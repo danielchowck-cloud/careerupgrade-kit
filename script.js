@@ -67,3 +67,15 @@ document.querySelector("#interest-form").addEventListener("submit", (event) => {
   document.querySelector("#form-output").textContent =
     `Beta note: ${name} is a ${status.toLowerCase()} targeting ${role}. Start by collecting their current resume, target job ads, internship/project details, and interview concerns.`;
 });
+
+document.querySelector("#copy-share").addEventListener("click", async () => {
+  const message = document.querySelector("#share-message").textContent.trim().replace(/\s+/g, " ");
+  const status = document.querySelector("#copy-status");
+
+  try {
+    await navigator.clipboard.writeText(message);
+    status.textContent = "Message copied.";
+  } catch {
+    status.textContent = "Copy failed. Select the message text manually.";
+  }
+});

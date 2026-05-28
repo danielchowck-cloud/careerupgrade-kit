@@ -462,6 +462,53 @@ select {
   color: rgba(255, 255, 255, 0.8);
 }
 
+.join-box {
+  max-width: 520px;
+  margin-top: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 18px;
+}
+
+.join-box strong {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.join-box span {
+  display: inline-block;
+  margin-left: 4px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.16);
+  color: #fff;
+  padding: 4px 8px;
+  font-weight: 800;
+}
+
+.share {
+  background: var(--surface);
+}
+
+.share-panel {
+  max-width: 860px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--bg);
+  padding: 24px;
+}
+
+.share-panel p {
+  color: var(--muted);
+}
+
+.copy-status {
+  min-height: 24px;
+  margin: 12px 0 0;
+  color: var(--accent-strong);
+  font-weight: 700;
+}
+
 .footer {
   display: flex;
   justify-content: space-between;
