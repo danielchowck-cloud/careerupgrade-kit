@@ -486,6 +486,28 @@ select {
   font-weight: 800;
 }
 
+.next-box {
+  max-width: 560px;
+  margin-top: 16px;
+  border-left: 4px solid #8fd0bf;
+  padding: 4px 0 4px 18px;
+}
+
+.next-box strong {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.next-box ol {
+  margin: 0;
+  padding-left: 18px;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.next-box li + li {
+  margin-top: 6px;
+}
+
 .share {
   background: var(--surface);
 }
