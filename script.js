@@ -57,17 +57,6 @@ buttons.forEach((button) => {
   });
 });
 
-document.querySelector("#interest-form").addEventListener("submit", (event) => {
-  event.preventDefault();
-  const form = new FormData(event.currentTarget);
-  const name = form.get("name") || "this student";
-  const role = form.get("role") || "their target internship or first full-time role";
-  const status = form.get("status");
-
-  document.querySelector("#form-output").textContent =
-    `Beta note: ${name} is a ${status.toLowerCase()} targeting ${role}. Start by collecting their current resume, target internship/job ads, internship/project details, and interview concerns.`;
-});
-
 document.querySelector("#copy-share").addEventListener("click", async () => {
   const message = document.querySelector("#share-message").textContent.trim().replace(/\s+/g, " ");
   const status = document.querySelector("#copy-status");
