@@ -10,7 +10,7 @@ const panels = {
   },
   linkedin: {
     label: "LinkedIn Starter Profile",
-    title: "A profile that shows direction instead of just 'fresh graduate'.",
+    title: "A profile that shows direction instead of just 'student' or 'fresh graduate'.",
     points: [
       "Headline aligned to target roles.",
       "About section with credible positioning.",
@@ -22,7 +22,7 @@ const panels = {
     title: "Prepared answers without sounding memorized.",
     points: [
       "\"Tell me about yourself\" script.",
-      "10 common fresh graduate interview answers.",
+      "10 common internship and fresh graduate interview answers.",
       "5 STAR-format story examples based on real background.",
     ],
   },
@@ -60,12 +60,12 @@ buttons.forEach((button) => {
 document.querySelector("#interest-form").addEventListener("submit", (event) => {
   event.preventDefault();
   const form = new FormData(event.currentTarget);
-  const name = form.get("name") || "this graduate";
-  const role = form.get("role") || "their first full-time role";
+  const name = form.get("name") || "this student";
+  const role = form.get("role") || "their target internship or first full-time role";
   const status = form.get("status");
 
   document.querySelector("#form-output").textContent =
-    `Beta note: ${name} is a ${status.toLowerCase()} targeting ${role}. Start by collecting their current resume, target job ads, internship/project details, and interview concerns.`;
+    `Beta note: ${name} is a ${status.toLowerCase()} targeting ${role}. Start by collecting their current resume, target internship/job ads, internship/project details, and interview concerns.`;
 });
 
 document.querySelector("#copy-share").addEventListener("click", async () => {
