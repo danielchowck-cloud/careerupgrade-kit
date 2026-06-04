@@ -39,6 +39,12 @@ const panels = {
 
 const panel = document.querySelector("#kit-panel");
 const buttons = document.querySelectorAll(".kit-item");
+const params = new URLSearchParams(window.location.search);
+const source = params.get("src") || params.get("source") || "direct";
+
+document.querySelector('input[name="source"]').value = source;
+document.querySelector('input[name="page_url"]').value = window.location.href;
+document.querySelector('input[name="referrer"]').value = document.referrer || "none";
 
 function renderPanel(key) {
   const item = panels[key];
