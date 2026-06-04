@@ -46,6 +46,22 @@ document.querySelector('input[name="source"]').value = source;
 document.querySelector('input[name="page_url"]').value = window.location.href;
 document.querySelector('input[name="referrer"]').value = document.referrer || "none";
 
+const form = document.querySelector(".lead-form");
+
+form.addEventListener("submit", () => {
+  const name = form.elements.name.value.trim() || "New applicant";
+  const timestamp = new Date().toLocaleString("en-SG", {
+    timeZone: "Asia/Singapore",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+  });
+
+  form.elements._subject.value = `CareerUpgrade Kit beta request - ${name} - ${timestamp}`;
+});
+
 function renderPanel(key) {
   const item = panels[key];
   panel.innerHTML = `
