@@ -449,6 +449,57 @@ h3 {
   overflow-wrap: anywhere;
 }
 
+.lead-form {
+  display: grid;
+  max-width: 860px;
+  margin-top: 28px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.lead-form label {
+  display: grid;
+  gap: 8px;
+  color: rgba(255, 255, 255, 0.86);
+  font-weight: 750;
+}
+
+.lead-form input,
+.lead-form select,
+.lead-form textarea {
+  width: 100%;
+  min-height: 46px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font: inherit;
+  padding: 11px 12px;
+}
+
+.lead-form select option {
+  color: var(--ink);
+}
+
+.lead-form textarea {
+  min-height: 118px;
+  resize: vertical;
+}
+
+.lead-form input::placeholder,
+.lead-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.46);
+}
+
+.lead-form input[name="_honey"] {
+  display: none;
+}
+
+.lead-form .full,
+.lead-form button {
+  grid-column: 1 / -1;
+}
+
 .share {
   background: var(--surface);
 }
@@ -511,6 +562,7 @@ h3 {
 
   .metrics,
   .comparison,
+  .lead-form,
   .steps {
     grid-template-columns: 1fr;
   }
