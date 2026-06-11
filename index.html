@@ -18,8 +18,9 @@
       </a>
       <nav class="nav" aria-label="Main navigation">
         <a href="#kit">Kit</a>
-        <a href="#targets">Internship & Jobs</a>
-        <a href="#proof">Before/After</a>
+        <a href="#targets">Jobs</a>
+        <a href="#tracker">Tracker</a>
+        <a href="#proof">Proof</a>
         <a href="#request">Request</a>
       </nav>
     </header>
@@ -91,70 +92,45 @@
 
       <section class="section targets" id="targets">
         <div class="section-heading">
-          <p class="eyebrow">Internship and job targeting</p>
-          <h2>Use the listing as a starting point. The service starts with the student's application.</h2>
+          <p class="eyebrow">R1 internship and first-job finder</p>
+          <h2>Browse the target, then submit it for resume, LinkedIn, and cover-letter help.</h2>
           <p>
-            Students can browse common internship and first-job paths, choose the
-            direction they want, then submit the target together with their resume,
-            LinkedIn profile, and cover-letter needs for review.
+            The listing is additional information for students. The service still
+            starts with reviewing the student's resume, LinkedIn profile, cover letter,
+            and application evidence against the internship or job they want.
           </p>
         </div>
-        <div class="target-grid">
-          <article class="target-card">
-            <span>Technology & AI</span>
-            <h3>Software, data, AI, and cybersecurity internships.</h3>
-            <ul>
-              <li>Software Engineering Intern</li>
-              <li>Data Analytics Intern</li>
-              <li>AI / ML Intern</li>
-              <li>Cybersecurity Intern</li>
-            </ul>
-            <button class="text-button choose-target" data-target="Technology & AI internship or first job" type="button">Choose this path</button>
-          </article>
-          <article class="target-card">
-            <span>Banking & Finance</span>
-            <h3>Finance, wealth, risk, compliance, and operations roles.</h3>
-            <ul>
-              <li>Investment Banking Intern</li>
-              <li>Wealth Management Intern</li>
-              <li>Risk & Compliance Intern</li>
-              <li>Finance Operations Intern</li>
-            </ul>
-            <button class="text-button choose-target" data-target="Banking & Finance internship or first job" type="button">Choose this path</button>
-          </article>
-          <article class="target-card">
-            <span>Engineering & Manufacturing</span>
-            <h3>Technical roles that need clear project and process evidence.</h3>
-            <ul>
-              <li>Mechanical Engineering Intern</li>
-              <li>Semiconductor Process Intern</li>
-              <li>Manufacturing Excellence Intern</li>
-              <li>Quality Engineering Intern</li>
-            </ul>
-            <button class="text-button choose-target" data-target="Engineering & Manufacturing internship or first job" type="button">Choose this path</button>
-          </article>
-          <article class="target-card">
-            <span>Supply Chain & Logistics</span>
-            <h3>Operations paths for students with coordination and data strengths.</h3>
-            <ul>
-              <li>Procurement Intern</li>
-              <li>Supply Chain Analyst Intern</li>
-              <li>Operations Excellence Intern</li>
-              <li>Logistics Planning Intern</li>
-            </ul>
-            <button class="text-button choose-target" data-target="Supply Chain & Logistics internship or first job" type="button">Choose this path</button>
-          </article>
-          <article class="target-card">
-            <span>Marketing & Business</span>
-            <h3>Business paths where projects and communication must be framed well.</h3>
-            <ul>
-              <li>Digital Marketing Intern</li>
-              <li>Business Development Intern</li>
-              <li>Product Marketing Intern</li>
-              <li>Market Research Intern</li>
-            </ul>
-            <button class="text-button choose-target" data-target="Marketing & Business internship or first job" type="button">Choose this path</button>
-          </article>
+
+        <div class="finder">
+          <div class="finder-controls" aria-label="Internship finder controls">
+            <label>
+              Student stage
+              <select id="finder-stage">
+                <option value="all">All students</option>
+                <option value="internship">Current student looking for internship</option>
+                <option value="first-job">Fresh graduate looking for first job</option>
+              </select>
+            </label>
+            <label>
+              Industry
+              <select id="finder-industry">
+                <option value="all">All industries</option>
+              </select>
+            </label>
+            <label>
+              Target role
+              <select id="finder-role">
+                <option value="all">All roles</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="finder-meta">
+            <span id="listing-count">0 targets</span>
+            <span id="listing-updated">Updated daily by CareerUpgradeKit</span>
+          </div>
+
+          <div class="listing-grid" id="listing-grid" aria-live="polite"></div>
         </div>
       </section>
 
@@ -269,6 +245,55 @@
         </div>
       </section>
 
+      <section class="section tracker-section" id="tracker">
+        <div class="section-heading">
+          <p class="eyebrow">Student application tracker</p>
+          <h2>Track each internship or first-job application after choosing a target.</h2>
+          <p>
+            R1 includes a simple private tracker in the browser. Students can record
+            the companies they are applying to and see whether each application is
+            still preparing, submitted, interviewing, offered, or closed.
+          </p>
+        </div>
+        <div class="tracker-layout">
+          <form class="tracker-form" id="tracker-form">
+            <label>
+              Company or programme
+              <input id="tracker-company" type="text" placeholder="Example: DBS, GovTech, Shopee, A*STAR" required />
+            </label>
+            <label>
+              Role
+              <input id="tracker-role" type="text" placeholder="Example: Data Analytics Intern" required />
+            </label>
+            <label>
+              Status
+              <select id="tracker-status">
+                <option>Preparing resume</option>
+                <option>Submitted</option>
+                <option>Interview scheduled</option>
+                <option>Offer received</option>
+                <option>Closed / rejected</option>
+              </select>
+            </label>
+            <button class="button primary" type="submit">Add to tracker</button>
+          </form>
+          <div class="tracker-board" id="tracker-board" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="section employer-match">
+        <div class="section-heading">
+          <p class="eyebrow">Future employer matching</p>
+          <h2>R1 prepares the data foundation for matching students with employers later.</h2>
+          <p>
+            The first version captures student target paths and application readiness.
+            The next version can let employers submit internship roles, then match
+            suitable students based on target industry, resume evidence, skills, and
+            readiness status.
+          </p>
+        </div>
+      </section>
+
       <section class="section contact" id="request">
         <div>
           <p class="eyebrow">Beta intake</p>
@@ -325,11 +350,16 @@
               Target internship or job path
               <select name="target_path" id="target-path" required>
                 <option value="">Select one</option>
-                <option>Technology & AI internship or first job</option>
-                <option>Banking & Finance internship or first job</option>
-                <option>Engineering & Manufacturing internship or first job</option>
-                <option>Supply Chain & Logistics internship or first job</option>
-                <option>Marketing & Business internship or first job</option>
+                <option>Technology, AI, data, software, or cybersecurity</option>
+                <option>Banking, finance, accounting, risk, or compliance</option>
+                <option>Engineering, semiconductor, manufacturing, or quality</option>
+                <option>Supply chain, logistics, procurement, or operations</option>
+                <option>Marketing, business development, sales, or product</option>
+                <option>Healthcare, biomedical, life science, or pharma</option>
+                <option>Hospitality, tourism, events, or customer experience</option>
+                <option>Human resources, admin, education, or training</option>
+                <option>Legal, compliance, policy, public sector, or ESG</option>
+                <option>Design, media, communications, or content</option>
                 <option>Other or not sure yet</option>
               </select>
             </label>
