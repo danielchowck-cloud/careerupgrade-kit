@@ -212,6 +212,89 @@ const targetData = [
 
 const marketUpdated = "11 Jun 2026";
 
+const verifiedInternships = [
+  {
+    title: "Data Analyst Intern",
+    company: "Lumens",
+    industry: "Technology, AI & Data",
+    source: "MyCareersFuture",
+    checked: "11 Jun 2026",
+    url: "https://www.mycareersfuture.gov.sg/job/design/data-analyst-intern-lumens-b08645f5c20da7600e43cac34d3943ee",
+  },
+  {
+    title: "Data Analyst Intern",
+    company: "PSA Marine",
+    industry: "Maritime, Aviation & Transport",
+    source: "MyCareersFuture",
+    checked: "11 Jun 2026",
+    url: "https://www.mycareersfuture.gov.sg/job/data-analyst-intern-psa-marine-966c1abd654da9373b31e452604d3de0",
+  },
+  {
+    title: "AI Analyst Intern",
+    company: "One Tech Stop",
+    industry: "Technology, AI & Data",
+    source: "MyCareersFuture",
+    checked: "11 Jun 2026",
+    url: "https://www.mycareersfuture.gov.sg/job/ai-analyst-intern-one-tech-stop-d32b86b85284b8ed93b219b8d32a3c8d",
+  },
+  {
+    title: "Marketing Intern",
+    company: "Heilo",
+    industry: "Marketing, Sales & Business",
+    source: "MyCareersFuture",
+    checked: "11 Jun 2026",
+    url: "https://www.mycareersfuture.gov.sg/job/marketing-intern-heilo-92e54edf1f509bf09e3accff57705297",
+  },
+  {
+    title: "Corporate Finance Intern",
+    company: "Soochow Singapore Capital Markets",
+    industry: "Banking, Finance, Insurance & Accounting",
+    source: "MyCareersFuture",
+    checked: "11 Jun 2026",
+    url: "https://www.mycareersfuture.gov.sg/job/corporate-finance-intern-soochow-singapore-capital-markets-efd22c085f2b5fe2c8c1b63332412ca3",
+  },
+  {
+    title: "Software Engineering Intern",
+    company: "Respiree",
+    industry: "Technology, AI & Data",
+    source: "MyCareersFuture",
+    checked: "11 Jun 2026",
+    url: "https://www.mycareersfuture.gov.sg/job/software-engineering-intern-respiree-f02b039184daf939e2de8924d7e68fab",
+  },
+  {
+    title: "HR Intern",
+    company: "Stamford American International School",
+    industry: "Human Resources, Admin & Education",
+    source: "MyCareersFuture",
+    checked: "11 Jun 2026",
+    url: "https://www.mycareersfuture.gov.sg/job/hr-intern-stamford-american-international-school-783619d7b49fcc50b8ddf237ef31e56f",
+  },
+  {
+    title: "IoT Engineering Intern",
+    company: "Biologic Technik",
+    industry: "Engineering, Semiconductor & Manufacturing",
+    source: "MyCareersFuture",
+    checked: "11 Jun 2026",
+    url: "https://www.mycareersfuture.gov.sg/job/iot-engineering-intern-biologic-technik-6f72b476016ce360d32af8c83cbd6e35",
+  },
+  {
+    title: "Finance Intern",
+    company: "Ace Ascentia",
+    industry: "Banking, Finance, Insurance & Accounting",
+    source: "MyCareersFuture",
+    checked: "11 Jun 2026",
+    url: "https://www.mycareersfuture.gov.sg/job/banking-finance/finance-intern-ace-ascentia-35e4e093b2f5c2e1d44e4e6ec29a02d8",
+  },
+  {
+    title: "Electrical Engineering Intern",
+    company: "China Railway Electrification Engineering Group",
+    industry: "Engineering, Semiconductor & Manufacturing",
+    source: "MyCareersFuture",
+    checked: "11 Jun 2026",
+    url: "https://www.mycareersfuture.gov.sg/job/electrical-engineering-intern-china-railway-electrification-engineering-group-co-54ddd17822c74415c4fb50af9942a82b",
+  },
+];
+
 function unique(values) {
   return [...new Set(values)].sort((a, b) => a.localeCompare(b));
 }
@@ -235,6 +318,31 @@ function rolesForIndustry(industry, stage = "") {
 function liveSearchUrl(role) {
   const query = encodeURIComponent(`${role} Singapore`);
   return `https://www.mycareersfuture.gov.sg/search?search=${query}&sortBy=new_posting_date&page=0`;
+}
+
+function setupVerifiedOpenings() {
+  const openingGrid = document.querySelector("#opening-grid");
+
+  if (!openingGrid) {
+    return;
+  }
+
+  openingGrid.innerHTML = verifiedInternships
+    .map(
+      (opening) => `
+        <article class="opening-card">
+          <span>${opening.industry}</span>
+          <h3>${opening.title}</h3>
+          <p>${opening.company}</p>
+          <p>Checked ${opening.checked} via ${opening.source}.</p>
+          <div class="listing-actions">
+            <a class="text-button" href="${opening.url}" target="_blank" rel="noreferrer">View opening</a>
+            <a class="button primary" href="#request">Request help</a>
+          </div>
+        </article>
+      `
+    )
+    .join("");
 }
 
 function setupFinder() {
@@ -343,3 +451,4 @@ function setupFinder() {
 }
 
 setupFinder();
+setupVerifiedOpenings();
