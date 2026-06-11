@@ -110,27 +110,30 @@ function setupChecker() {
   }
 
   function selectedCheckerTarget() {
-    return targetData.find((item) => item.role === checkerRole.value) || targetData[1];
+    return targetData.find((item) => item.role === checkerRole.value) || {
+      role: "Resume + LinkedIn preparation",
+      evidence: "resume clarity, LinkedIn positioning, cover-letter direction, and interview stories",
+    };
   }
 
   function scoreCopy(score) {
     if (score >= 82) {
       return {
-        title: "Strong base. Now make it target-specific.",
-        copy: "Your materials look prepared. The next step is polishing role keywords, evidence, and interview stories for the exact opportunity.",
+        title: "Strong base. Now make it sharper and more specific.",
+        copy: "Your materials look prepared. The next step is polishing evidence, LinkedIn positioning, cover-letter direction, and interview stories.",
       };
     }
 
     if (score >= 62) {
       return {
-        title: "Good direction, but not fully application-ready.",
-        copy: "You likely need targeted resume bullets, stronger LinkedIn positioning, and a more specific cover-letter angle before applying.",
+        title: "Good direction, but your profile can be stronger.",
+        copy: "You likely need clearer resume bullets, stronger LinkedIn positioning, and a more specific cover-letter angle.",
       };
     }
 
     return {
-      title: "You have a target, but your application is not ready yet.",
-      copy: "Start with resume and LinkedIn rewriting before applying. A stronger application can improve screening chances before interview stage.",
+      title: "Your career profile needs strengthening before you rely on it.",
+      copy: "Start with resume and LinkedIn rewriting, then add cover-letter direction and interview stories when you are ready.",
     };
   }
 
@@ -154,9 +157,7 @@ function setupChecker() {
   }
 
   populateSelect(checkerIndustry, unique(targetData.map((item) => item.industry)), "Select industry");
-  checkerIndustry.value = "Technology, AI & Data";
   populateSelect(checkerRole, rolesForIndustry(checkerIndustry.value), "Select role");
-  checkerRole.value = "Data Analytics Intern";
 
   checkerIndustry.addEventListener("change", () => {
     populateSelect(checkerRole, rolesForIndustry(checkerIndustry.value), "Select role");
