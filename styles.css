@@ -612,6 +612,23 @@ h3 {
   gap: 16px;
 }
 
+.opening-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: end;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.opening-filter label {
+  min-width: min(100%, 320px);
+}
+
 .opening-card {
   padding: 20px;
 }

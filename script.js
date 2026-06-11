@@ -238,88 +238,54 @@ const targetData = [
 
 const marketUpdated = "11 Jun 2026";
 
-const verifiedInternships = [
-  {
-    title: "Data Analyst Intern",
-    company: "Lumens",
-    industry: "Technology, AI & Data",
-    source: "MyCareersFuture",
-    checked: "11 Jun 2026",
-    url: "https://www.mycareersfuture.gov.sg/job/design/data-analyst-intern-lumens-b08645f5c20da7600e43cac34d3943ee",
-  },
-  {
-    title: "Data Analyst Intern",
-    company: "PSA Marine",
-    industry: "Maritime, Aviation & Transport",
-    source: "MyCareersFuture",
-    checked: "11 Jun 2026",
-    url: "https://www.mycareersfuture.gov.sg/job/data-analyst-intern-psa-marine-966c1abd654da9373b31e452604d3de0",
-  },
-  {
-    title: "AI Analyst Intern",
-    company: "One Tech Stop",
-    industry: "Technology, AI & Data",
-    source: "MyCareersFuture",
-    checked: "11 Jun 2026",
-    url: "https://www.mycareersfuture.gov.sg/job/ai-analyst-intern-one-tech-stop-d32b86b85284b8ed93b219b8d32a3c8d",
-  },
-  {
-    title: "Marketing Intern",
-    company: "Heilo",
-    industry: "Marketing, Sales & Business",
-    source: "MyCareersFuture",
-    checked: "11 Jun 2026",
-    url: "https://www.mycareersfuture.gov.sg/job/marketing-intern-heilo-92e54edf1f509bf09e3accff57705297",
-  },
-  {
-    title: "Corporate Finance Intern",
-    company: "Soochow Singapore Capital Markets",
-    industry: "Banking, Finance, Insurance & Accounting",
-    source: "MyCareersFuture",
-    checked: "11 Jun 2026",
-    url: "https://www.mycareersfuture.gov.sg/job/corporate-finance-intern-soochow-singapore-capital-markets-efd22c085f2b5fe2c8c1b63332412ca3",
-  },
-  {
-    title: "Software Engineering Intern",
-    company: "Respiree",
-    industry: "Technology, AI & Data",
-    source: "MyCareersFuture",
-    checked: "11 Jun 2026",
-    url: "https://www.mycareersfuture.gov.sg/job/software-engineering-intern-respiree-f02b039184daf939e2de8924d7e68fab",
-  },
-  {
-    title: "HR Intern",
-    company: "Stamford American International School",
-    industry: "Human Resources, Admin & Education",
-    source: "MyCareersFuture",
-    checked: "11 Jun 2026",
-    url: "https://www.mycareersfuture.gov.sg/job/hr-intern-stamford-american-international-school-783619d7b49fcc50b8ddf237ef31e56f",
-  },
-  {
-    title: "IoT Engineering Intern",
-    company: "Biologic Technik",
-    industry: "Engineering, Semiconductor & Manufacturing",
-    source: "MyCareersFuture",
-    checked: "11 Jun 2026",
-    url: "https://www.mycareersfuture.gov.sg/job/iot-engineering-intern-biologic-technik-6f72b476016ce360d32af8c83cbd6e35",
-  },
-  {
-    title: "Finance Intern",
-    company: "Ace Ascentia",
-    industry: "Banking, Finance, Insurance & Accounting",
-    source: "MyCareersFuture",
-    checked: "11 Jun 2026",
-    url: "https://www.mycareersfuture.gov.sg/job/banking-finance/finance-intern-ace-ascentia-35e4e093b2f5c2e1d44e4e6ec29a02d8",
-  },
-  {
-    title: "Electrical Engineering Intern",
-    company: "China Railway Electrification Engineering Group",
-    industry: "Engineering, Semiconductor & Manufacturing",
-    source: "MyCareersFuture",
-    checked: "11 Jun 2026",
-    url: "https://www.mycareersfuture.gov.sg/job/electrical-engineering-intern-china-railway-electrification-engineering-group-co-54ddd17822c74415c4fb50af9942a82b",
-  },
-];
+const featuredOpenings = [
+  ["Data Analyst Intern", "Lumens", "Technology, AI & Data", "internship", "https://www.mycareersfuture.gov.sg/job/design/data-analyst-intern-lumens-b08645f5c20da7600e43cac34d3943ee"],
+  ["Data Analyst Intern", "PSA Marine", "Maritime, Aviation & Transport", "internship", "https://www.mycareersfuture.gov.sg/job/data-analyst-intern-psa-marine-966c1abd654da9373b31e452604d3de0"],
+  ["AI Analyst Intern", "One Tech Stop", "Technology, AI & Data", "internship", "https://www.mycareersfuture.gov.sg/job/ai-analyst-intern-one-tech-stop-d32b86b85284b8ed93b219b8d32a3c8d"],
+  ["Marketing Intern", "Heilo", "Marketing, Sales & Business", "internship", "https://www.mycareersfuture.gov.sg/job/marketing-intern-heilo-92e54edf1f509bf09e3accff57705297"],
+  ["Corporate Finance Intern", "Soochow Singapore Capital Markets", "Banking, Finance, Insurance & Accounting", "internship", "https://www.mycareersfuture.gov.sg/job/corporate-finance-intern-soochow-singapore-capital-markets-efd22c085f2b5fe2c8c1b63332412ca3"],
+  ["Software Engineering Intern", "Respiree", "Technology, AI & Data", "internship", "https://www.mycareersfuture.gov.sg/job/software-engineering-intern-respiree-f02b039184daf939e2de8924d7e68fab"],
+  ["HR Intern", "Stamford American International School", "Human Resources, Admin & Education", "internship", "https://www.mycareersfuture.gov.sg/job/hr-intern-stamford-american-international-school-783619d7b49fcc50b8ddf237ef31e56f"],
+  ["IoT Engineering Intern", "Biologic Technik", "Engineering, Semiconductor & Manufacturing", "internship", "https://www.mycareersfuture.gov.sg/job/iot-engineering-intern-biologic-technik-6f72b476016ce360d32af8c83cbd6e35"],
+  ["Finance Intern", "Ace Ascentia", "Banking, Finance, Insurance & Accounting", "internship", "https://www.mycareersfuture.gov.sg/job/banking-finance/finance-intern-ace-ascentia-35e4e093b2f5c2e1d44e4e6ec29a02d8"],
+  ["Electrical Engineering Intern", "China Railway Electrification Engineering Group", "Engineering, Semiconductor & Manufacturing", "internship", "https://www.mycareersfuture.gov.sg/job/electrical-engineering-intern-china-railway-electrification-engineering-group-co-54ddd17822c74415c4fb50af9942a82b"],
+  ["Information Technology Intern", "HIGOGAME", "Technology, AI & Data", "internship", "https://www.mycareersfuture.gov.sg/job/information-technology/information-technology-intern-higogame-71e10ce33f2b655f40233070d58377ec"],
+  ["Social Media Intern", "C. K. Tang", "Retail, FMCG & E-Commerce", "internship", "https://www.mycareersfuture.gov.sg/job/marketing/social-media-intern-ck-tang-0fbeacaad4bf2c5a3917b607cadb4536"],
+  ["Intern, Sub-Branch", "Bank of China", "Banking, Finance, Insurance & Accounting", "internship", "https://www.mycareersfuture.gov.sg/job/intern-bank-china-708d8acd97e7e8bed0ebe32e740afd3c"],
+  ["Business & Operations Intern", "Infinix Hospitality Management", "Hospitality, Tourism & Events", "internship", "https://www.mycareersfuture.gov.sg/job/others/business-operations-intern-infinix-hospitality-management-bf349ad5e7802049702a21b0ded82f97"],
+  ["Product Marketing Design Intern", "Superstar Teacher", "Design, Media & Communications", "internship", "https://www.mycareersfuture.gov.sg/job/design/product-marketing-design-intern-superstar-teacher-ab862fb450a43fc0641346164e7b941b"],
+  ["Research Intern", "GWS Living Art", "Science, Research & Academia", "internship", "https://www.mycareersfuture.gov.sg/job/design/research-intern-gws-living-art-1871b21d6b6d3598a1b37b86589898a3"],
+  ["Creative Intern", "Hustle Institute", "Design, Media & Communications", "internship", "https://www.mycareersfuture.gov.sg/job/creative-intern-hustle-institute-12d1fb02f9d65a11ac64ce8b8954ed73"],
+  ["Graphic Design Intern", "Republic Singapore Yacht Club", "Design, Media & Communications", "internship", "https://www.mycareersfuture.gov.sg/job/advertising/graphic-design-intern-republic-singapore-yacht-club-43871a0f282b710fa3fc52f1c55e68b5"],
+  ["Sales and Marketing Intern", "AC P Computer Training & Consultancy", "Marketing, Sales & Business", "internship", "https://www.mycareersfuture.gov.sg/job/marketing/sales-marketing-intern-ac-p-computer-training-consultancy-61a3ed0a75795e03d136a09b06b93782"],
+  ["Intern, Fashion Merchandiser / Merchandising", "Q Retail", "Retail, FMCG & E-Commerce", "internship", "https://www.mycareersfuture.gov.sg/job/customer-service/intern-fashion-merchandisermerchandising-q-retail-edb0e651f1954c4b9539423fecc92627"],
+  ["Content Creator Intern", "Academy Video Productions", "Design, Media & Communications", "internship", "https://www.mycareersfuture.gov.sg/job/content-creator-intern-academy-video-productions-5607e6062293235b3664e6156c2e3ac0"],
+  ["Fund Management Support Intern", "Galilee Investment Management", "Banking, Finance, Insurance & Accounting", "internship", "https://www.mycareersfuture.gov.sg/job/banking-finance/fund-management-support-intern-galilee-investment-management-76c4a01dae0c693cfbf74e37da5557af"],
+  ["Finance / Accounting Intern", "Tanbury Consulting", "Banking, Finance, Insurance & Accounting", "internship", "https://www.mycareersfuture.gov.sg/job/financeaccounting-intern-tanbury-consulting-e453b166eb7f7464cf994dddfdc5f531"],
+  ["Data and AI Engineering Intern", "TVS Motor Company Singapore Branch", "Technology, AI & Data", "internship", "https://www.mycareersfuture.gov.sg/job/data-ai-engineering-intern-tvs-motor-company-singapore-branch-4b87c3a83ecd49883baf2c466fc7c310"],
+  ["Compliance Intern", "FOMO Pay", "Banking, Finance, Insurance & Accounting", "internship", "https://www.mycareersfuture.gov.sg/job/banking-finance/compliance-intern-fomo-pay-640ac25e26e5e6332bae40731eff23ea"],
+  ["Technical Product & QA Intern", "ChainUp", "Technology, AI & Data", "internship", "https://www.mycareersfuture.gov.sg/job/information-technology/technical-product-qa-intern-chainup-e51f105894d6e786f60ac77334eb67a0"],
+  ["Employer Engagement and Placements Intern", "Generation: You Employed Singapore", "Human Resources, Admin & Education", "internship", "https://www.mycareersfuture.gov.sg/job/human-resources/employer-engagement-placements-intern-generation-employed-singapore-84bb4b5395c125efae5996ea43b8e70f"],
+  ["Sustainability Intern", "Bureau Veritas Singapore", "Energy, Utilities & Sustainability", "internship", "https://www.mycareersfuture.gov.sg/job/sustainability-intern-bureau-veritas-singapore-2bf4a35145d2df21b335a73cc08fd465"],
+  ["Vessel Operator Intern", "Tongli Shipping", "Maritime, Aviation & Transport", "internship", "https://www.mycareersfuture.gov.sg/job/vessel-operator-intern-tongli-shipping-9fc0b3fb0e5d3440cad011c7d9b883fa"],
+  ["Healthcare Business Development Intern", "Recruit Express", "Healthcare, Biomedical & Pharma", "internship", "https://www.mycareersfuture.gov.sg/job/healthcare-business-development-intern-hdc-recruit-express-5379d7cddaa88f739b135522685e2526"],
+  ["Fresh Graduate Regional Sales Engineer", "Personnel Link Jobhub", "Marketing, Sales & Business", "first-job", "https://www.mycareersfuture.gov.sg/job/fresh-graduate-regional-sales-engineer-personnel-link-jobhub-06b8e7741216857aab0944f37d3d0779"],
+  ["Software Engineer (Fresh Graduate)", "BlackScore", "Technology, AI & Data", "first-job", "https://www.mycareersfuture.gov.sg/job/information-technology/software-engineer-blackscore-05f609408597a69f1d4f1bdbf9d65590"],
+  ["Software Engineer: C / C++ Development (New College Graduate)", "Applied Materials South East Asia", "Engineering, Semiconductor & Manufacturing", "first-job", "https://www.mycareersfuture.gov.sg/job/information-technology/software-engineer-c-c-development-applied-materials-south-east-asia-b0687dbc1417caf6a6ef9cbe830ded55"],
+  ["Management Associate", "FNDR Headhunting", "Professional Services, Consulting & Advisory", "first-job", "https://www.mycareersfuture.gov.sg/job/education-training/management-associate-fndr-headhunting-44fe0f4de495d12ce2a807f264b531a3"],
+  ["Procurement Ops Executive - Entry Level", "Sciente International", "Supply Chain, Logistics & Operations", "first-job", "https://www.mycareersfuture.gov.sg/job/banking-finance/procurement-ops-executive-entry-level-sciente-international-df19a2265b991093dbdfefb2a4534eeb"],
+  ["Electrical Engineer (Fresh Graduates)", "Shinryo Corporation", "Built Environment, Real Estate & Facilities", "first-job", "https://www.mycareersfuture.gov.sg/job/electrical-engineer-shinryo-corporation-48602895209a2dbb7d374443d16aef88"],
+  ["Mechanical Engineer (Fresh Graduates)", "Shinryo Corporation", "Engineering, Semiconductor & Manufacturing", "first-job", "https://www.mycareersfuture.gov.sg/job/mechanical-engineer-shinryo-corporation-caae1dbd68d41fd251aee20125191602"],
+  ["Human Resource Executive (Entry Level)", "Recruit Express Services", "Human Resources, Admin & Education", "first-job", "https://www.mycareersfuture.gov.sg/job/consulting/human-resource-executive-recruit-express-services-522dab035d15d1615005404f5c891303"],
+].map(([title, company, industry, stage, url]) => ({
+  title,
+  company,
+  industry,
+  stage,
+  source: "MyCareersFuture",
+  checked: "11 Jun 2026",
+  url,
+}));
 
 function unique(values) {
   return [...new Set(values)].sort((a, b) => a.localeCompare(b));
@@ -341,9 +307,14 @@ function rolesForIndustry(industry, stage = "") {
   );
 }
 
-function liveSearchUrl(role) {
-  const query = encodeURIComponent(`${role} Singapore`);
-  return `https://www.mycareersfuture.gov.sg/search?search=${query}&sortBy=new_posting_date&page=0`;
+function liveSearchUrl(role, stage = "internship") {
+  if (stage === "first-job") {
+    const query = encodeURIComponent(`${role} fresh graduate entry level`);
+    return `https://www.mycareersfuture.gov.sg/search?employmentType=Full%20Time&page=0&search=${query}&sortBy=new_posting_date`;
+  }
+
+  const query = encodeURIComponent(role.replace(/\bInternship\b/i, "Intern"));
+  return `https://www.mycareersfuture.gov.sg/search?employmentType=Internship%2FAttachment&page=0&search=${query}&sortBy=new_posting_date`;
 }
 
 function prefillOpportunityRequest(role, stage = "internship") {
@@ -365,28 +336,42 @@ function prefillOpportunityRequest(role, stage = "internship") {
 
 function setupVerifiedOpenings() {
   const openingGrid = document.querySelector("#opening-grid");
+  const openingStage = document.querySelector("#opening-stage");
+  const openingLiveSearch = document.querySelector("#opening-live-search");
 
   if (!openingGrid) {
     return;
   }
 
-  openingGrid.innerHTML = verifiedInternships
-    .map(
-      (opening) => `
-        <article class="opening-card">
-          <span>${opening.industry}</span>
-          <h3>${opening.title}</h3>
-          <p>${opening.company}</p>
-          <p>Checked ${opening.checked} via ${opening.source}.</p>
-          <div class="listing-actions">
-            <a class="text-button" href="${opening.url}" target="_blank" rel="noreferrer">View opening</a>
-            <button class="text-button use-opening" data-role="${opening.title}" type="button">Use this opening</button>
-            <a class="button primary" href="#request">Request help</a>
-          </div>
-        </article>
-      `
-    )
-    .join("");
+  function renderOpenings() {
+    const stage = openingStage?.value || "internship";
+    const openings = featuredOpenings.filter((opening) => opening.stage === stage);
+
+    if (openingLiveSearch) {
+      openingLiveSearch.href = liveSearchUrl(stage === "first-job" ? "graduate" : "intern", stage);
+      openingLiveSearch.textContent = stage === "first-job"
+        ? "Open graduate-only live search"
+        : "Open internship-only live search";
+    }
+
+    openingGrid.innerHTML = openings
+      .map(
+        (opening) => `
+          <article class="opening-card">
+            <span>${opening.industry}</span>
+            <h3>${opening.title}</h3>
+            <p>${opening.company}</p>
+            <p>${opening.stage === "first-job" ? "Graduate / entry-level job" : "Internship opening"} checked ${opening.checked} via ${opening.source}.</p>
+            <div class="listing-actions">
+              <a class="text-button" href="${opening.url}" target="_blank" rel="noreferrer">View opening</a>
+              <button class="text-button use-opening" data-stage="${opening.stage}" data-role="${opening.title}" type="button">Use this opening</button>
+              <a class="button primary" href="#request">Request help</a>
+            </div>
+          </article>
+        `
+      )
+      .join("");
+  }
 
   openingGrid.addEventListener("click", (event) => {
     const button = event.target.closest(".use-opening");
@@ -395,8 +380,11 @@ function setupVerifiedOpenings() {
       return;
     }
 
-    prefillOpportunityRequest(button.dataset.role, "internship");
+    prefillOpportunityRequest(button.dataset.role, button.dataset.stage);
   });
+
+  openingStage?.addEventListener("change", renderOpenings);
+  renderOpenings();
 }
 
 function setupFinder() {
@@ -456,7 +444,7 @@ function setupFinder() {
             <p><strong>Evidence to prepare:</strong> ${item.evidence}.</p>
             <div class="listing-actions">
               <button class="text-button use-target" data-stage="${item.stage}" data-role="${item.role}" type="button">Use this target</button>
-              <a class="text-button" href="${liveSearchUrl(item.role)}" target="_blank" rel="noreferrer">View live search</a>
+              <a class="text-button" href="${liveSearchUrl(item.role, item.stage)}" target="_blank" rel="noreferrer">View live search</a>
               <a class="button primary" href="#request">Request help</a>
             </div>
           </article>

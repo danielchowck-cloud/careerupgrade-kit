@@ -40,13 +40,22 @@
 
       <section class="section live-openings" id="live-openings">
         <div class="section-heading">
-          <p class="eyebrow">Verified internship openings</p>
-          <h2>Current internship examples from live Singapore postings.</h2>
+          <p class="eyebrow">Verified opening examples</p>
+          <h2>Choose internship or graduate openings before viewing roles.</h2>
           <p>
-            These are opening-level examples checked from MyCareersFuture. The broader
-            target map below remains useful when a student wants to choose an industry
-            before narrowing to a specific role.
+            Students see internship listings only. Fresh graduates see graduate and
+            entry-level jobs only, unless they deliberately switch back to internships.
           </p>
+        </div>
+        <div class="opening-filter" aria-label="Opening type">
+          <label>
+            Showing
+            <select id="opening-stage">
+              <option value="internship">Internship openings only</option>
+              <option value="first-job">Fresh graduate jobs only</option>
+            </select>
+          </label>
+          <a class="text-button" id="opening-live-search" href="https://www.mycareersfuture.gov.sg/search?employmentType=Internship%2FAttachment&page=0&search=intern&sortBy=new_posting_date" target="_blank" rel="noreferrer">Open matching live search</a>
         </div>
         <div class="opening-grid" id="opening-grid" aria-live="polite"></div>
         <div class="page-actions">
@@ -189,6 +198,6 @@
       <span>Opportunities are the entry point. Readiness is the paid product.</span>
     </footer>
 
-    <script src="script.js?v=mobile-nav-20260611"></script>
+    <script src="script.js?v=stage-filtered-openings-20260611"></script>
   </body>
 </html>
