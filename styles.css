@@ -88,7 +88,6 @@ a {
 }
 
 .hero-copy {
-  min-width: 0;
   max-width: 760px;
 }
 
@@ -164,14 +163,12 @@ h3 {
 }
 
 .resume-preview {
-  min-width: 0;
   display: flex;
   justify-content: center;
 }
 
 .paper {
-  width: 100%;
-  max-width: 440px;
+  width: min(100%, 440px);
   min-height: 540px;
   padding: 26px;
   border: 1px solid var(--line);
@@ -324,83 +321,6 @@ h3 {
 .section-heading {
   max-width: 780px;
   margin-bottom: 28px;
-}
-
-.section-heading p:not(.eyebrow) {
-  color: var(--muted);
-}
-
-.targets {
-  border-top: 1px solid rgba(31, 42, 46, 0.1);
-  background: var(--surface);
-}
-
-.target-grid {
-  display: grid;
-  grid-template-columns: repeat(5, minmax(220px, 1fr));
-  gap: 14px;
-  overflow-x: auto;
-  padding-bottom: 8px;
-}
-
-.target-card {
-  min-height: 390px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--bg);
-  padding: 22px;
-}
-
-.target-card:nth-child(2) {
-  background: #eef4f6;
-}
-
-.target-card:nth-child(3) {
-  background: #f4f0e7;
-}
-
-.target-card:nth-child(4) {
-  background: #eef3ec;
-}
-
-.target-card:nth-child(5) {
-  background: #f6ece9;
-}
-
-.target-card span {
-  display: block;
-  margin-bottom: 16px;
-  color: var(--accent-strong);
-  font-size: 0.8rem;
-  font-weight: 850;
-  text-transform: uppercase;
-}
-
-.target-card h3 {
-  min-height: 78px;
-}
-
-.target-card ul {
-  margin: 22px 0 0;
-  padding-left: 18px;
-}
-
-.target-card li {
-  margin-bottom: 10px;
-  color: var(--muted);
-}
-
-.text-button {
-  min-height: 42px;
-  margin-top: 16px;
-  border: 1px solid var(--accent);
-  border-radius: 8px;
-  background: transparent;
-  color: var(--accent-strong);
-  font: inherit;
-  font-weight: 800;
-  padding: 9px 12px;
-  cursor: pointer;
 }
 
 .proof {
@@ -627,15 +547,6 @@ h3 {
   .steps {
     grid-template-columns: 1fr 1fr;
   }
-
-  .target-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    overflow-x: visible;
-  }
-
-  .target-card {
-    min-height: auto;
-  }
 }
 
 @media (max-width: 680px) {
@@ -646,32 +557,13 @@ h3 {
 
   .nav {
     width: 100%;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 10px 16px;
-  }
-
-  .hero {
-    overflow: hidden;
-  }
-
-  .hero-copy,
-  .resume-preview,
-  .paper {
-    width: 100%;
-    max-width: min(calc(100vw - 50px), 340px);
-  }
-
-  h1 {
-    font-size: 1.92rem;
-    line-height: 1.04;
+    justify-content: space-between;
   }
 
   .metrics,
   .comparison,
   .lead-form,
-  .steps,
-  .target-grid {
+  .steps {
     grid-template-columns: 1fr;
   }
 

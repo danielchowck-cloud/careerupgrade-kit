@@ -47,8 +47,6 @@ document.querySelector('input[name="page_url"]').value = window.location.href;
 document.querySelector('input[name="referrer"]').value = document.referrer || "none";
 
 const form = document.querySelector(".lead-form");
-const targetPath = document.querySelector("#target-path");
-const targetSituation = document.querySelector('textarea[name="target_role_or_situation"]');
 
 form.addEventListener("submit", () => {
   const name = form.elements.name.value.trim() || "New applicant";
@@ -78,20 +76,6 @@ buttons.forEach((button) => {
     buttons.forEach((candidate) => candidate.classList.remove("active"));
     button.classList.add("active");
     renderPanel(button.dataset.panel);
-  });
-});
-
-document.querySelectorAll(".choose-target").forEach((button) => {
-  button.addEventListener("click", () => {
-    const selectedTarget = button.dataset.target;
-    targetPath.value = selectedTarget;
-
-    if (!targetSituation.value.trim()) {
-      targetSituation.value = selectedTarget;
-    }
-
-    document.querySelector("#request").scrollIntoView({ behavior: "smooth", block: "start" });
-    targetPath.focus({ preventScroll: true });
   });
 });
 
