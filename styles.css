@@ -608,16 +608,16 @@ h3 {
 
 .opening-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 1fr);
   gap: 16px;
+  max-width: 720px;
 }
 
 .opening-filter {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) auto;
   gap: 14px;
   align-items: end;
-  justify-content: space-between;
   margin-bottom: 18px;
   padding: 14px 16px;
   border: 1px solid var(--line);
@@ -626,7 +626,12 @@ h3 {
 }
 
 .opening-filter label {
-  min-width: min(100%, 320px);
+  min-width: 0;
+}
+
+.opening-filter .text-button {
+  margin-bottom: 12px;
+  white-space: nowrap;
 }
 
 .opening-card {
@@ -928,6 +933,7 @@ h3 {
   .lead-form,
   .steps,
   .finder-controls,
+  .opening-filter,
   .listing-grid,
   .opening-grid,
   .dashboard-preview,

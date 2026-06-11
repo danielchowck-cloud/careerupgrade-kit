@@ -337,40 +337,107 @@ function prefillOpportunityRequest(role, stage = "internship") {
 function setupVerifiedOpenings() {
   const openingGrid = document.querySelector("#opening-grid");
   const openingStage = document.querySelector("#opening-stage");
+  const openingInterest = document.querySelector("#opening-interest");
+  const openingChoice = document.querySelector("#opening-choice");
   const openingLiveSearch = document.querySelector("#opening-live-search");
+  const openingEmpty = document.querySelector("#opening-empty");
 
-  if (!openingGrid) {
+  if (!openingGrid || !openingStage || !openingInterest || !openingChoice || !openingEmpty) {
     return;
   }
 
-  function renderOpenings() {
-    const stage = openingStage?.value || "internship";
-    const openings = featuredOpenings.filter((opening) => opening.stage === stage);
+  function setSelectOptions(select, options, placeholder, labelFor = (option) => option) {
+    select.innerHTML = "";
+
+    const placeholderOption = document.createElement("option");
+    placeholderOption.value = "";
+    placeholderOption.textContent = placeholder;
+    select.append(placeholderOption);
+
+    options.forEach((option) => {
+      const optionEl = document.createElement("option");
+      optionEl.value = option.value ?? option;
+      optionEl.textContent = labelFor(option);
+      select.append(optionEl);
+    });
+  }
+
+  function currentStageOpenings() {
+    return featuredOpenings.filter((opening) => opening.stage === openingStage.value);
+  }
+
+  function currentInterestOpenings() {
+    return currentStageOpenings().filter((opening) => opening.industry === openingInterest.value);
+  }
+
+  function selectedOpening() {
+    if (!openingChoice.value) {
+      return null;
+    }
+
+    const opening = featuredOpenings[Number(openingChoice.value)];
+
+    if (!opening || opening.stage !== openingStage.value || opening.industry !== openingInterest.value) {
+      return null;
+    }
+
+    return opening;
+  }
+
+  function updateLiveSearch(opening = null) {
+    const stage = openingStage.value || "internship";
+    const query = opening?.title || openingInterest.value || (stage === "first-job" ? "graduate" : "intern");
 
     if (openingLiveSearch) {
-      openingLiveSearch.href = liveSearchUrl(stage === "first-job" ? "graduate" : "intern", stage);
+      openingLiveSearch.href = liveSearchUrl(query, stage);
       openingLiveSearch.textContent = stage === "first-job"
         ? "Open graduate-only live search"
         : "Open internship-only live search";
     }
+  }
 
-    openingGrid.innerHTML = openings
-      .map(
-        (opening) => `
-          <article class="opening-card">
-            <span>${opening.industry}</span>
-            <h3>${opening.title}</h3>
-            <p>${opening.company}</p>
-            <p>${opening.stage === "first-job" ? "Graduate / entry-level job" : "Internship opening"} checked ${opening.checked} via ${opening.source}.</p>
-            <div class="listing-actions">
-              <a class="text-button" href="${opening.url}" target="_blank" rel="noreferrer">View opening</a>
-              <button class="text-button use-opening" data-stage="${opening.stage}" data-role="${opening.title}" type="button">Use this opening</button>
-              <a class="button primary" href="#request">Request help</a>
-            </div>
-          </article>
-        `
-      )
-      .join("");
+  function updateInterestOptions() {
+    setSelectOptions(
+      openingInterest,
+      unique(currentStageOpenings().map((opening) => opening.industry)),
+      "Select interest area"
+    );
+  }
+
+  function updateOpeningOptions() {
+    const options = currentInterestOpenings().map((opening) => ({
+      value: featuredOpenings.indexOf(opening),
+      label: `${opening.title} - ${opening.company}`,
+    }));
+
+    setSelectOptions(openingChoice, options, "Select an opening", (option) => option.label);
+  }
+
+  function renderOpenings() {
+    const opening = selectedOpening();
+
+    updateLiveSearch(opening);
+
+    if (!opening) {
+      openingGrid.innerHTML = "";
+      openingEmpty.hidden = false;
+      return;
+    }
+
+    openingEmpty.hidden = true;
+    openingGrid.innerHTML = `
+      <article class="opening-card">
+        <span>${opening.industry}</span>
+        <h3>${opening.title}</h3>
+        <p>${opening.company}</p>
+        <p>${opening.stage === "first-job" ? "Graduate / entry-level job" : "Internship opening"} checked ${opening.checked} via ${opening.source}.</p>
+        <div class="listing-actions">
+          <a class="text-button" href="${opening.url}" target="_blank" rel="noreferrer">View opening</a>
+          <button class="text-button use-opening" data-stage="${opening.stage}" data-role="${opening.title}" type="button">Use this opening</button>
+          <a class="button primary" href="#request">Request help</a>
+        </div>
+      </article>
+    `;
   }
 
   openingGrid.addEventListener("click", (event) => {
@@ -383,7 +450,21 @@ function setupVerifiedOpenings() {
     prefillOpportunityRequest(button.dataset.role, button.dataset.stage);
   });
 
-  openingStage?.addEventListener("change", renderOpenings);
+  openingStage.addEventListener("change", () => {
+    updateInterestOptions();
+    updateOpeningOptions();
+    renderOpenings();
+  });
+
+  openingInterest.addEventListener("change", () => {
+    updateOpeningOptions();
+    renderOpenings();
+  });
+
+  openingChoice.addEventListener("change", renderOpenings);
+
+  updateInterestOptions();
+  updateOpeningOptions();
   renderOpenings();
 }
 

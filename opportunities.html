@@ -41,21 +41,37 @@
       <section class="section live-openings" id="live-openings">
         <div class="section-heading">
           <p class="eyebrow">Verified opening examples</p>
-          <h2>Choose internship or graduate openings before viewing roles.</h2>
+          <h2>Select your interest before viewing a checked opening.</h2>
           <p>
             Students see internship listings only. Fresh graduates see graduate and
-            entry-level jobs only, unless they deliberately switch back to internships.
+            entry-level jobs only. The page shows a selected example instead of a
+            long mixed list.
           </p>
         </div>
         <div class="opening-filter" aria-label="Opening type">
           <label>
-            Showing
+            Path
             <select id="opening-stage">
               <option value="internship">Internship openings only</option>
               <option value="first-job">Fresh graduate jobs only</option>
             </select>
           </label>
+          <label>
+            Interest area
+            <select id="opening-interest">
+              <option value="">Select interest area</option>
+            </select>
+          </label>
+          <label>
+            Opening
+            <select id="opening-choice">
+              <option value="">Select an opening</option>
+            </select>
+          </label>
           <a class="text-button" id="opening-live-search" href="https://www.mycareersfuture.gov.sg/search?employmentType=Internship%2FAttachment&page=0&search=intern&sortBy=new_posting_date" target="_blank" rel="noreferrer">Open matching live search</a>
+        </div>
+        <div class="results-empty" id="opening-empty">
+          Select a path and interest area, then choose an opening to view one checked example.
         </div>
         <div class="opening-grid" id="opening-grid" aria-live="polite"></div>
         <div class="page-actions">
@@ -198,6 +214,6 @@
       <span>Opportunities are the entry point. Readiness is the paid product.</span>
     </footer>
 
-    <script src="script.js?v=stage-filtered-openings-20260611"></script>
+    <script src="script.js?v=selected-opening-flow-20260611"></script>
   </body>
 </html>
