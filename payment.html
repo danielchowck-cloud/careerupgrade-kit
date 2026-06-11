@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pay for CareerUpgrade Kit</title>
+    <meta
+      name="description"
+      content="Pay for the CareerUpgrade Kit beta through Stripe's hosted checkout."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html" aria-label="CareerUpgrade Kit home">
+        <span class="brand-mark">CU</span>
+        <span>CareerUpgrade Kit</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-lines" aria-hidden="true"></span>
+        <span class="nav-toggle-label">Menu</span>
+      </button>
+      <nav class="nav" id="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="opportunities.html">Opportunities</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="index.html#request">Request</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="payment-hero">
+        <div class="payment-copy">
+          <p class="eyebrow">Secure Stripe checkout</p>
+          <h1>CareerUpgrade Kit beta payment</h1>
+          <p>
+            Payment is handled on Stripe's hosted checkout page. After payment,
+            you will receive the next-step instructions for sending your resume,
+            target roles, and application details.
+          </p>
+          <div class="payment-steps" aria-label="Payment flow">
+            <div>
+              <span>1</span>
+              <strong>Pay through Stripe</strong>
+              <p>Cards and supported wallets are handled by Stripe.</p>
+            </div>
+            <div>
+              <span>2</span>
+              <strong>Send materials</strong>
+              <p>Share your resume, target role, LinkedIn link, and context.</p>
+            </div>
+            <div>
+              <span>3</span>
+              <strong>Receive kit</strong>
+              <p>We prepare your resume, LinkedIn, and interview direction.</p>
+            </div>
+          </div>
+        </div>
+
+        <aside class="payment-card" aria-label="Order summary">
+          <p class="panel-label">Order summary</p>
+          <h2>CareerUpgrade Kit Beta</h2>
+          <div class="price-line">
+            <strong>SGD 9.90</strong>
+            <span>beta package</span>
+          </div>
+          <ul>
+            <li>Resume upgrade direction.</li>
+            <li>LinkedIn starter profile direction.</li>
+            <li>Interview answer and story-bank guidance.</li>
+            <li>Application target review for internship or first job.</li>
+          </ul>
+          <a class="button primary disabled" id="stripe-pay-button" href="#" aria-disabled="true">
+            Stripe Payment Link Not Connected
+          </a>
+          <p class="setup-note" id="stripe-setup-note">
+            Stripe setup pending: add the live Payment Link URL in
+            <strong>stripe-config.js</strong>.
+          </p>
+          <a class="text-button" href="index.html#request">Back to request form</a>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>CareerUpgrade Kit</span>
+      <span>Payment handled by Stripe.</span>
+    </footer>
+
+    <script src="stripe-config.js"></script>
+    <script src="script.js?v=stripe-payment-20260611"></script>
+  </body>
+</html>

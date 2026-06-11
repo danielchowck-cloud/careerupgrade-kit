@@ -135,6 +135,34 @@ document.querySelector("#copy-share")?.addEventListener("click", async () => {
   }
 });
 
+function setupStripePaymentLink() {
+  const button = document.querySelector("#stripe-pay-button");
+  const note = document.querySelector("#stripe-setup-note");
+
+  if (!button) {
+    return;
+  }
+
+  const config = window.CUK_STRIPE_CONFIG || {};
+  const paymentLink = (config.paymentLink || "").trim();
+  const amountLabel = config.amountLabel || "SGD 9.90";
+
+  if (paymentLink && paymentLink.startsWith("https://buy.stripe.com/")) {
+    button.href = paymentLink;
+    button.textContent = `Pay ${amountLabel} With Stripe`;
+    button.classList.remove("disabled");
+    button.removeAttribute("aria-disabled");
+
+    if (note) {
+      note.textContent = "After payment, Stripe will show the next step for submitting your materials.";
+    }
+  } else {
+    button.addEventListener("click", (event) => event.preventDefault());
+  }
+}
+
+setupStripePaymentLink();
+
 const targetData = [
   ["Technology, AI & Data", "Software Engineering Intern", "internship", "Projects, GitHub, coding tests, teamwork evidence"],
   ["Technology, AI & Data", "Data Analytics Intern", "internship", "Excel, SQL, Python, dashboards, business insight"],
