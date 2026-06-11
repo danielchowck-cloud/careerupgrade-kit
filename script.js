@@ -320,6 +320,23 @@ function liveSearchUrl(role) {
   return `https://www.mycareersfuture.gov.sg/search?search=${query}&sortBy=new_posting_date&page=0`;
 }
 
+function prefillOpportunityRequest(role, stage = "internship") {
+  const targetPath = document.querySelector("#target-path");
+  const requestStage = document.querySelector("#request-stage");
+
+  if (targetPath) {
+    targetPath.value = role;
+  }
+
+  if (requestStage) {
+    requestStage.value = stage === "first-job"
+      ? "Fresh graduate applying for first job"
+      : "Current student applying for internships";
+  }
+
+  document.querySelector("#request")?.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
 function setupVerifiedOpenings() {
   const openingGrid = document.querySelector("#opening-grid");
 
@@ -337,12 +354,23 @@ function setupVerifiedOpenings() {
           <p>Checked ${opening.checked} via ${opening.source}.</p>
           <div class="listing-actions">
             <a class="text-button" href="${opening.url}" target="_blank" rel="noreferrer">View opening</a>
+            <button class="text-button use-opening" data-role="${opening.title}" type="button">Use this opening</button>
             <a class="button primary" href="#request">Request help</a>
           </div>
         </article>
       `
     )
     .join("");
+
+  openingGrid.addEventListener("click", (event) => {
+    const button = event.target.closest(".use-opening");
+
+    if (!button) {
+      return;
+    }
+
+    prefillOpportunityRequest(button.dataset.role, "internship");
+  });
 }
 
 function setupFinder() {
@@ -351,8 +379,6 @@ function setupFinder() {
   const finderRole = document.querySelector("#finder-role");
   const listingGrid = document.querySelector("#listing-grid");
   const resultsEmpty = document.querySelector("#results-empty");
-  const targetPath = document.querySelector("#target-path");
-  const requestStage = document.querySelector("#request-stage");
   const marketCount = document.querySelector("#market-count");
   const marketUpdatedEl = document.querySelector("#market-updated");
 
@@ -434,17 +460,7 @@ function setupFinder() {
       return;
     }
 
-    if (targetPath) {
-      targetPath.value = button.dataset.role;
-    }
-
-    if (requestStage) {
-      requestStage.value = button.dataset.stage === "first-job"
-        ? "Fresh graduate applying for first job"
-        : "Current student applying for internships";
-    }
-
-    document.querySelector("#request")?.scrollIntoView({ behavior: "smooth", block: "start" });
+    prefillOpportunityRequest(button.dataset.role, button.dataset.stage);
   });
 
   renderListings();

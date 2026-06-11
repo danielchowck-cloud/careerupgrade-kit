@@ -665,6 +665,22 @@ h3 {
   margin-top: 16px;
 }
 
+.page-actions,
+.inline-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.page-actions {
+  margin-top: 22px;
+}
+
+.inline-actions {
+  margin-top: 18px;
+}
+
 .text-button {
   padding: 0;
   border: 0;
