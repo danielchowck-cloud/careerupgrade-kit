@@ -3,217 +3,203 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>CareerUpgrade Kit | Resume, LinkedIn and Application Preparation</title>
+    <title>CareerUpgrade Kit</title>
     <meta
       name="description"
-      content="Paid resume, LinkedIn, cover letter, and interview preparation for Singapore students and fresh graduates, with optional internship and first-job targeting."
+      content="An internship and first-job application kit built from a hiring manager's perspective for students and fresh graduates."
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="topbar">
-      <a class="brand" href="index.html" aria-label="CareerUpgrade Kit home">
+      <a class="brand" href="#top" aria-label="CareerUpgrade Kit home">
         <span class="brand-mark">CU</span>
         <span>CareerUpgrade Kit</span>
       </a>
       <nav class="nav" aria-label="Main navigation">
-        <a href="opportunities.html">Opportunities</a>
-        <a href="dashboard.html">Dashboard</a>
-        <a href="employers.html">Employers</a>
+        <a href="#kit">Kit</a>
+        <a href="#targets">Internship & Jobs</a>
+        <a href="#proof">Before/After</a>
         <a href="#request">Request</a>
       </nav>
     </header>
 
-    <main>
+    <main id="top">
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">Student + fresh graduate career preparation</p>
-          <h1>Upgrade your resume, LinkedIn profile, cover letter, and interview answers.</h1>
+          <p class="eyebrow">Student + Fresh Grad Edition</p>
+          <h1>Internship and first-job applications, rewritten from a hiring manager's perspective.</h1>
           <p class="hero-text">
-            CareerUpgrade Kit helps students and fresh graduates turn school projects,
-            CCAs, part-time work, internships, and early experience into an ATS-compatible
-            resume, sharper LinkedIn profile, targeted cover-letter direction, and a practical
-            interview story bank. You can prepare first, even before choosing an internship or job.
+            CareerUpgrade Kit helps current students and fresh graduates turn school
+            projects, internships, CCAs, and part-time work into a credible resume,
+            LinkedIn profile, and interview story bank.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="#request">Request my CareerUpgrade Kit</a>
-            <a class="button secondary" href="#readiness">Check my preparation gaps</a>
+            <a class="button primary" href="#request">Request beta access</a>
+            <a class="button secondary" href="#proof">See transformation</a>
           </div>
         </div>
 
-        <aside class="hero-panel" aria-label="CareerUpgrade Kit match preview">
-          <div class="score-card">
-            <div class="score-top">
-              <span>Preparation focus</span>
-              <strong id="hero-target">Resume + LinkedIn</strong>
+        <aside class="resume-preview" aria-label="Resume preview">
+          <div class="paper">
+            <div class="paper-header">
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
-            <div class="score-ring">
-              <strong id="hero-score">58%</strong>
-              <span>Readiness preview</span>
+            <h2>Amanda Tan</h2>
+            <p class="muted">Business Student | Internship & Graduate Roles</p>
+            <div class="paper-section">
+              <strong>Profile</strong>
+              <p>
+                Targeting sales coordination roles, with internship exposure to
+                customer follow-up, reporting, and market research.
+              </p>
             </div>
-            <div class="score-breakdown">
-              <div><span>Resume ATS</span><strong id="hero-ats">54%</strong></div>
-              <div><span>LinkedIn</span><strong id="hero-linkedin">50%</strong></div>
-              <div><span>Interview</span><strong id="hero-interview">56%</strong></div>
-            </div>
-            <div class="next-action">
-              <span>Recommended next action</span>
-              <p id="hero-action">Start with a clearer resume, stronger LinkedIn profile, and interview stories before moving into role targeting.</p>
+            <div class="paper-section">
+              <strong>Experience</strong>
+              <ul>
+                <li>Supported quotation updates and weekly sales reporting.</li>
+                <li>Prepared competitor and pricing summaries.</li>
+                <li>Coordinated customer information across teams.</li>
+              </ul>
             </div>
           </div>
         </aside>
       </section>
 
-      <section class="metrics-band">
-        <div class="metrics" aria-label="CareerUpgrade Kit highlights">
+      <section class="band">
+        <div class="metrics" aria-label="Product highlights">
           <div>
             <strong>1</strong>
-            <span>start with resume, LinkedIn, cover letter, and interview readiness</span>
+            <span>job-ready resume</span>
           </div>
           <div>
-            <strong>ATS</strong>
-            <span>resume structure built for screening systems and recruiters</span>
+            <strong>5</strong>
+            <span>STAR interview stories</span>
           </div>
           <div>
-            <strong>Fit</strong>
-            <span>optional match score only when the student has a target role</span>
+            <strong>10</strong>
+            <span>common interview answers</span>
           </div>
           <div>
-            <strong>S$9.90</strong>
-            <span>paid beta application readiness package</span>
+            <strong>20s</strong>
+            <span>hiring-manager scan test</span>
           </div>
         </div>
       </section>
 
-      <section class="section readiness" id="readiness">
+      <section class="section targets" id="targets">
         <div class="section-heading">
-          <p class="eyebrow">Interactive readiness check</p>
-          <h2>Help visitors see what is weak in their career profile.</h2>
+          <p class="eyebrow">Internship and job targeting</p>
+          <h2>Use the listing as a starting point. The service starts with the student's application.</h2>
           <p>
-            Not every visitor is applying today. Some are preparing early. The checker keeps
-            the original CareerUpgradeKit service first: resume, LinkedIn, cover letter, and
-            interview preparation. Role targeting comes later when the student is ready.
+            Students can browse common internship and first-job paths, choose the
+            direction they want, then submit the target together with their resume,
+            LinkedIn profile, and cover-letter needs for review.
           </p>
         </div>
-
-        <div class="checker">
-          <form class="checker-form" id="checker-form">
-            <label>
-              I am a
-              <select id="checker-stage">
-                <option value="student">Current student seeking internship</option>
-                <option value="fresh-grad">Fresh graduate seeking first job</option>
-              </select>
-            </label>
-            <label>
-              Target industry
-              <select id="checker-industry"></select>
-            </label>
-            <label>
-              Target role
-              <select id="checker-role"></select>
-            </label>
-            <label>
-              Resume status
-              <select id="checker-resume">
-                <option value="weak">Not confident / outdated</option>
-                <option value="medium">Updated but not tailored</option>
-                <option value="strong">Tailored to this role</option>
-              </select>
-            </label>
-            <label>
-              LinkedIn status
-              <select id="checker-linkedin">
-                <option value="weak">Empty or basic</option>
-                <option value="medium">Updated but generic</option>
-                <option value="strong">Targeted to my role</option>
-              </select>
-            </label>
-            <label>
-              Cover letter status
-              <select id="checker-cover">
-                <option value="weak">No cover letter yet</option>
-                <option value="medium">Generic draft</option>
-                <option value="strong">Targeted draft ready</option>
-              </select>
-            </label>
-          </form>
-
-          <div class="checker-result">
-            <p class="panel-label">Preview readiness score</p>
-            <strong id="preview-score">58%</strong>
-            <h3 id="preview-title">Your career profile needs strengthening before you rely on it.</h3>
-            <p id="preview-copy">
-              Start with resume and LinkedIn rewriting, then add cover-letter direction
-              and interview stories when you are ready to apply.
-            </p>
-            <a class="button primary" href="#request">Request resume and LinkedIn help</a>
-          </div>
+        <div class="target-grid">
+          <article class="target-card">
+            <span>Technology & AI</span>
+            <h3>Software, data, AI, and cybersecurity internships.</h3>
+            <ul>
+              <li>Software Engineering Intern</li>
+              <li>Data Analytics Intern</li>
+              <li>AI / ML Intern</li>
+              <li>Cybersecurity Intern</li>
+            </ul>
+            <button class="text-button choose-target" data-target="Technology & AI internship or first job" type="button">Choose this path</button>
+          </article>
+          <article class="target-card">
+            <span>Banking & Finance</span>
+            <h3>Finance, wealth, risk, compliance, and operations roles.</h3>
+            <ul>
+              <li>Investment Banking Intern</li>
+              <li>Wealth Management Intern</li>
+              <li>Risk & Compliance Intern</li>
+              <li>Finance Operations Intern</li>
+            </ul>
+            <button class="text-button choose-target" data-target="Banking & Finance internship or first job" type="button">Choose this path</button>
+          </article>
+          <article class="target-card">
+            <span>Engineering & Manufacturing</span>
+            <h3>Technical roles that need clear project and process evidence.</h3>
+            <ul>
+              <li>Mechanical Engineering Intern</li>
+              <li>Semiconductor Process Intern</li>
+              <li>Manufacturing Excellence Intern</li>
+              <li>Quality Engineering Intern</li>
+            </ul>
+            <button class="text-button choose-target" data-target="Engineering & Manufacturing internship or first job" type="button">Choose this path</button>
+          </article>
+          <article class="target-card">
+            <span>Supply Chain & Logistics</span>
+            <h3>Operations paths for students with coordination and data strengths.</h3>
+            <ul>
+              <li>Procurement Intern</li>
+              <li>Supply Chain Analyst Intern</li>
+              <li>Operations Excellence Intern</li>
+              <li>Logistics Planning Intern</li>
+            </ul>
+            <button class="text-button choose-target" data-target="Supply Chain & Logistics internship or first job" type="button">Choose this path</button>
+          </article>
+          <article class="target-card">
+            <span>Marketing & Business</span>
+            <h3>Business paths where projects and communication must be framed well.</h3>
+            <ul>
+              <li>Digital Marketing Intern</li>
+              <li>Business Development Intern</li>
+              <li>Product Marketing Intern</li>
+              <li>Market Research Intern</li>
+            </ul>
+            <button class="text-button choose-target" data-target="Marketing & Business internship or first job" type="button">Choose this path</button>
+          </article>
         </div>
       </section>
 
-      <section class="section path-strip">
-        <div class="section-heading">
-          <p class="eyebrow">CareerUpgradeKit journey</p>
-          <h2>Start with preparation. Add opportunity targeting only when needed.</h2>
+      <section class="section split" id="kit">
+        <div>
+          <p class="eyebrow">What the kit includes</p>
+          <h2>Not resume writing only. A complete internship and first-job application package.</h2>
+          <p>
+            The kit is designed for students and graduates who have useful experience
+            but do not know how to translate it into employer language.
+          </p>
         </div>
-        <div class="journey-grid">
-          <a class="journey-card" href="#kit">
+        <div class="kit-list">
+          <button class="kit-item active" data-panel="resume" type="button">
             <span>01</span>
-            <h3>Prepare the profile</h3>
-            <p>Resume, LinkedIn, cover letter, and interview readiness remain the core offer.</p>
-          </a>
-          <a class="journey-card" href="opportunities.html">
+            <strong>Resume Upgrade</strong>
+          </button>
+          <button class="kit-item" data-panel="linkedin" type="button">
             <span>02</span>
-            <h3>Choose a target later</h3>
-            <p>Internship and first-job roles stay on a separate page for students who are ready.</p>
-          </a>
-          <a class="journey-card" href="dashboard.html">
+            <strong>LinkedIn Starter Profile</strong>
+          </button>
+          <button class="kit-item" data-panel="interview" type="button">
             <span>03</span>
-            <h3>Track as a paid user</h3>
-            <p>Dashboard, match score, saved roles, and application status are gated.</p>
-          </a>
-          <a class="journey-card" href="employers.html">
+            <strong>Interview Starter Pack</strong>
+          </button>
+          <button class="kit-item" data-panel="tracker" type="button">
             <span>04</span>
-            <h3>Match with employers later</h3>
-            <p>Prepared students become the supply side of the future marketplace.</p>
-          </a>
+            <strong>Application Tracker</strong>
+          </button>
         </div>
-      </section>
-
-      <section class="section kit" id="kit">
-        <div class="section-heading">
-          <p class="eyebrow">What paid users get</p>
-          <h2>The core product is career preparation, not only internship listings.</h2>
-        </div>
-        <div class="kit-grid">
-          <article>
-            <span>01</span>
-            <h3>ATS resume upgrade</h3>
-            <p>Cleaner structure, role keywords, quantified bullets, and evidence that recruiters can scan quickly.</p>
-          </article>
-          <article>
-            <span>02</span>
-            <h3>LinkedIn profile upgrade</h3>
-            <p>Headline, About section, projects, skills, and positioning aligned to the target internship or job.</p>
-          </article>
-          <article>
-            <span>03</span>
-            <h3>Cover-letter direction</h3>
-            <p>A targeted reason for why this role fits the student's background, strengths, and career direction.</p>
-          </article>
-          <article>
-            <span>04</span>
-            <h3>Interview story bank</h3>
-            <p>STAR stories and answers built from projects, internships, CCAs, part-time work, and school experience.</p>
-          </article>
+        <div class="kit-panel" id="kit-panel">
+          <p class="panel-label">Resume Upgrade</p>
+          <h3>One-page resume built for recruiter screening.</h3>
+          <ul>
+            <li>Clear profile summary for target roles.</li>
+            <li>Internship, project, CCA, and part-time work rewritten.</li>
+            <li>Achievement-focused bullets with action verbs.</li>
+          </ul>
         </div>
       </section>
 
       <section class="section proof" id="proof">
         <div class="section-heading">
-          <p class="eyebrow">Before and after</p>
-          <h2>Same student, stronger employer language.</h2>
+          <p class="eyebrow">Sales proof</p>
+          <h2>Before and after: same graduate, stronger employer language.</h2>
         </div>
         <div class="comparison">
           <article class="sample before">
@@ -221,37 +207,79 @@
               <span>Before</span>
               <strong>Student language</strong>
             </div>
+            <h3>Work Experience</h3>
             <ul>
               <li>Helped the sales team</li>
               <li>Did admin work</li>
               <li>Prepared reports</li>
               <li>Contacted customers</li>
             </ul>
+            <h3>Project</h3>
+            <ul>
+              <li>Did a group project about a new product</li>
+              <li>Researched competitors</li>
+              <li>Presented to class</li>
+            </ul>
           </article>
+
           <article class="sample after">
             <div class="sample-top">
               <span>After</span>
               <strong>Hiring-manager language</strong>
             </div>
+            <h3>Sales Internship</h3>
             <ul>
-              <li>Supported customer follow-up tracking, quotation updates, and weekly sales reporting.</li>
-              <li>Prepared competitor and pricing summaries to support market positioning discussions.</li>
-              <li>Coordinated customer information across sales and operations teams.</li>
+              <li>
+                Supported customer follow-up tracking, quotation updates, and weekly
+                sales reporting.
+              </li>
+              <li>
+                Prepared competitor and pricing summaries to support market
+                positioning discussions.
+              </li>
+              <li>
+                Coordinated customer information across sales and operations teams.
+              </li>
             </ul>
           </article>
         </div>
       </section>
 
+      <section class="section process">
+        <div class="section-heading">
+          <p class="eyebrow">How it works</p>
+          <h2>A practical upgrade process for internship and first-job applications.</h2>
+        </div>
+        <div class="steps">
+          <div>
+            <span>1</span>
+            <h3>Share your target</h3>
+            <p>Tell us what internship or first job you are applying for, and share your current resume if you have one.</p>
+          </div>
+          <div>
+            <span>2</span>
+            <h3>Upgrade package</h3>
+            <p>We prepare resume, LinkedIn copy, interview answers, and story bank.</p>
+          </div>
+          <div>
+            <span>3</span>
+            <h3>Apply with more confidence</h3>
+            <p>Use the upgraded material for applications, interviews, referrals, and follow-ups.</p>
+          </div>
+        </div>
+      </section>
+
       <section class="section contact" id="request">
         <div>
-          <p class="eyebrow">Paid beta intake</p>
-          <h2>Request the CareerUpgrade Kit paid beta.</h2>
+          <p class="eyebrow">Beta intake</p>
+          <h2>Request the first CareerUpgrade Kit test batch.</h2>
           <p>
-            Submit your current situation and the help you need. We will review whether you are
-            suitable for the beta before payment instructions are shared.
+            We are starting with a small beta group of students and fresh graduates.
+            Submit your details if you want help with your resume, LinkedIn profile,
+            interview answers, or job application direction.
           </p>
           <form class="lead-form" action="https://formsubmit.co/careerupgradekit@gmail.com" method="POST">
-            <input type="hidden" name="_subject" value="CareerUpgrade Kit paid beta request" />
+            <input type="hidden" name="_subject" value="CareerUpgrade Kit beta request" />
             <input type="hidden" name="_captcha" value="false" />
             <input type="hidden" name="_template" value="table" />
             <input type="hidden" name="source" value="direct" />
@@ -273,52 +301,85 @@
             </label>
             <label>
               Current stage
-              <select name="stage" id="request-stage" required>
+              <select name="stage" required>
                 <option value="">Select one</option>
                 <option>Current student applying for internships</option>
+                <option>Final-year student applying for first job</option>
                 <option>Fresh graduate applying for first job</option>
                 <option>Parent asking for a student or graduate</option>
               </select>
             </label>
             <label>
-              Main help needed
+              What do you need help with?
               <select name="help_needed" required>
                 <option value="">Select one</option>
-                <option>ATS resume upgrade</option>
-                <option>LinkedIn profile upgrade</option>
-                <option>Cover letter direction</option>
+                <option>Resume upgrade</option>
+                <option>LinkedIn profile</option>
+                <option>Cover letter review or direction</option>
                 <option>Interview preparation</option>
                 <option>Full application kit</option>
+                <option>Not sure yet</option>
               </select>
             </label>
             <label>
-              Target role, if you already have one
-              <input name="target_path" id="target-path" type="text" placeholder="Example: Data Analytics Intern, or Not sure yet" required />
+              Target internship or job path
+              <select name="target_path" id="target-path" required>
+                <option value="">Select one</option>
+                <option>Technology & AI internship or first job</option>
+                <option>Banking & Finance internship or first job</option>
+                <option>Engineering & Manufacturing internship or first job</option>
+                <option>Supply Chain & Logistics internship or first job</option>
+                <option>Marketing & Business internship or first job</option>
+                <option>Other or not sure yet</option>
+              </select>
             </label>
             <label class="full">
-              Current situation
+              Target role or situation
               <textarea
                 name="target_role_or_situation"
                 rows="4"
-                placeholder="Tell us your school, current resume/LinkedIn/cover-letter status, target role if any, and deadline if any."
+                placeholder="Example: business internship, data analytics intern, semiconductor process intern, sales coordinator, first full-time job after poly/uni"
                 required
               ></textarea>
             </label>
-            <button class="button primary" type="submit">Request paid beta review</button>
+            <button class="button primary" type="submit">Send beta request</button>
           </form>
           <div class="join-box">
-            <strong>Paid beta package: SGD 9.90</strong>
-            <p>Payment instructions are sent only after we confirm the request is suitable.</p>
+            <strong>Beta package: SGD 9.90</strong>
+            <p>
+              Payment instructions will be shared only after we confirm that the
+              request is suitable for the first test batch.
+            </p>
           </div>
+        </div>
+      </section>
+
+      <section class="section share">
+        <div class="section-heading">
+          <p class="eyebrow">Forward this</p>
+          <h2>Simple message for parents, friends, and student groups.</h2>
+        </div>
+        <div class="share-panel">
+          <p id="share-message">
+            Hi, I’m sharing a CareerUpgrade Kit for students and fresh graduates. It is
+            built from a hiring manager’s perspective and helps with resumes, LinkedIn
+            profiles, and interview answers for internship and first-job applications.
+            They are taking a small beta batch at SGD 9.90 per package.
+            If you know someone applying for internships, graduating, or applying for
+            jobs, please forward this to them. Link:
+            https://careerupgradekit.com
+          </p>
+          <button class="button secondary" id="copy-share" type="button">Copy message</button>
+          <p class="copy-status" id="copy-status" aria-live="polite"></p>
         </div>
       </section>
     </main>
 
     <footer class="footer">
       <span>CareerUpgrade Kit</span>
-      <span>Resume, LinkedIn, cover letter, and interview preparation for students and fresh graduates.</span>
+      <span>Built from a hiring manager's perspective.</span>
     </footer>
 
-    <script src="script.js?v=r3-core-prep-20260611-1138"></script>
+    <script src="script.js?v=targets-20260611"></script>
   </body>
 </html>
