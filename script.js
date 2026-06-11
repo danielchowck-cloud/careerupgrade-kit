@@ -1,38 +1,38 @@
 const panels = {
   resume: {
     label: "Resume Upgrade",
-    title: "Resume tailored to the internship path.",
+    title: "One-page resume built for recruiter screening.",
     points: [
-      "Clear profile summary for the selected internship category.",
-      "Projects, CCAs, part-time work, and coursework rewritten as evidence.",
-      "Bullets shaped for a fast hiring-manager scan.",
+      "Clear profile summary for target roles.",
+      "Internship, project, CCA, and part-time work rewritten.",
+      "Achievement-focused bullets with action verbs.",
     ],
   },
   linkedin: {
     label: "LinkedIn Starter Profile",
-    title: "A profile that signals direction before the recruiter opens the resume.",
+    title: "A profile that shows direction instead of just 'student' or 'fresh graduate'.",
     points: [
-      "Headline aligned to the target internship path.",
-      "About section that explains the student's interest and evidence.",
-      "Project, activity, and skills sections rewritten for recruiter search.",
+      "Headline aligned to target roles.",
+      "About section with credible positioning.",
+      "Experience, project, and skills sections rewritten for recruiter search.",
     ],
   },
   interview: {
     label: "Interview Starter Pack",
-    title: "Interview stories built from the student's real evidence.",
+    title: "Prepared answers without sounding memorized.",
     points: [
-      "\"Tell me about yourself\" script for the target role.",
+      "\"Tell me about yourself\" script.",
       "10 common internship and fresh graduate interview answers.",
-      "5 STAR-format stories for teamwork, initiative, problem-solving, and feedback.",
+      "5 STAR-format story examples based on real background.",
     ],
   },
-  cover: {
-    label: "Cover Letter Direction",
-    title: "A practical angle for explaining why this internship fits.",
+  tracker: {
+    label: "Application Tracker",
+    title: "A simple system for applying with more control.",
     points: [
-      "Opening angle for the target internship or employer type.",
-      "Evidence points to connect school work and experience to the role.",
-      "Short guidance for referrals, email applications, and follow-ups.",
+      "Track companies, roles, dates, and follow-ups.",
+      "Record resume version and interview stage.",
+      "Reduce random applications and missed follow-ups.",
     ],
   },
 };
@@ -47,6 +47,8 @@ document.querySelector('input[name="page_url"]').value = window.location.href;
 document.querySelector('input[name="referrer"]').value = document.referrer || "none";
 
 const form = document.querySelector(".lead-form");
+const targetPath = document.querySelector("#target-path");
+const targetSituation = document.querySelector('textarea[name="target_role_or_situation"]');
 
 form.addEventListener("submit", () => {
   const name = form.elements.name.value.trim() || "New applicant";
@@ -76,6 +78,20 @@ buttons.forEach((button) => {
     buttons.forEach((candidate) => candidate.classList.remove("active"));
     button.classList.add("active");
     renderPanel(button.dataset.panel);
+  });
+});
+
+document.querySelectorAll(".choose-target").forEach((button) => {
+  button.addEventListener("click", () => {
+    const selectedTarget = button.dataset.target;
+    targetPath.value = selectedTarget;
+
+    if (!targetSituation.value.trim()) {
+      targetSituation.value = selectedTarget;
+    }
+
+    document.querySelector("#request").scrollIntoView({ behavior: "smooth", block: "start" });
+    targetPath.focus({ preventScroll: true });
   });
 });
 
