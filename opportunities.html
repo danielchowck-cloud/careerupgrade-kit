@@ -28,19 +28,23 @@
         <p class="eyebrow">Internship and first-job finder</p>
         <h1>Select a target before asking us to upgrade your application.</h1>
         <p>
-          The finder is intentionally hidden until the student chooses a stage, industry,
-          and role. The goal is not to overwhelm them with every target; it is to guide
-          them into a focused paid application readiness request.
+          The finder covers Singapore internship and fresh-graduate paths across
+          major industries. Students choose a stage, industry, and role, then open
+          the live market search or request help to prepare the application properly.
         </p>
       </section>
 
       <section class="section opportunities" id="opportunities">
         <div class="section-heading">
-          <p class="eyebrow">Target selection</p>
-          <h2>Choose your path, then review the application evidence needed.</h2>
+          <p class="eyebrow">Daily refreshed target map</p>
+          <h2>Choose your path across Singapore industries.</h2>
         </div>
 
         <div class="opportunity-tool">
+          <div class="market-status" aria-label="Opportunity refresh status">
+            <strong id="market-count">Loading Singapore opportunity targets</strong>
+            <span id="market-updated">Daily refresh marker loading.</span>
+          </div>
           <div class="finder-controls">
             <label>
               Stage
@@ -64,7 +68,7 @@
             </label>
           </div>
           <div class="results-empty" id="results-empty">
-            Select stage, industry, and role to preview matching targets.
+            Select stage and industry to preview matching targets. Role selection is optional.
           </div>
           <div class="listing-grid" id="listing-grid" aria-live="polite"></div>
         </div>

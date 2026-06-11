@@ -576,6 +576,26 @@ h3 {
   padding: clamp(18px, 4vw, 30px);
 }
 
+.market-status {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px 18px;
+  margin-bottom: 18px;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.market-status strong {
+  color: var(--ink);
+}
+
+.market-status span {
+  color: var(--muted);
+}
+
 .finder-controls {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
