@@ -79,6 +79,39 @@ a {
   text-decoration: none;
 }
 
+.nav-toggle {
+  display: none;
+  align-items: center;
+  gap: 8px;
+  min-height: 42px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--ink);
+  padding: 9px 12px;
+  font: inherit;
+  font-weight: 750;
+}
+
+.nav-toggle-lines {
+  position: relative;
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  border-top: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+}
+
+.nav-toggle-lines::after {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 18px;
+  height: 2px;
+  background: currentColor;
+  content: "";
+}
+
 .hero {
   display: grid;
   grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr);
@@ -826,13 +859,51 @@ h3 {
 
 @media (max-width: 680px) {
   .topbar {
-    align-items: flex-start;
-    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .brand {
+    min-width: 0;
+  }
+
+  .brand span:last-child {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .nav-toggle {
+    display: inline-flex;
+    margin-left: auto;
   }
 
   .nav {
+    display: none;
     width: 100%;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 0;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--surface);
+    box-shadow: 0 14px 34px rgba(38, 45, 43, 0.14);
+  }
+
+  .topbar.nav-open .nav {
+    display: flex;
+  }
+
+  .nav a {
+    min-height: 46px;
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--line);
+    color: var(--ink);
+    font-weight: 750;
+  }
+
+  .nav a:last-child {
+    border-bottom: 0;
   }
 
   .metrics,

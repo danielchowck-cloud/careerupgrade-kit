@@ -42,6 +42,32 @@ const buttons = document.querySelectorAll(".kit-item");
 const params = new URLSearchParams(window.location.search);
 const source = params.get("src") || params.get("source") || "direct";
 
+function setupMobileNav() {
+  const topbar = document.querySelector(".topbar");
+  const toggle = document.querySelector(".nav-toggle");
+  const nav = document.querySelector("#site-nav");
+
+  if (!topbar || !toggle || !nav) {
+    return;
+  }
+
+  toggle.addEventListener("click", () => {
+    const isOpen = topbar.classList.toggle("nav-open");
+    toggle.setAttribute("aria-expanded", String(isOpen));
+  });
+
+  nav.addEventListener("click", (event) => {
+    if (!event.target.closest("a")) {
+      return;
+    }
+
+    topbar.classList.remove("nav-open");
+    toggle.setAttribute("aria-expanded", "false");
+  });
+}
+
+setupMobileNav();
+
 document.querySelectorAll('input[name="source"]').forEach((field) => {
   field.value = source;
 });
