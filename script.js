@@ -1,38 +1,38 @@
 const panels = {
   resume: {
     label: "Resume Upgrade",
-    title: "One-page resume built for recruiter screening.",
+    title: "Resume tailored to the internship path.",
     points: [
-      "Clear profile summary for target roles.",
-      "Internship, project, CCA, and part-time work rewritten.",
-      "Achievement-focused bullets with action verbs.",
+      "Clear profile summary for the selected internship category.",
+      "Projects, CCAs, part-time work, and coursework rewritten as evidence.",
+      "Bullets shaped for a fast hiring-manager scan.",
     ],
   },
   linkedin: {
     label: "LinkedIn Starter Profile",
-    title: "A profile that shows direction instead of just 'student' or 'fresh graduate'.",
+    title: "A profile that signals direction before the recruiter opens the resume.",
     points: [
-      "Headline aligned to target roles.",
-      "About section with credible positioning.",
-      "Experience, project, and skills sections rewritten for recruiter search.",
+      "Headline aligned to the target internship path.",
+      "About section that explains the student's interest and evidence.",
+      "Project, activity, and skills sections rewritten for recruiter search.",
     ],
   },
   interview: {
     label: "Interview Starter Pack",
-    title: "Prepared answers without sounding memorized.",
+    title: "Interview stories built from the student's real evidence.",
     points: [
-      "\"Tell me about yourself\" script.",
+      "\"Tell me about yourself\" script for the target role.",
       "10 common internship and fresh graduate interview answers.",
-      "5 STAR-format story examples based on real background.",
+      "5 STAR-format stories for teamwork, initiative, problem-solving, and feedback.",
     ],
   },
-  tracker: {
-    label: "Application Tracker",
-    title: "A simple system for applying with more control.",
+  cover: {
+    label: "Cover Letter Direction",
+    title: "A practical angle for explaining why this internship fits.",
     points: [
-      "Track companies, roles, dates, and follow-ups.",
-      "Record resume version and interview stage.",
-      "Reduce random applications and missed follow-ups.",
+      "Opening angle for the target internship or employer type.",
+      "Evidence points to connect school work and experience to the role.",
+      "Short guidance for referrals, email applications, and follow-ups.",
     ],
   },
 };
