@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Employers | CareerUpgrade Kit</title>
+    <meta
+      name="description"
+      content="Future employer matching direction for CareerUpgrade Kit: prepared students, internships, first jobs, and early-career hiring."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html" aria-label="CareerUpgrade Kit home">
+        <span class="brand-mark">CU</span>
+        <span>CareerUpgrade Kit</span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="opportunities.html">Opportunities</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="#employer-interest">Interest</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero employer-hero">
+        <p class="eyebrow">Future employer matching</p>
+        <h1>Prepared students should become easier for employers to discover.</h1>
+        <p>
+          The student side comes first: resume, LinkedIn, cover letter, interview readiness,
+          and application tracking. Once enough prepared users exist, CareerUpgrade Kit
+          can connect employers with students and fresh graduates who are already application-ready.
+        </p>
+      </section>
+
+      <section class="section employer-match">
+        <div class="section-heading">
+          <p class="eyebrow">Long-term marketplace vision</p>
+          <h2>Student -> Intern -> Graduate -> Professional -> Future Leader.</h2>
+          <p>
+            The long-term direction is an AI-powered talent marketplace across Singapore
+            and Southeast Asia, starting with student application readiness and expanding
+            into employer matching.
+          </p>
+        </div>
+        <div class="kit-grid">
+          <article>
+            <span>01</span>
+            <h3>Prepared candidate pool</h3>
+            <p>Students enter only after their application materials are reviewed and improved.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Role readiness signal</h3>
+            <p>Match scores and ATS readiness create a clearer view of candidate fit.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Employer demand</h3>
+            <p>Employers can later list internship and fresh-graduate needs by role and industry.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Lifelong relationship</h3>
+            <p>CareerUpgrade Kit supports users from student stage into early professional growth.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact" id="employer-interest">
+        <div>
+          <p class="eyebrow">Employer interest preview</p>
+          <h2>Collect employer interest later, without distracting from student sales now.</h2>
+          <form class="lead-form" action="https://formsubmit.co/careerupgradekit@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="CareerUpgrade Kit employer interest" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="source" value="employer-page" />
+            <input type="hidden" name="page_url" value="" />
+            <input type="hidden" name="referrer" value="" />
+            <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+            <label>
+              Name
+              <input name="name" type="text" autocomplete="name" required />
+            </label>
+            <label>
+              Work email
+              <input name="email" type="email" autocomplete="email" required />
+            </label>
+            <label>
+              Company
+              <input name="company" type="text" autocomplete="organization" required />
+            </label>
+            <label>
+              Hiring need
+              <select name="hiring_need" required>
+                <option value="">Select one</option>
+                <option>Internship hiring</option>
+                <option>Fresh graduate hiring</option>
+                <option>Both internship and fresh graduate hiring</option>
+              </select>
+            </label>
+            <label class="full">
+              Roles or industries
+              <textarea name="roles" rows="4" placeholder="Tell us the roles, industries, and hiring timeline." required></textarea>
+            </label>
+            <button class="button primary" type="submit">Register employer interest</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>CareerUpgrade Kit</span>
+      <span>Employer matching comes after the student product is strong.</span>
+    </footer>
+
+    <script src="script.js?v=r3-20260611"></script>
+  </body>
+</html>
