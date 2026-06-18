@@ -264,7 +264,7 @@ const targetData = [
   ["Science, Research & Academia", "Research Assistant", "first-job", "Research design, writing, analysis, ethics"],
 ].map(([industry, role, stage, evidence]) => ({ industry, role, stage, evidence }));
 
-const marketUpdated = "18 Jun 2026";
+const marketUpdated = "19 Jun 2026";
 
 const featuredOpenings = [
   ["Administrative Intern/Staff", "MORI HAMADA SINGAPORE LLP", "Human Resources, Admin & Education", "internship", "https://www.mycareersfuture.gov.sg/job/admin/administrative-internstaff-mori-hamada-singapore-2b69838f6635486186086eaa2d9d5baf", "17 Jun 2026"],
@@ -319,7 +319,7 @@ const featuredOpenings = [
   industry,
   stage,
   source: "MyCareersFuture",
-  checked: "18 Jun 2026",
+  checked: "19 Jun 2026",
   posted,
   url,
 }));
