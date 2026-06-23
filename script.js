@@ -264,7 +264,7 @@ const targetData = [
   ["Science, Research & Academia", "Research Assistant", "first-job", "Research design, writing, analysis, ethics"],
 ].map(([industry, role, stage, evidence]) => ({ industry, role, stage, evidence }));
 
-const marketUpdated = "23 Jun 2026";
+const marketUpdated = "24 Jun 2026";
 
 const featuredOpenings = [
   ["Data Analyst Intern", "PSA MARINE (PTE) LTD", "Technology, AI & Data", "internship", "https://www.mycareersfuture.gov.sg/job/others/data-analyst-intern-psa-marine-966c1abd654da9373b31e452604d3de0", "22 Jun 2026"],
@@ -300,7 +300,7 @@ const featuredOpenings = [
   industry,
   stage,
   source: "MyCareersFuture",
-  checked: "23 Jun 2026",
+  checked: "24 Jun 2026",
   posted,
   url,
 }));
