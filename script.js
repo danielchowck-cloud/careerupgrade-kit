@@ -264,14 +264,15 @@ const targetData = [
   ["Science, Research & Academia", "Research Assistant", "first-job", "Research design, writing, analysis, ethics"],
 ].map(([industry, role, stage, evidence]) => ({ industry, role, stage, evidence }));
 
-const marketUpdated = "1 Jul 2026";
+const marketUpdated = "2 Jul 2026";
 
 const featuredOpenings = [
-  ["Marketing Intern (Social Media)", "CONFIRM GOOD PTE. LTD.", "Marketing, Sales & Business", "internship", "https://www.mycareersfuture.gov.sg/job/advertising/marketing-intern-confirm-good-9d78caa72834606b6a1f52f8af0701e5", "29 Jun 2026"],
+  ["Recruitment and Programmes Intern", "GENERATION: YOU EMPLOYED, SINGAPORE LTD.", "Social Services, Non-Profit & Community", "internship", "https://www.mycareersfuture.gov.sg/job/recruitment-programmes-intern-generation-employed-singapore-b52b5f2183cc2652f41bdec487c997d0", "1 Jul 2026"],
   ["Internship: Motion Graphic, Video Editor", "DB GOLF TRAINING & PERFORMANCE CENTER PTE. LTD.", "Design, Media & Communications", "internship", "https://www.mycareersfuture.gov.sg/job/advertising/internship-motion-graphic-video-editor-db-golf-training-performance-center-35f2c4053db011973d24c8bfc2637e12?event=Search&source=MCF", "1 Jul 2026"],
   ["AI Intern", "TRADESOCIO PTE. LTD.", "Technology, AI & Data", "internship", "https://www.mycareersfuture.gov.sg/job/information-technology/ai-intern-tradesocio-6ae62f2c9c2f0426151a4e3e1e86f092?event=Search&source=MCF", "30 Jun 2026"],
   ["Graphic Design Intern", "RUDER FINN ASIA PTE LTD", "Design, Media & Communications", "internship", "https://www.mycareersfuture.gov.sg/job/design/graphic-design-intern-ruder-finn-asia-17936555c87fb54e30ccc587dcee3070", "30 Jun 2026"],
   ["Financial Intern", "ACE ASCENTIA PTE. LTD.", "Banking, Finance, Insurance & Accounting", "internship", "https://www.mycareersfuture.gov.sg/job/banking-finance/financial-intern-ace-ascentia-00172ac1304c8df6b827680dc1834e12", "30 Jun 2026"],
+  ["Marketing Intern (Social Media)", "CONFIRM GOOD PTE. LTD.", "Marketing, Sales & Business", "internship", "https://www.mycareersfuture.gov.sg/job/advertising/marketing-intern-confirm-good-9d78caa72834606b6a1f52f8af0701e5", "29 Jun 2026"],
   ["Media, Digital Marketing & AI Content Intern", "SURPLUS MEDIA PTE. LTD.", "Marketing, Sales & Business", "internship", "https://www.mycareersfuture.gov.sg/job/advertising/media-digital-marketing-ai-content-intern-surplus-media-6c6a213017d0bf6e98d4d6578cd547eb?event=Search&source=MCF", "29 Jun 2026"],
   ["AI Intern", "FRAGMENT WORKS PTE. LTD.", "Technology, AI & Data", "internship", "https://www.mycareersfuture.gov.sg/job/information-technology/ai-intern-fragment-works-292688886cc6e25992174b949cc0db67?event=Search&source=MCF", "29 Jun 2026"],
   ["AI Research Scientist Intern", "ALPHA Z ANALYTICS SINGAPORE PTE. LTD.", "Technology, AI & Data", "internship", "https://www.mycareersfuture.gov.sg/job/information-technology/ai-research-scientist-intern-alpha-z-b7fe63c52bfa7a4539215ec6a1b9b6ea?event=Search&source=MCF", "29 Jun 2026"],
@@ -283,8 +284,12 @@ const featuredOpenings = [
   ["Accounting Intern", "EMPACT PTE. LTD.", "Banking, Finance, Insurance & Accounting", "internship", "https://www.mycareersfuture.gov.sg/job/accounting/accounting-intern-empact-e1903ef641195acfc4898c19e22f854f", "29 Jun 2026"],
   ["Merchandising Intern (6 months)", "SHILLA TRAVEL RETAIL PTE. LTD.", "Retail, FMCG & E-Commerce", "internship", "https://www.mycareersfuture.gov.sg/job/purchasing/merchandising-intern-shilla-travel-retail-1a758f05e6ce9c496f078388fea481e5?event=Search&source=MCF", "29 Jun 2026"],
   ["Business Operations Intern (Education Business)", "MINDFLEX EDUCATION PTE. LTD.", "Human Resources, Admin & Education", "internship", "https://www.mycareersfuture.gov.sg/job/admin/business-operations-intern-mindflex-education-33240b97fcba9a8394bd0c62de252d95?event=Search&source=MCF", "29 Jun 2026"],
+  ["Field Service Engineer (open to fresh graduate)", "ULTRA CLEAN ASIA PACIFIC PTE. LTD.", "Engineering, Semiconductor & Manufacturing", "first-job", "https://www.mycareersfuture.gov.sg/job/engineering/field-service-engineer-ultra-clean-asia-pacific-75f9ccada3c231920fd1785b6005d090", "2 Jul 2026"],
+  ["Entry-Level Software Developer | Fresh Graduates Welcome to Apply | Company-Sponsored Training in Oracle & Talend", "AVENSYS CONSULTING PTE. LTD.", "Technology, AI & Data", "first-job", "https://www.mycareersfuture.gov.sg/job/engineering/entry-level-software-developer-fresh-graduates-welcome-apply-company-sponsored-training-oracle-talend-avensys-consulting-e6b2866205e3af033234f869f2c4c3f5", "2 Jul 2026"],
+  ["Junior Marketing & Sales Executive (Fresh Graduate Friendly)", "J&N VENTURES", "Marketing, Sales & Business", "first-job", "https://www.mycareersfuture.gov.sg/job/marketing/junior-marketing-sales-executive-jn-ventures-bc55df00ac04d1bbb8476bd3f0e44aa3", "30 Jun 2026"],
   ["Graduate Development Associate (Full-Time)", "AUDERE MARKETING PTE. LTD.", "Marketing, Sales & Business", "first-job", "https://www.mycareersfuture.gov.sg/job/events/%F0%9F%8E%93-graduate-development-associate-audere-marketing-24ae3e671c687a495eace901de8e1e15?event=Search&source=MCF", "30 Jun 2026"],
   ["Graduate Development Associate", "AUDERE MARKETING PTE. LTD.", "Marketing, Sales & Business", "first-job", "https://www.mycareersfuture.gov.sg/job/marketing/%F0%9F%8C%9F-graduate-development-associate-audere-marketing-71b87eb1acc386aa2d55ffb1f2820422?event=Search&source=MCF", "30 Jun 2026"],
+  ["Fresh Graduate Opportunity - Financial Services Consultant", "ET MARKETING PTE. LTD.", "Banking, Finance, Insurance & Accounting", "first-job", "https://www.mycareersfuture.gov.sg/job/banking-finance/fresh-graduate-opportunity-%E2%80%93-financial-services-consultant-et-marketing-3557358a36032195dfba40421f44cc4a", "30 Jun 2026"],
   ["Process Engineer (Semiconductor) [Entry level welcome] [5 DAYS]", "THE SUPREME HR ADVISORY PTE. LTD.", "Engineering, Semiconductor & Manufacturing", "first-job", "https://www.mycareersfuture.gov.sg/job/engineering/process-engineer-entry-level-welcome-5-days-woodlands-supreme-hr-advisory-fb28c3d9819dfeb5993f140cc695b8b7", "30 Jun 2026"],
   ["Events Associate (Entry Level)", "RYO GLOBAL PTE. LTD.", "Hospitality, Tourism & Events", "first-job", "https://www.mycareersfuture.gov.sg/job/marketing/events-associate-ryo-global-2166f601985bc53f95fe7e4e5bde10f9", "30 Jun 2026"],
   ["Sales & Communications Executive", "ASCEND MARKETING SOLUTIONS PTE. LTD.", "Marketing, Sales & Business", "first-job", "https://www.mycareersfuture.gov.sg/job/customer-service/sales-communications-executive-ascend-marketing-solutions-928a8daca5b2096eb0c424445b967d51", "30 Jun 2026"],
@@ -303,7 +308,7 @@ const featuredOpenings = [
   industry,
   stage,
   source: "MyCareersFuture",
-  checked: "1 Jul 2026",
+  checked: "2 Jul 2026",
   posted,
   url,
 }));
@@ -451,7 +456,7 @@ function setupVerifiedOpenings() {
         <span>${opening.industry}</span>
         <h3>${opening.title}</h3>
         <p>${opening.company}</p>
-        <p>${opening.stage === "first-job" ? "Graduate / entry-level job" : "Internship opening"} posted ${opening.posted} and checked ${opening.checked} via ${opening.source}.</p>
+        <p>${opening.stage === "first-job" ? "Graduate / entry-level job" : "Internship opening"} listed ${opening.posted} and checked ${opening.checked} via ${opening.source}.</p>
         <div class="listing-actions">
           <a class="text-button" href="${opening.url}" target="_blank" rel="noreferrer">View opening</a>
           <button class="text-button use-opening" data-stage="${opening.stage}" data-role="${opening.title}" type="button">Use this opening</button>
