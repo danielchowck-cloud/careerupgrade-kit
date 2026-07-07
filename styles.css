@@ -416,6 +416,96 @@ h3 {
   color: var(--muted);
 }
 
+.career-reads {
+  border-top: 1px solid rgba(31, 42, 46, 0.1);
+  background: var(--surface);
+}
+
+.career-reads .section-heading p:not(.eyebrow) {
+  max-width: 760px;
+  color: var(--muted);
+}
+
+.insight-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.insight-strip span {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--bg);
+  color: var(--accent-strong);
+  padding: 7px 11px;
+  font-size: 0.86rem;
+  font-weight: 800;
+}
+
+.article-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.article-card {
+  display: flex;
+  min-height: 280px;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--bg);
+  padding: 22px;
+}
+
+.article-card.featured {
+  grid-column: span 2;
+  background: var(--ink);
+  color: #fff;
+}
+
+.article-source {
+  color: var(--accent-strong);
+  font-size: 0.76rem;
+  font-weight: 850;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.article-card.featured .article-source {
+  color: #8fd0bf;
+}
+
+.article-card h3 {
+  margin: 10px 0;
+  font-size: 1.24rem;
+}
+
+.article-card p,
+.article-card li {
+  color: var(--muted);
+}
+
+.article-card.featured p,
+.article-card.featured li {
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.article-card ul {
+  margin: 0 0 18px;
+  padding-left: 18px;
+}
+
+.article-card .text-button {
+  margin-top: auto;
+}
+
+.article-card.featured .text-button {
+  color: #8fd0bf;
+}
+
 .process {
   border-top: 1px solid rgba(31, 42, 46, 0.1);
 }
@@ -1016,8 +1106,13 @@ h3 {
   .steps,
   .finder-controls,
   .dashboard-preview,
-  .journey-grid {
+  .journey-grid,
+  .article-grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .article-card.featured {
+    grid-column: 1 / -1;
   }
 }
 
@@ -1081,6 +1176,7 @@ h3 {
   .dashboard-preview,
   .tracker-row,
   .journey-grid,
+  .article-grid,
   .payment-hero,
   .payment-steps {
     grid-template-columns: 1fr;
