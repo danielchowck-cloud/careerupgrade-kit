@@ -264,9 +264,21 @@ const targetData = [
   ["Science, Research & Academia", "Research Assistant", "first-job", "Research design, writing, analysis, ethics"],
 ].map(([industry, role, stage, evidence]) => ({ industry, role, stage, evidence }));
 
-const marketUpdated = "14 Jul 2026";
+const marketUpdated = "15 Jul 2026";
 
 const featuredOpenings = [
+  ["Sustainability Intern", "TOLARAM PTE. LTD.", "Energy, Utilities & Sustainability", "internship", "https://www.mycareersfuture.gov.sg/job/environment/sustainability-intern-tolaram-f450d0c3f1c5cc6c991d53ddc0d1df66", "14 Jul 2026"],
+  ["Intern, Pre-Charities & Ground-Up Partnerships (Programmes, BAGUS Together)", "NATIONAL VOLUNTEER AND PHILANTHROPY CENTRE", "Social Services, Non-Profit & Community", "internship", "https://www.mycareersfuture.gov.sg/job/social-services/intern-pre-charities-ground-up-partnerships-national-volunteer-philanthropy-centre-a64b16262e04919fc6b312f82e14c9e9", "14 Jul 2026"],
+  ["Business & Events Internship", "THEMEETUPSG PTE. LTD.", "Hospitality, Tourism & Events", "internship", "https://www.mycareersfuture.gov.sg/job/events/business-events-internship-themeetupsg-6392c64f640bfaf9313ebbb5a682320f", "14 Jul 2026"],
+  ["HR Intern ( Recruitment / Talent Acquisition ) #HYT", "RECRUIT EXPRESS PTE LTD", "Human Resources, Admin & Education", "internship", "https://www.mycareersfuture.gov.sg/job/human-resources/hr-intern-hyt-recruit-express-c7430ac79884af8464e7ca00a5247aa5", "14 Jul 2026"],
+  ["Electrical Engineer Internship Trainee", "LEYTRON TECHNOLOGY PTE LTD", "Engineering, Semiconductor & Manufacturing", "internship", "https://www.mycareersfuture.gov.sg/job/engineering/electrical-engineer-internship-trainee-leytron-technology-4b6dd9661253dc8292b472e24aa5064c", "14 Jul 2026"],
+  ["E-Commerce & Digital Marketing Intern", "THE SINGAPORE RESORT & SPA", "Retail, FMCG & E-Commerce", "internship", "https://www.mycareersfuture.gov.sg/job/marketing/e-commerce-digital-marketing-intern-singapore-resort-spa-c3d9dd37d4dd01ef136fca39f93b3ce7", "14 Jul 2026"],
+  ["AI Engineer", "METACOMP PTE. LTD.", "Technology, AI & Data", "first-job", "https://www.mycareersfuture.gov.sg/job/banking-finance/ai-engineer-metacomp-94c1a960b6fade98fead051c7c191a70", "14 Jul 2026"],
+  ["Software Developer / Software Engineer #10123", "ANRADUS PTE. LTD.", "Technology, AI & Data", "first-job", "https://www.mycareersfuture.gov.sg/job/information-technology/software-developer-software-engineer-10123-anradus-f6fe75bfd6383b1a20f39ce9850c5ce0", "14 Jul 2026"],
+  ["Drone Pilot", "HR SG PTE. LTD.", "Engineering, Semiconductor & Manufacturing", "first-job", "https://www.mycareersfuture.gov.sg/job/engineering/drone-pilot-hr-sg-0672f5fbd0f3bccd878fbaf3483f23bb", "14 Jul 2026"],
+  ["Loans Specialist - Business, Property and Personal Finance", "BIZSAVER PTE. LTD.", "Banking, Finance, Insurance & Accounting", "first-job", "https://www.mycareersfuture.gov.sg/job/banking-finance/loans-specialist-business-property-personal-finance-bizsaver-a5ac8fac496395d07f9e1feba007a38b", "14 Jul 2026"],
+  ["Urgent Part Time 3 Months Logistics Assistant / Store Assistant / Storekeeper (West) 3-5 Days #HYT", "RECRUIT EXPRESS PTE LTD", "Supply Chain, Logistics & Operations", "first-job", "https://www.mycareersfuture.gov.sg/job/logistics/urgent-part-time-3-months-logistics-assistant-store-assistant-storekeeper-3-5-days-hyt-recruit-express-4347363ee2dba7d08ff416923246e3bc", "14 Jul 2026"],
+  ["Management Trainee | Marketing & Sales (Entry-level)", "ROYAL ORG PTE. LTD.", "Marketing, Sales & Business", "first-job", "https://www.mycareersfuture.gov.sg/job/marketing/management-trainee-marketing-sales-royal-org-30f6691eeb1108c985f0be813bdb4413", "14 Jul 2026"],
   ["Operations Intern", "CINTRA CONSULTANCY PTE. LTD.", "Supply Chain, Logistics & Operations", "internship", "https://www.mycareersfuture.gov.sg/job/admin/operations-intern-cintra-consultancy-d22856856f001fbdf7da641f0cac97ef", "13 Jul 2026"],
   ["AI & WordPress Intern", "FJ & JOSEPH PTE. LTD.", "Technology, AI & Data", "internship", "https://www.mycareersfuture.gov.sg/job/information-technology/ai-wordpress-intern-fj-joseph-419e23d35cdda484858a77c4a3a5997b", "13 Jul 2026"],
   ["Social Service Intern (Single Mothers Programme)", "SINGAPORE COUNCIL OF WOMEN'S ORGANISATIONS", "Social Services, Non-Profit & Community", "internship", "https://www.mycareersfuture.gov.sg/job/social-services/social-service-intern-singapore-council-womens-organisations-f7898400ae80bdcc970e601550eb26de", "13 Jul 2026"],
@@ -311,7 +323,7 @@ const featuredOpenings = [
   industry,
   stage,
   source: "MyCareersFuture",
-  checked: "14 Jul 2026",
+  checked: "15 Jul 2026",
   posted,
   url,
 }));
