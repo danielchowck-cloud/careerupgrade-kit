@@ -80,6 +80,29 @@ document.querySelectorAll('input[name="referrer"]').forEach((field) => {
 
 const form = document.querySelector(".lead-form");
 const trackedApplyStorageKey = "careerupgradekit_apply_link_clicks";
+const paymentOptionsUrl = "https://careerupgradekit.com/payment.html";
+
+function updateFormRedirect(leadForm) {
+  const nextField = leadForm.elements._next;
+  const selectedHelp = leadForm.elements.help_needed?.value || "";
+  const config = window.CUK_STRIPE_CONFIG || {};
+
+  if (!nextField) {
+    return;
+  }
+
+  if (selectedHelp.toLowerCase().includes("full application kit") && config.fullKitPaymentLink) {
+    nextField.value = config.fullKitPaymentLink;
+    return;
+  }
+
+  if (selectedHelp.toLowerCase().includes("starter career review") && config.starterPaymentLink) {
+    nextField.value = config.starterPaymentLink;
+    return;
+  }
+
+  nextField.value = paymentOptionsUrl;
+}
 
 document.querySelectorAll(".lead-form").forEach((leadForm) => {
   leadForm.addEventListener("submit", () => {
@@ -97,6 +120,7 @@ document.querySelectorAll(".lead-form").forEach((leadForm) => {
       leadForm.elements._subject.value = `${leadForm.elements._subject.value} - ${name} - ${timestamp}`;
     }
 
+    updateFormRedirect(leadForm);
     syncTrackedApplyFields();
   });
 });
