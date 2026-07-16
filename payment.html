@@ -34,9 +34,9 @@
           <p class="eyebrow">Secure Stripe checkout</p>
           <h1>CareerUpgrade Kit payment</h1>
           <p>
-            This checkout is for the SGD 9.90 Starter Career Review. If you
-            selected the SGD 19.90 Full Application Kit, submit the request first
-            so the correct payment instruction can be sent after review.
+            Choose the checkout that matches the package confirmed in your
+            request: SGD 9.90 for one Starter Career Review focus area, or SGD
+            19.90 for the Full Application Kit.
           </p>
           <div class="payment-steps" aria-label="Payment flow">
             <div>
@@ -58,7 +58,7 @@
         </div>
 
         <aside class="payment-card" aria-label="Order summary">
-          <p class="panel-label">Order summary</p>
+          <p class="panel-label">Payment options</p>
           <h2>Starter Career Review</h2>
           <div class="price-line">
             <strong>SGD 9.90</strong>
@@ -67,20 +67,26 @@
           <ul>
             <li>Resume, LinkedIn, cover-letter, interview, or application focus.</li>
             <li>Reviewed after intake so the right focus is confirmed.</li>
-            <li>Full Application Kit is SGD 19.90 and handled after review.</li>
           </ul>
-          <a class="button primary disabled" id="stripe-pay-button" href="#" aria-disabled="true">
+          <a class="button primary disabled" id="stripe-starter-pay-button" href="#" aria-disabled="true">
             Stripe Payment Link Not Connected
           </a>
-          <p class="setup-note" id="stripe-setup-note">
+          <p class="setup-note" id="stripe-starter-setup-note">
             Stripe setup pending: add the live Payment Link URL in
             <strong>stripe-config.js</strong>.
           </p>
           <div class="payment-tier-note">
             <strong>Full Application Kit: SGD 19.90</strong>
             <p>
-              Use the request form first. We will confirm suitability and send the
-              correct payment instruction for the full kit.
+              Resume, LinkedIn, and application direction reviewed together for
+              one target role or job application.
+            </p>
+            <a class="button secondary disabled" id="stripe-full-kit-pay-button" href="#" aria-disabled="true">
+              Stripe Payment Link Not Connected
+            </a>
+            <p class="setup-note" id="stripe-full-kit-setup-note">
+              Stripe setup pending: add the live Full Application Kit Payment
+              Link URL in <strong>stripe-config.js</strong>.
             </p>
           </div>
           <a class="text-button" href="index.html#request">Back to request form</a>
@@ -94,6 +100,6 @@
     </footer>
 
     <script src="stripe-config.js"></script>
-    <script src="script.js?v=apply-link-tracking-20260716"></script>
+    <script src="script.js?v=payment-options-20260716"></script>
   </body>
 </html>

@@ -139,29 +139,42 @@ document.querySelector("#copy-share")?.addEventListener("click", async () => {
 });
 
 function setupStripePaymentLink() {
-  const button = document.querySelector("#stripe-pay-button");
-  const note = document.querySelector("#stripe-setup-note");
-
-  if (!button) {
-    return;
-  }
-
   const config = window.CUK_STRIPE_CONFIG || {};
-  const paymentLink = (config.paymentLink || "").trim();
-  const amountLabel = config.amountLabel || "SGD 9.90";
+  const paymentButtons = [
+    {
+      button: document.querySelector("#stripe-starter-pay-button") || document.querySelector("#stripe-pay-button"),
+      note: document.querySelector("#stripe-starter-setup-note") || document.querySelector("#stripe-setup-note"),
+      paymentLink: config.starterPaymentLink || config.paymentLink,
+      amountLabel: "SGD 9.90",
+    },
+    {
+      button: document.querySelector("#stripe-full-kit-pay-button"),
+      note: document.querySelector("#stripe-full-kit-setup-note"),
+      paymentLink: config.fullKitPaymentLink,
+      amountLabel: "SGD 19.90",
+    },
+  ];
 
-  if (paymentLink && paymentLink.startsWith("https://buy.stripe.com/")) {
-    button.href = paymentLink;
-    button.textContent = `Pay ${amountLabel} With Stripe`;
-    button.classList.remove("disabled");
-    button.removeAttribute("aria-disabled");
-
-    if (note) {
-      note.textContent = "After payment, Stripe will show the next step for submitting your materials.";
+  paymentButtons.forEach(({ button, note, paymentLink, amountLabel }) => {
+    if (!button) {
+      return;
     }
-  } else {
-    button.addEventListener("click", (event) => event.preventDefault());
-  }
+
+    const stripeLink = (paymentLink || "").trim();
+
+    if (stripeLink && stripeLink.startsWith("https://buy.stripe.com/")) {
+      button.href = stripeLink;
+      button.textContent = `Pay ${amountLabel} With Stripe`;
+      button.classList.remove("disabled");
+      button.removeAttribute("aria-disabled");
+
+      if (note) {
+        note.textContent = "After payment, Stripe will show the next step for submitting your materials.";
+      }
+    } else {
+      button.addEventListener("click", (event) => event.preventDefault());
+    }
+  });
 }
 
 setupStripePaymentLink();
