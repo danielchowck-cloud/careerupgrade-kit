@@ -493,6 +493,31 @@ h3 {
   color: rgba(255, 255, 255, 0.76);
 }
 
+.article-meta {
+  margin: 0 0 14px;
+  font-size: 0.84rem;
+  font-weight: 750;
+}
+
+.article-note {
+  margin-bottom: 14px;
+}
+
+.article-note strong {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--ink);
+  font-size: 0.88rem;
+}
+
+.article-card.featured .article-note strong {
+  color: #fff;
+}
+
+.article-note p {
+  margin: 0;
+}
+
 .article-card ul {
   margin: 0 0 18px;
   padding-left: 18px;
