@@ -775,6 +775,13 @@ h3 {
   background: var(--surface);
 }
 
+.tracking-note {
+  max-width: 720px;
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
 .listing-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));

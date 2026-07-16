@@ -45,8 +45,8 @@
           <h2>Select your interest before viewing a checked opening.</h2>
           <p>
             Students see internship listings only. Fresh graduates see graduate and
-            entry-level jobs only. The page shows a selected example instead of a
-            long mixed list.
+            entry-level jobs only. Apply-link clicks from this page can be used for
+            CareerUpgradeKit follow-up guidance.
           </p>
         </div>
         <div class="opening-filter" aria-label="Opening type">
@@ -75,6 +75,10 @@
           Select a path and interest area, then choose an opening to view one checked example.
         </div>
         <div class="opening-grid" id="opening-grid" aria-live="polite"></div>
+        <p class="tracking-note">
+          Tracking applies to CareerUpgradeKit links opened from this page. Final
+          submission status still depends on the employer or job portal.
+        </p>
         <div class="page-actions">
           <a class="button secondary" href="#opportunities">Browse by industry</a>
           <a class="button primary" href="dashboard.html">Preview paid dashboard</a>
@@ -127,8 +131,8 @@
           <h2>Browsing can be public. Tracking should be paid and logged in.</h2>
           <p>
             Public users can select a target and request help. Paid users later get
-            the full dashboard experience: saved roles, application status, match score,
-            and next actions.
+            the full dashboard experience: CareerUpgradeKit apply-link clicks,
+            application status, match score, and next actions.
           </p>
         </div>
         <div class="stacked-card">
@@ -137,7 +141,7 @@
             <li>Select target role.</li>
             <li>Request paid application upgrade.</li>
             <li>Receive ATS resume and profile support.</li>
-            <li>Track applications in the paid dashboard.</li>
+            <li>Track CareerUpgradeKit apply-link clicks in the paid dashboard.</li>
           </ol>
           <div class="inline-actions">
             <a class="text-button" href="index.html">Back to landing page</a>
@@ -157,6 +161,8 @@
             <input type="hidden" name="source" value="direct" />
             <input type="hidden" name="page_url" value="" />
             <input type="hidden" name="referrer" value="" />
+            <input type="hidden" name="tracked_application_links" id="tracked-application-links" value="" />
+            <input type="hidden" name="latest_tracked_application_link" id="latest-tracked-application-link" value="" />
             <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" />
 
             <label>
@@ -230,6 +236,6 @@
       <span>Opportunities are the entry point. Readiness is the paid product.</span>
     </footer>
 
-    <script src="script.js?v=opportunity-refresh-20260710"></script>
+    <script src="script.js?v=apply-link-tracking-20260716"></script>
   </body>
 </html>

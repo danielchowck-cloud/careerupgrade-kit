@@ -30,9 +30,9 @@ const panels = {
     label: "Application Tracker",
     title: "A simple system for applying with more control.",
     points: [
-      "Track companies, roles, dates, and follow-ups.",
-      "Record resume version and interview stage.",
-      "Reduce random applications and missed follow-ups.",
+      "Track CareerUpgradeKit apply-link clicks and target roles.",
+      "Record resume version, follow-up status, and interview stage.",
+      "Reduce random applications without asking customers to manually report every job.",
     ],
   },
 };
@@ -79,6 +79,7 @@ document.querySelectorAll('input[name="referrer"]').forEach((field) => {
 });
 
 const form = document.querySelector(".lead-form");
+const trackedApplyStorageKey = "careerupgradekit_apply_link_clicks";
 
 document.querySelectorAll(".lead-form").forEach((leadForm) => {
   leadForm.addEventListener("submit", () => {
@@ -95,6 +96,8 @@ document.querySelectorAll(".lead-form").forEach((leadForm) => {
     if (leadForm.elements._subject) {
       leadForm.elements._subject.value = `${leadForm.elements._subject.value} - ${name} - ${timestamp}`;
     }
+
+    syncTrackedApplyFields();
   });
 });
 
@@ -337,6 +340,65 @@ function liveSearchUrl(role, stage = "internship") {
   return `https://www.mycareersfuture.gov.sg/search?employmentType=Internship%2FAttachment&page=0&search=${query}&sortBy=new_posting_date`;
 }
 
+function trackedApplyClicks() {
+  try {
+    const parsed = JSON.parse(localStorage.getItem(trackedApplyStorageKey) || "[]");
+    return Array.isArray(parsed) ? parsed : [];
+  } catch {
+    return [];
+  }
+}
+
+function saveTrackedApplyClick(link) {
+  const item = {
+    role: link.dataset.role || "Unknown role",
+    company: link.dataset.company || "",
+    industry: link.dataset.industry || "",
+    stage: link.dataset.stage || "",
+    source: link.dataset.source || "CareerUpgradeKit",
+    url: link.href,
+    clicked_at: new Date().toISOString(),
+  };
+  const nextItems = [item, ...trackedApplyClicks()].slice(0, 10);
+
+  try {
+    localStorage.setItem(trackedApplyStorageKey, JSON.stringify(nextItems));
+  } catch {
+    return;
+  }
+
+  syncTrackedApplyFields();
+}
+
+function syncTrackedApplyFields() {
+  const clicks = trackedApplyClicks();
+  const summary = clicks
+    .map((item) => `${item.clicked_at} | ${item.role}${item.company ? ` | ${item.company}` : ""} | ${item.url}`)
+    .join("\n");
+  const latest = clicks[0]
+    ? `${clicks[0].role}${clicks[0].company ? ` | ${clicks[0].company}` : ""} | ${clicks[0].url}`
+    : "";
+
+  document.querySelectorAll('input[name="tracked_application_links"]').forEach((field) => {
+    field.value = summary;
+  });
+  document.querySelectorAll('input[name="latest_tracked_application_link"]').forEach((field) => {
+    field.value = latest;
+  });
+}
+
+document.addEventListener("click", (event) => {
+  const link = event.target.closest("a[data-apply-track]");
+
+  if (!link) {
+    return;
+  }
+
+  saveTrackedApplyClick(link);
+});
+
+syncTrackedApplyFields();
+
 function prefillOpportunityRequest(role, stage = "internship") {
   const targetPath = document.querySelector("#target-path");
   const requestStage = document.querySelector("#request-stage");
@@ -452,7 +514,7 @@ function setupVerifiedOpenings() {
         <p>${opening.company}</p>
         <p>${opening.stage === "first-job" ? "Graduate / entry-level job" : "Internship opening"} listed ${opening.posted} and checked ${opening.checked} via ${opening.source}.</p>
         <div class="listing-actions">
-          <a class="text-button" href="${opening.url}" target="_blank" rel="noreferrer">View opening</a>
+          <a class="text-button" href="${opening.url}" target="_blank" rel="noreferrer" data-apply-track="verified-opening" data-role="${opening.title}" data-company="${opening.company}" data-industry="${opening.industry}" data-stage="${opening.stage}" data-source="${opening.source}">Open tracked apply link</a>
           <button class="text-button use-opening" data-stage="${opening.stage}" data-role="${opening.title}" type="button">Use this opening</button>
           <a class="button primary" href="#request">Request help</a>
         </div>
@@ -545,7 +607,7 @@ function setupFinder() {
             <p><strong>Evidence to prepare:</strong> ${item.evidence}.</p>
             <div class="listing-actions">
               <button class="text-button use-target" data-stage="${item.stage}" data-role="${item.role}" type="button">Use this target</button>
-              <a class="text-button" href="${liveSearchUrl(item.role, item.stage)}" target="_blank" rel="noreferrer">View live search</a>
+              <a class="text-button" href="${liveSearchUrl(item.role, item.stage)}" target="_blank" rel="noreferrer" data-apply-track="live-search" data-role="${item.role}" data-industry="${item.industry}" data-stage="${item.stage}" data-source="MyCareersFuture search">Open tracked live search</a>
               <a class="button primary" href="#request">Request help</a>
             </div>
           </article>
