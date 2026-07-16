@@ -304,45 +304,46 @@ const targetData = [
   ["Science, Research & Academia", "Research Assistant", "first-job", "Research design, writing, analysis, ethics"],
 ].map(([industry, role, stage, evidence]) => ({ industry, role, stage, evidence }));
 
-const marketUpdated = "16 Jul 2026";
+const marketUpdated = "17 Jul 2026";
 
 const featuredOpenings = [
-  ["Partnerships Intern", "ANYWHEEL PTE. LTD.", "Marketing, Sales & Business", "internship", "https://www.mycareersfuture.gov.sg/job/marketing/partnerships-intern-anywheel-792d39fe8bb9dec90a35ab5e38c7f0b5", "15 Jul 2026"],
-  ["Marketing Intern", "KINO BIOTECH PTE. LTD.", "Marketing, Sales & Business", "internship", "https://www.mycareersfuture.gov.sg/job/marketing/marketing-intern-kino-biotech-ca6b08aa636d462aca5baa285200d36e", "15 Jul 2026"],
-  ["AI Intern", "ADDCEL ENGINEERING PTE. LTD.", "Technology, AI & Data", "internship", "https://www.mycareersfuture.gov.sg/job/information-technology/ai-intern-addcel-engineering-897416aaee8a7791c7e122afb71a568d", "15 Jul 2026"],
-  ["Business Operations Intern (Education Business)", "MINDFLEX EDUCATION PTE. LTD.", "Supply Chain, Logistics & Operations", "internship", "https://www.mycareersfuture.gov.sg/job/admin/business-operations-intern-mindflex-education-6384b867e51dca369508e0c10ab48e2e", "15 Jul 2026"],
-  ["Surgical Veterinary Intern", "BEECROFT ANIMAL SPECIALIST SERVICES PTE. LTD.", "Healthcare, Biomedical & Pharma", "internship", "https://www.mycareersfuture.gov.sg/job/environment/surgical-veterinary-intern-beecroft-animal-specialist-services-6eb8f577ed3145ec0b0d369d195823ed", "15 Jul 2026"],
-  ["IoT Engineering Intern", "BIOLOGIC TECHNIK PRIVATE LIMITED", "Engineering, Semiconductor & Manufacturing", "internship", "https://www.mycareersfuture.gov.sg/job/engineering/iot-engineering-intern-biologic-technik-6f72b476016ce360d32af8c83cbd6e35", "15 Jul 2026"],
-  ["HR & Corporate Branding Intern", "RECRUIT EXPRESS PTE LTD", "Professional Services, Consulting & Advisory", "internship", "https://www.mycareersfuture.gov.sg/job/consulting/hr-corporate-branding-intern-recruit-express-60713360acdf623f43b822fc10088855", "15 Jul 2026"],
-  ["Intern, Finance Associate", "HUMMINGBIRD BIOSCIENCE PTE. LTD.", "Banking, Finance, Insurance & Accounting", "internship", "https://www.mycareersfuture.gov.sg/job/accounting/intern-finance-associate-hummingbird-bioscience-cd00b23aabc6ebbb148f2c3ea0680fd1", "14 Jul 2026"],
-  ["People Intern (HR)", "MIGHTY JAXX INTERNATIONAL PTE. LTD.", "Human Resources, Admin & Education", "internship", "https://www.mycareersfuture.gov.sg/job/human-resources/people-intern-mighty-jaxx-international-a74c907a73c136bf8ce436d3b3044dff", "14 Jul 2026"],
-  ["Finance Intern (Aug to Dec 26)", "HONG YE GROUP PTE. LTD.", "Banking, Finance, Insurance & Accounting", "internship", "https://www.mycareersfuture.gov.sg/job/accounting/finance-intern-hong-ye-group-69e39ec5fded3ae187bb02d4f4399fca", "13 Jul 2026"],
-  ["Operations Intern", "CINTRA CONSULTANCY PTE. LTD.", "Supply Chain, Logistics & Operations", "internship", "https://www.mycareersfuture.gov.sg/job/admin/operations-intern-cintra-consultancy-d22856856f001fbdf7da641f0cac97ef", "13 Jul 2026"],
-  ["Events Intern", "ONE RQ PTE. LTD.", "Hospitality, Tourism & Events", "internship", "https://www.mycareersfuture.gov.sg/job/events/events-intern-one-rq-5f577442bdf77d315d24adc0470d9bf5", "7 Jul 2026"],
-  ["Intern, Communications", "ASIA-EUROPE FOUNDATION", "Design, Media & Communications", "internship", "https://www.mycareersfuture.gov.sg/job/advertising/intern-communications-asia-europe-foundation-d34d6f2d4dcee717cd17d7268c771262", "6 Jul 2026"],
-  ["Events Management Intern (Part-time)", "JK & REAL CORPORATION PRIVATE LIMITED", "Hospitality, Tourism & Events", "internship", "https://www.mycareersfuture.gov.sg/job/events/events-management-intern-jk-real-corporation-59bce8c16445999710049683c4578841", "6 Jul 2026"],
-  ["Technical Services Analyst", "EPIC HEALTHCARE SYSTEMS PTE. LTD.", "Technology, AI & Data", "first-job", "https://www.mycareersfuture.gov.sg/job/healthcare/technical-services-analyst-epic-healthcare-systems-3b45ff58bda627561393b6ec6612ae2f", "16 Jul 2026"],
-  ["Admin & Sales Coordinator", "PLETHUNO MARKETING", "Marketing, Sales & Business", "first-job", "https://www.mycareersfuture.gov.sg/job/sales/admin-sales-coordinator-plethuno-marketing-d9c9220c724743ce20f60b357856094c", "16 Jul 2026"],
-  ["Process Engineer (Entry Level)", "RECRUITPEDIA PTE. LTD.", "Engineering, Semiconductor & Manufacturing", "first-job", "https://www.mycareersfuture.gov.sg/job/engineering/process-engineer-recruitpedia-fac4bda014d72a7ca72f0e05d24c5641", "15 Jul 2026"],
-  ["Site Engineer x 5 (Entry Level)", "RECRUIT EXPERT PTE. LTD.", "Built Environment, Real Estate & Facilities", "first-job", "https://www.mycareersfuture.gov.sg/job/building-construction/site-engineer-x-5-recruit-expert-618bc44212b094a4dd6d81cbf2477565", "15 Jul 2026"],
-  ["Finance Analyst (1 Year Contract)", "RECRUITPEDIA PTE. LTD.", "Banking, Finance, Insurance & Accounting", "first-job", "https://www.mycareersfuture.gov.sg/job/accounting/finance-analyst-recruitpedia-3e3936d8d230cb536245dafcec66b106", "15 Jul 2026"],
-  ["Accounts Assistant", "LI JIA PROPERTY PTE. LTD.", "Banking, Finance, Insurance & Accounting", "first-job", "https://www.mycareersfuture.gov.sg/job/accounting/accounts-assistant-li-jia-property-8edd847b77ca53818a7c7f1df59db08b", "15 Jul 2026"],
-  ["HR Recruitment Coordinator (Central, Entry Level)", "RECRUIT EXPRESS SERVICES PTE. LTD.", "Professional Services, Consulting & Advisory", "first-job", "https://www.mycareersfuture.gov.sg/job/consulting/hr-recruitment-coordinator-recruit-express-services-e2054ed96f841091cb8e0c32578fb7e8", "15 Jul 2026"],
-  ["Clinical Research Assistant (2-year) - Nursing #HHL", "RECRUIT EXPRESS PTE LTD", "Healthcare, Biomedical & Pharma", "first-job", "https://www.mycareersfuture.gov.sg/job/sciences/clinical-research-assistant-nursing-hhl-recruit-express-0c36127451793783de1cba03d6f45f44", "15 Jul 2026"],
-  ["Research Assistant/Fellow, Faculty of Dentistry", "NATIONAL UNIVERSITY OF SINGAPORE", "Science, Research & Academia", "first-job", "https://www.mycareersfuture.gov.sg/job/sciences/research-assistantfellow-faculty-dentistry-national-university-singapore-8de2d9bb33e02d60934a263b64f8f438", "15 Jul 2026"],
-  ["Inside Sales Coordinator #78315", "ANRADUS PTE. LTD.", "Marketing, Sales & Business", "first-job", "https://www.mycareersfuture.gov.sg/job/admin/inside-sales-coordinator-78315-anradus-cf47c3584515bd00bfb50d89b0dd95b1", "15 Jul 2026"],
-  ["Sales Coordinator (Marine)", "DIRECT SEARCH ASIA PTE. LTD.", "Maritime, Aviation & Transport", "first-job", "https://www.mycareersfuture.gov.sg/job/logistics/sales-coordinator-direct-search-asia-a31eea845f5ed6345cf239c01690ce58", "15 Jul 2026"],
-  ["Air Export Customer Service Executive [Entry Level / Flexible Timing] - WCAN", "WECRUIT PTE. LTD.", "Maritime, Aviation & Transport", "first-job", "https://www.mycareersfuture.gov.sg/job/logistics/air-export-customer-service-executive-entry-level-flexible-timing-wcan-wecruit-943718b7012889ff4f38716562929521", "15 Jul 2026"],
-  ["*entry level* HR Assistant #ESY", "RECRUIT EXPRESS PTE LTD", "Human Resources, Admin & Education", "first-job", "https://www.mycareersfuture.gov.sg/job/human-resources/entry-level-hr-assistant-esy-recruit-express-183c79be06a31f787e2f8ad12ad8c511", "13 Jul 2026"],
-  ["Graduate / Associate Technical Business Analyst (Innovation)", "GUY CARPENTER & COMPANY PRIVATE LIMITED", "Professional Services, Consulting & Advisory", "first-job", "https://www.mycareersfuture.gov.sg/job/consulting/graduate-associate-technical-business-analyst-guy-carpenter-company-c0e0fc4de87a6c7b39b86f66a25f193f", "8 Jul 2026"],
-  ["Regional Strategy and Operations Analyst - Regional Logistics (2026 Graduate)", "SHOPEE SINGAPORE PRIVATE LIMITED", "Supply Chain, Logistics & Operations", "first-job", "https://www.mycareersfuture.gov.sg/job/information-technology/regional-strategy-operations-analyst-regional-logistics-shopee-singapore-2f50c30476240658912823e257d6a7e3", "25 Jun 2026"],
-].map(([title, company, industry, stage, url, posted]) => ({
+  ["Intern - AI Engineering (Aug to Dec 2026)", "LIGHTHOUSE CANTON PTE. LTD.", "Technology, AI & Data", "internship", "https://www.mycareersfuture.gov.sg/job/intern-ai-engineering-lighthouse-canton-a7e0c1bf7fe1188a3ad8e440592ee501", "16 Jul 2026", "MyCareersFuture"],
+  ["Intern - Global Markets (6 months)", "HL BANK", "Banking, Finance, Insurance & Accounting", "internship", "https://www.mycareersfuture.gov.sg/job/intern-global-markets-hl-bank-a179bb786209264fb88cd42128545bf8", "16 Jul 2026", "MyCareersFuture"],
+  ["Partnerships Intern", "ANYWHEEL PTE. LTD.", "Marketing, Sales & Business", "internship", "https://www.mycareersfuture.gov.sg/job/marketing/partnerships-intern-anywheel-792d39fe8bb9dec90a35ab5e38c7f0b5", "15 Jul 2026", "MyCareersFuture"],
+  ["Marketing Intern", "KINO BIOTECH PTE. LTD.", "Marketing, Sales & Business", "internship", "https://www.mycareersfuture.gov.sg/job/marketing/marketing-intern-kino-biotech-ca6b08aa636d462aca5baa285200d36e", "15 Jul 2026", "MyCareersFuture"],
+  ["AI Intern", "ADDCEL ENGINEERING PTE. LTD.", "Technology, AI & Data", "internship", "https://www.mycareersfuture.gov.sg/job/information-technology/ai-intern-addcel-engineering-897416aaee8a7791c7e122afb71a568d", "15 Jul 2026", "MyCareersFuture"],
+  ["Business Operations Intern (Education Business)", "MINDFLEX EDUCATION PTE. LTD.", "Supply Chain, Logistics & Operations", "internship", "https://www.mycareersfuture.gov.sg/job/admin/business-operations-intern-mindflex-education-6384b867e51dca369508e0c10ab48e2e", "15 Jul 2026", "MyCareersFuture"],
+  ["Surgical Veterinary Intern", "BEECROFT ANIMAL SPECIALIST SERVICES PTE. LTD.", "Healthcare, Biomedical & Pharma", "internship", "https://www.mycareersfuture.gov.sg/job/environment/surgical-veterinary-intern-beecroft-animal-specialist-services-6eb8f577ed3145ec0b0d369d195823ed", "15 Jul 2026", "MyCareersFuture"],
+  ["IoT Engineering Intern", "BIOLOGIC TECHNIK PRIVATE LIMITED", "Engineering, Semiconductor & Manufacturing", "internship", "https://www.mycareersfuture.gov.sg/job/engineering/iot-engineering-intern-biologic-technik-6f72b476016ce360d32af8c83cbd6e35", "15 Jul 2026", "MyCareersFuture"],
+  ["Data Analyst (Internship) (H2 2026)", "ShopBack", "Technology, AI & Data", "internship", "https://sg.indeed.com/q-internship-jobs.html", "17 Jul 2026", "Indeed Singapore"],
+  ["Quantitative Research Intern (July/August to December 2026)", "WorldQuant", "Science, Research & Academia", "internship", "https://sg.indeed.com/q-july-to-december-internship-jobs.html", "17 Jul 2026", "Indeed Singapore"],
+  ["Intern, DevSecOps", "Ensign InfoSecurity", "Technology, AI & Data", "internship", "https://jobs.singaporeglobalnetwork.gov.sg/jobs/ensign-infosecurity?internshipOnly=true", "17 Jul 2026", "Singapore Global Network"],
+  ["Intern, Security Engineering", "Ensign InfoSecurity", "Technology, AI & Data", "internship", "https://jobs.singaporeglobalnetwork.gov.sg/jobs/ensign-infosecurity?internshipOnly=true", "17 Jul 2026", "Singapore Global Network"],
+  ["People Intern (HR)", "MIGHTY JAXX INTERNATIONAL PTE. LTD.", "Human Resources, Admin & Education", "internship", "https://www.mycareersfuture.gov.sg/job/human-resources/people-intern-mighty-jaxx-international-a74c907a73c136bf8ce436d3b3044dff", "14 Jul 2026", "MyCareersFuture"],
+  ["Events Intern", "ONE RQ PTE. LTD.", "Hospitality, Tourism & Events", "internship", "https://www.mycareersfuture.gov.sg/job/events/events-intern-one-rq-5f577442bdf77d315d24adc0470d9bf5", "7 Jul 2026", "MyCareersFuture"],
+  ["Intern, Communications", "ASIA-EUROPE FOUNDATION", "Design, Media & Communications", "internship", "https://www.mycareersfuture.gov.sg/job/advertising/intern-communications-asia-europe-foundation-d34d6f2d4dcee717cd17d7268c771262", "6 Jul 2026", "MyCareersFuture"],
+  ["Technical Services Analyst", "EPIC HEALTHCARE SYSTEMS PTE. LTD.", "Technology, AI & Data", "first-job", "https://www.mycareersfuture.gov.sg/job/healthcare/technical-services-analyst-epic-healthcare-systems-3b45ff58bda627561393b6ec6612ae2f", "16 Jul 2026", "MyCareersFuture"],
+  ["Admin & Sales Coordinator", "PLETHUNO MARKETING", "Marketing, Sales & Business", "first-job", "https://www.mycareersfuture.gov.sg/job/sales/admin-sales-coordinator-plethuno-marketing-d9c9220c724743ce20f60b357856094c", "16 Jul 2026", "MyCareersFuture"],
+  ["Graduate Programme 2026", "Ensign InfoSecurity", "Technology, AI & Data", "first-job", "https://jobs.singaporeglobalnetwork.gov.sg/jobs/ensign-infosecurity?internshipOnly=true", "17 Jul 2026", "Singapore Global Network"],
+  ["Process Engineer (Entry Level)", "RECRUITPEDIA PTE. LTD.", "Engineering, Semiconductor & Manufacturing", "first-job", "https://www.mycareersfuture.gov.sg/job/engineering/process-engineer-recruitpedia-fac4bda014d72a7ca72f0e05d24c5641", "15 Jul 2026", "MyCareersFuture"],
+  ["Site Engineer x 5 (Entry Level)", "RECRUIT EXPERT PTE. LTD.", "Built Environment, Real Estate & Facilities", "first-job", "https://www.mycareersfuture.gov.sg/job/building-construction/site-engineer-x-5-recruit-expert-618bc44212b094a4dd6d81cbf2477565", "15 Jul 2026", "MyCareersFuture"],
+  ["Finance Analyst (1 Year Contract)", "RECRUITPEDIA PTE. LTD.", "Banking, Finance, Insurance & Accounting", "first-job", "https://www.mycareersfuture.gov.sg/job/accounting/finance-analyst-recruitpedia-3e3936d8d230cb536245dafcec66b106", "15 Jul 2026", "MyCareersFuture"],
+  ["Accounts Assistant", "LI JIA PROPERTY PTE. LTD.", "Banking, Finance, Insurance & Accounting", "first-job", "https://www.mycareersfuture.gov.sg/job/accounting/accounts-assistant-li-jia-property-8edd847b77ca53818a7c7f1df59db08b", "15 Jul 2026", "MyCareersFuture"],
+  ["HR Recruitment Coordinator (Central, Entry Level)", "RECRUIT EXPRESS SERVICES PTE. LTD.", "Professional Services, Consulting & Advisory", "first-job", "https://www.mycareersfuture.gov.sg/job/consulting/hr-recruitment-coordinator-recruit-express-services-e2054ed96f841091cb8e0c32578fb7e8", "15 Jul 2026", "MyCareersFuture"],
+  ["Clinical Research Assistant (2-year) - Nursing #HHL", "RECRUIT EXPRESS PTE LTD", "Healthcare, Biomedical & Pharma", "first-job", "https://www.mycareersfuture.gov.sg/job/sciences/clinical-research-assistant-nursing-hhl-recruit-express-0c36127451793783de1cba03d6f45f44", "15 Jul 2026", "MyCareersFuture"],
+  ["Research Assistant/Fellow, Faculty of Dentistry", "NATIONAL UNIVERSITY OF SINGAPORE", "Science, Research & Academia", "first-job", "https://www.mycareersfuture.gov.sg/job/sciences/research-assistantfellow-faculty-dentistry-national-university-singapore-8de2d9bb33e02d60934a263b64f8f438", "15 Jul 2026", "MyCareersFuture"],
+  ["Inside Sales Coordinator #78315", "ANRADUS PTE. LTD.", "Marketing, Sales & Business", "first-job", "https://www.mycareersfuture.gov.sg/job/admin/inside-sales-coordinator-78315-anradus-cf47c3584515bd00bfb50d89b0dd95b1", "15 Jul 2026", "MyCareersFuture"],
+  ["Sales Coordinator (Marine)", "DIRECT SEARCH ASIA PTE. LTD.", "Maritime, Aviation & Transport", "first-job", "https://www.mycareersfuture.gov.sg/job/logistics/sales-coordinator-direct-search-asia-a31eea845f5ed6345cf239c01690ce58", "15 Jul 2026", "MyCareersFuture"],
+  ["Air Export Customer Service Executive [Entry Level / Flexible Timing] - WCAN", "WECRUIT PTE. LTD.", "Maritime, Aviation & Transport", "first-job", "https://www.mycareersfuture.gov.sg/job/logistics/air-export-customer-service-executive-entry-level-flexible-timing-wcan-wecruit-943718b7012889ff4f38716562929521", "15 Jul 2026", "MyCareersFuture"],
+  ["*entry level* HR Assistant #ESY", "RECRUIT EXPRESS PTE LTD", "Human Resources, Admin & Education", "first-job", "https://www.mycareersfuture.gov.sg/job/human-resources/entry-level-hr-assistant-esy-recruit-express-183c79be06a31f787e2f8ad12ad8c511", "13 Jul 2026", "MyCareersFuture"],
+  ["Regional Strategy and Operations Analyst - Regional Logistics (2026 Graduate)", "SHOPEE SINGAPORE PRIVATE LIMITED", "Supply Chain, Logistics & Operations", "first-job", "https://www.mycareersfuture.gov.sg/job/information-technology/regional-strategy-operations-analyst-regional-logistics-shopee-singapore-2f50c30476240658912823e257d6a7e3", "25 Jun 2026", "MyCareersFuture"],
+].map(([title, company, industry, stage, url, posted, source]) => ({
   title,
   company,
   industry,
   stage,
-  source: "MyCareersFuture",
-  checked: "16 Jul 2026",
+  source,
+  checked: "17 Jul 2026",
   posted,
   url,
 }));
@@ -375,6 +376,33 @@ function liveSearchUrl(role, stage = "internship") {
 
   const query = encodeURIComponent(role.replace(/\bInternship\b/i, "Intern"));
   return `https://www.mycareersfuture.gov.sg/search?employmentType=Internship%2FAttachment&page=0&search=${query}&sortBy=new_posting_date`;
+}
+
+function sourceSearchLinks(role, stage = "internship") {
+  const stageQuery = stage === "first-job"
+    ? encodeURIComponent(`${role} fresh graduate entry level`)
+    : encodeURIComponent(`${role} internship`);
+  const jobStreetQuery = stage === "first-job"
+    ? encodeURIComponent(`${role} fresh graduate`)
+    : encodeURIComponent(`${role} internship`);
+  const sgnQuery = stage === "first-job"
+    ? encodeURIComponent(`${role} graduate`)
+    : encodeURIComponent(`${role} intern`);
+
+  return [
+    ["MyCareersFuture", liveSearchUrl(role, stage)],
+    ["Indeed SG", `https://sg.indeed.com/jobs?q=${stageQuery}&sort=date`],
+    ["JobStreet SG", `https://sg.jobstreet.com/${jobStreetQuery}-jobs?sortmode=ListedDate`],
+    ["Singapore Global Network", `https://jobs.singaporeglobalnetwork.gov.sg/jobs?query=${sgnQuery}`],
+  ];
+}
+
+function renderSourceLinks(role, stage) {
+  return sourceSearchLinks(role, stage)
+    .map(
+      ([source, url]) => `<a class="text-button" href="${url}" target="_blank" rel="noreferrer" data-apply-track="live-search" data-role="${role}" data-stage="${stage}" data-source="${source} search">${source}</a>`
+    )
+    .join("");
 }
 
 function trackedApplyClicks() {
@@ -605,7 +633,7 @@ function setupFinder() {
   }
 
   if (marketUpdatedEl) {
-    marketUpdatedEl.textContent = `Daily refresh marker: ${marketUpdated}. Live source links open current MyCareersFuture searches.`;
+    marketUpdatedEl.textContent = `Daily refresh marker: ${marketUpdated}. Live source links open current MyCareersFuture, Indeed SG, JobStreet SG, and Singapore Global Network searches.`;
   }
 
   function updateFinderRoles() {
@@ -644,7 +672,7 @@ function setupFinder() {
             <p><strong>Evidence to prepare:</strong> ${item.evidence}.</p>
             <div class="listing-actions">
               <button class="text-button use-target" data-stage="${item.stage}" data-role="${item.role}" type="button">Use this target</button>
-              <a class="text-button" href="${liveSearchUrl(item.role, item.stage)}" target="_blank" rel="noreferrer" data-apply-track="live-search" data-role="${item.role}" data-industry="${item.industry}" data-stage="${item.stage}" data-source="MyCareersFuture search">Open tracked live search</a>
+              ${renderSourceLinks(item.role, item.stage)}
               <a class="button primary" href="#request">Request help</a>
             </div>
           </article>
