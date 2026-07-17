@@ -369,6 +369,11 @@ h3 {
   background: var(--panel);
 }
 
+.proof .section-heading p:not(.eyebrow) {
+  max-width: 760px;
+  color: var(--muted);
+}
+
 .comparison {
   display: grid;
   grid-template-columns: 0.82fr 1.18fr;
@@ -414,6 +419,116 @@ h3 {
 .sample li {
   margin-bottom: 10px;
   color: var(--muted);
+}
+
+.proof-hero {
+  background: var(--surface);
+}
+
+.proof-lab {
+  border-top: 1px solid rgba(31, 42, 46, 0.1);
+}
+
+.proof-lab.alt {
+  background: var(--panel);
+}
+
+.proof-case {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.15fr) minmax(260px, 0.7fr);
+  gap: 16px;
+  align-items: stretch;
+}
+
+.proof-pane,
+.proof-explain {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 22px;
+  box-shadow: var(--shadow);
+}
+
+.proof-pane span,
+.proof-explain span {
+  color: var(--accent-strong);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.proof-pane.weak {
+  background: var(--bg);
+}
+
+.proof-pane.weak span {
+  color: var(--danger);
+}
+
+.proof-pane.strong {
+  border-color: rgba(23, 107, 91, 0.42);
+}
+
+.proof-pane h3,
+.proof-explain p {
+  margin-top: 10px;
+}
+
+.proof-pane ul {
+  margin-bottom: 0;
+  padding-left: 18px;
+}
+
+.proof-pane li {
+  margin-bottom: 10px;
+  color: var(--muted);
+}
+
+.proof-pane li:last-child {
+  margin-bottom: 0;
+}
+
+.proof-explain {
+  background: var(--ink);
+  color: #fff;
+}
+
+.proof-explain span,
+.proof-explain p {
+  color: rgba(255, 255, 255, 0.74);
+}
+
+.proof-scoreboard {
+  background: var(--surface);
+  border-top: 1px solid rgba(31, 42, 46, 0.1);
+}
+
+.score-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.score-grid div {
+  display: grid;
+  gap: 9px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--bg);
+  padding: 20px;
+}
+
+.score-grid strong {
+  font-size: 1.08rem;
+}
+
+.score-grid span {
+  color: var(--muted);
+}
+
+.compact-contact {
+  display: block;
 }
 
 .career-reads {
@@ -1235,6 +1350,8 @@ h3 {
   .dashboard-preview,
   .operator-grid,
   .workflow-board,
+  .proof-case,
+  .score-grid,
   .journey-grid,
   .article-grid {
     grid-template-columns: 1fr 1fr;
@@ -1305,6 +1422,8 @@ h3 {
   .dashboard-preview,
   .operator-grid,
   .workflow-board,
+  .proof-case,
+  .score-grid,
   .tracker-row,
   .journey-grid,
   .article-grid,
