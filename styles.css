@@ -1096,6 +1096,84 @@ h3 {
   font-weight: 800;
 }
 
+.operator-system {
+  border-top: 1px solid rgba(31, 42, 46, 0.1);
+  background: var(--panel);
+}
+
+.operator-system .section-heading p:not(.eyebrow) {
+  max-width: 760px;
+  color: var(--muted);
+}
+
+.operator-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.operator-card,
+.workflow-column {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 22px;
+  box-shadow: var(--shadow);
+}
+
+.operator-card.priority {
+  background: var(--ink);
+  color: #ffffff;
+}
+
+.operator-card span,
+.workflow-column span {
+  color: var(--accent-strong);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.operator-card.priority span,
+.operator-card.priority p {
+  color: rgba(255, 255, 255, 0.74);
+}
+
+.operator-card h3,
+.workflow-column h3 {
+  margin: 10px 0;
+}
+
+.operator-card p,
+.workflow-column li {
+  color: var(--muted);
+}
+
+.workflow-system {
+  background: var(--surface);
+  border-top: 1px solid rgba(31, 42, 46, 0.1);
+}
+
+.workflow-board {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.workflow-column {
+  background: var(--bg);
+}
+
+.workflow-column ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.workflow-column li {
+  margin-bottom: 8px;
+}
+
 .journey-links {
   background: var(--bg);
 }
@@ -1155,6 +1233,8 @@ h3 {
   .steps,
   .finder-controls,
   .dashboard-preview,
+  .operator-grid,
+  .workflow-board,
   .journey-grid,
   .article-grid {
     grid-template-columns: 1fr 1fr;
@@ -1223,6 +1303,8 @@ h3 {
   .listing-grid,
   .opening-grid,
   .dashboard-preview,
+  .operator-grid,
+  .workflow-board,
   .tracker-row,
   .journey-grid,
   .article-grid,
