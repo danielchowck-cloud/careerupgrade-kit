@@ -304,7 +304,7 @@ const targetData = [
   ["Science, Research & Academia", "Research Assistant", "first-job", "Research design, writing, analysis, ethics"],
 ].map(([industry, role, stage, evidence]) => ({ industry, role, stage, evidence }));
 
-const marketUpdated = "19 Jul 2026";
+const marketUpdated = "20 Jul 2026";
 
 const featuredOpenings = [
   ["Marketing Intern (AI & Digital Marketing)", "Linkwave Technologies", "Marketing, Sales & Business", "internship", "https://sg.jobstreet.com/job/93339013?origin=cardTitle&ref=search-standalone&type=standard", "16 Jul 2026", "JobStreet SG"],
@@ -343,7 +343,7 @@ const featuredOpenings = [
   industry,
   stage,
   source,
-  checked: "19 Jul 2026",
+  checked: "20 Jul 2026",
   posted,
   url,
 }));
