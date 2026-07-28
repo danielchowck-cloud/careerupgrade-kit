@@ -304,7 +304,7 @@ const targetData = [
   ["Science, Research & Academia", "Research Assistant", "first-job", "Research design, writing, analysis, ethics"],
 ].map(([industry, role, stage, evidence]) => ({ industry, role, stage, evidence }));
 
-const marketUpdated = "28 Jul 2026";
+const marketUpdated = "29 Jul 2026";
 
 const featuredOpenings = [
   ["Marketing Intern (Social Media)", "CONFIRM GOOD", "Design, Media & Communications", "internship", "https://www.mycareersfuture.gov.sg/job/advertising/marketing-intern-confirm-good-117a86a301a2ac79b4daa7acba5706f2", "Posted 27 Jul 2026", "MyCareersFuture"],
@@ -391,7 +391,7 @@ const featuredOpenings = [
   industry,
   stage,
   source,
-  checked: "28 Jul 2026",
+  checked: "29 Jul 2026",
   posted,
   url,
 }));
