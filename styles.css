@@ -1330,6 +1330,69 @@ h3 {
   color: var(--muted);
 }
 
+.seo-guides {
+  border-top: 1px solid rgba(31, 42, 46, 0.1);
+  background: var(--surface);
+}
+
+.seo-guide-grid,
+.seo-two-column {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.seo-guide-card,
+.seo-two-column article {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--bg);
+  padding: 24px;
+}
+
+.seo-guide-card {
+  display: block;
+  min-height: 210px;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.seo-guide-card span {
+  color: var(--accent-strong);
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.seo-guide-card strong {
+  display: block;
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.seo-guide-card p,
+.seo-two-column p,
+.seo-two-column li {
+  color: var(--muted);
+}
+
+.seo-hero {
+  max-width: 1040px;
+}
+
+.seo-content {
+  background: var(--surface);
+}
+
+.seo-two-column ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.seo-two-column li {
+  margin-bottom: 10px;
+}
+
 @media (max-width: 980px) {
   .hero,
   .split,
@@ -1353,6 +1416,8 @@ h3 {
   .proof-case,
   .score-grid,
   .journey-grid,
+  .seo-guide-grid,
+  .seo-two-column,
   .article-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -1426,6 +1491,8 @@ h3 {
   .score-grid,
   .tracker-row,
   .journey-grid,
+  .seo-guide-grid,
+  .seo-two-column,
   .article-grid,
   .payment-hero,
   .payment-steps {
