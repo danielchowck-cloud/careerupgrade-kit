@@ -304,9 +304,15 @@ const targetData = [
   ["Science, Research & Academia", "Research Assistant", "first-job", "Research design, writing, analysis, ethics"],
 ].map(([industry, role, stage, evidence]) => ({ industry, role, stage, evidence }));
 
-const marketUpdated = "29 Jul 2026";
+const marketUpdated = "31 Jul 2026";
 
 const featuredOpenings = [
+  ["Machine Learning Intern, Behaviors Research", "Motional Singapore", "Technology, AI & Data", "internship", "https://www.mycareersfuture.gov.sg/job/machine-learning-intern-behaviors-research-motional-singapore-40830e191712c839d36281609f87ebfe", "Crawled 31 Jul 2026", "MyCareersFuture"],
+  ["Software Engineering Intern (Uni Undergrad)", "Respiree", "Technology, AI & Data", "internship", "https://www.mycareersfuture.gov.sg/job/software-engineering-intern-respiree-f02b039184daf939e2de8924d7e68fab", "Crawled 31 Jul 2026", "MyCareersFuture"],
+  ["Legal Intern", "Prosper Cap Corporation Limited", "Legal, Policy, Public Sector & ESG", "internship", "https://sg.jobstreet.com/intern-jobs", "Listed 7h ago", "JobStreet SG"],
+  ["Warehouse Intern", "Cyrus Technology Pte Ltd", "Supply Chain, Logistics & Operations", "internship", "https://sg.jobstreet.com/intern-jobs", "Listed 5h ago", "JobStreet SG"],
+  ["People Operations Intern - People Operations & Services Team (Fall 2026)", "Shopee", "Human Resources, Admin & Education", "internship", "https://sg.indeed.com/viewjob?jk=1d0cc1fdb17ae95a", "Crawled 27 Jul 2026", "Indeed Singapore"],
+  ["2026 - 2027 Information Technology Intern", "StepStone Group", "Technology, AI & Data", "internship", "https://sg.indeed.com/viewjob?jk=ed23e16fa2e0e116", "Crawled 31 Jul 2026", "Indeed Singapore"],
   ["Marketing Intern (Social Media)", "CONFIRM GOOD", "Design, Media & Communications", "internship", "https://www.mycareersfuture.gov.sg/job/advertising/marketing-intern-confirm-good-117a86a301a2ac79b4daa7acba5706f2", "Posted 27 Jul 2026", "MyCareersFuture"],
   ["Data Scientist Intern (AI Analyst Intern)", "ONE TECH STOP", "Technology, AI & Data", "internship", "https://www.mycareersfuture.gov.sg/job/information-technology/data-scientist-intern-one-tech-stop-2b121bc509dcce4e301d5c91b77bd688?event=Search&source=MCF", "Posted 27 Jul 2026", "MyCareersFuture"],
   ["Data Scientist Intern (AI Engineer Intern)", "ONE TECH STOP", "Technology, AI & Data", "internship", "https://www.mycareersfuture.gov.sg/job/information-technology/data-scientist-intern-one-tech-stop-bd7febfd9af0863776669e07bfac23dd?event=Search&source=MCF", "Posted 27 Jul 2026", "MyCareersFuture"],
@@ -348,6 +354,11 @@ const featuredOpenings = [
   ["Intern, Tenant Management, Singapore (Funan) (Summer 2026)", "CapitaLand", "Built Environment, Real Estate & Facilities", "internship", "https://jobs.singaporeglobalnetwork.gov.sg/jobs/capitaland?internshipOnly=true", "Posted 30+ days ago", "Singapore Global Network"],
   ["IT Security Intern (6 months)", "Sea", "Technology, AI & Data", "internship", "https://jobs.singaporeglobalnetwork.gov.sg/jobs/sea?internshipOnly=true", "Posted 9d ago", "Singapore Global Network"],
   ["Repair Operations Intern", "Razer", "Supply Chain, Logistics & Operations", "internship", "https://jobs.singaporeglobalnetwork.gov.sg/jobs/razer?internshipOnly=true", "Posted 30+ days ago", "Singapore Global Network"],
+  ["Tax Specialist (Fresh Graduate / Entry-level)", "BITMAIN DEVELOPMENT PTE. LTD.", "Banking, Finance, Insurance & Accounting", "first-job", "https://www.mycareersfuture.gov.sg/job/accounting/tax-specialist-bitmain-development-88594f92e6e8090e77d235152add5b47", "Posted 30 Jul 2026", "MyCareersFuture"],
+  ["Finance Specialist (Fresh Graduate/Entry-level)", "BITMAIN DEVELOPMENT PTE. LTD.", "Banking, Finance, Insurance & Accounting", "first-job", "https://sg.indeed.com/viewjob?jk=34469d6b0611584d", "Crawled 31 Jul 2026", "Indeed Singapore"],
+  ["AI Algorithm Engineer (Entry-Level / Fresh Graduates)", "Reolink", "Technology, AI & Data", "first-job", "https://sg.indeed.com/viewjob?jk=d46495c2d6efdfd4", "Crawled 31 Jul 2026", "Indeed Singapore"],
+  ["Admin Assistant @ Bank [Up to $2.6k, Entry Level, No Exp Ok]", "Talentvis Singapore Pte Ltd", "Human Resources, Admin & Education", "first-job", "https://sg.jobstreet.com/fresh-graduate-entry-level-jobs/in-Singapore", "Listed 6h ago", "JobStreet SG"],
+  ["Entry-Level Marketing Executive (Brand & Campaigns | Training Provided)", "Eminence Organization", "Marketing, Sales & Business", "first-job", "https://sg.jobstreet.com/fresh-graduate-entry-level-jobs", "Listed 5h ago", "JobStreet SG"],
   ["Sales & Marketing (Entry Level)", "SIMPLE RECRUIT", "Marketing, Sales & Business", "first-job", "https://www.mycareersfuture.gov.sg/job/marketing/%F0%9F%8C%8F-sales-marketing-simple-recruit-7c5cd770486aa328ab3bd9b5876f1dad", "Posted 27 Jul 2026", "MyCareersFuture"],
   ["Full-Time Marketing & Events Executive", "AUDERE MARKETING", "Marketing, Sales & Business", "first-job", "https://www.mycareersfuture.gov.sg/job/marketing/%F0%9F%92%A1-full-time-marketing-events-executive-audere-marketing-641e5856fed0a470a1667beea65fb48f?event=RecommendedJobJD&source=MCF", "Posted 27 Jul 2026", "MyCareersFuture"],
   ["Entry Level Marketing", "ALTIUS ORG", "Marketing, Sales & Business", "first-job", "https://www.mycareersfuture.gov.sg/job/advertising/marketing-%E2%9D%A4%EF%B8%8F-altius-org-0e6e5671355df8a930c0f093504c19fd", "Posted 27 Jul 2026", "MyCareersFuture"],
@@ -391,7 +402,7 @@ const featuredOpenings = [
   industry,
   stage,
   source,
-  checked: "29 Jul 2026",
+  checked: "31 Jul 2026",
   posted,
   url,
 }));
@@ -437,10 +448,14 @@ function sourceSearchLinks(role, stage = "internship") {
     ? encodeURIComponent(`${role} graduate`)
     : encodeURIComponent(`${role} intern`);
 
+  const jobStreetPath = stage === "first-job"
+    ? "fresh-graduate-entry-level-jobs"
+    : "student-internship-jobs";
+
   return [
     ["MyCareersFuture", liveSearchUrl(role, stage)],
     ["Indeed SG", `https://sg.indeed.com/jobs?q=${stageQuery}&sort=date`],
-    ["JobStreet SG", `https://sg.jobstreet.com/${jobStreetQuery}-jobs?sortmode=ListedDate`],
+    ["JobStreet SG", `https://sg.jobstreet.com/${jobStreetPath}?keywords=${jobStreetQuery}&sortmode=ListedDate`],
     ["Singapore Global Network", `https://jobs.singaporeglobalnetwork.gov.sg/jobs?query=${sgnQuery}${stage === "internship" ? "&internshipOnly=true" : ""}`],
   ];
 }
