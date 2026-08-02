@@ -304,13 +304,13 @@ const targetData = [
   ["Science, Research & Academia", "Research Assistant", "first-job", "Research design, writing, analysis, ethics"],
 ].map(([industry, role, stage, evidence]) => ({ industry, role, stage, evidence }));
 
-const marketUpdated = "2 Aug 2026";
+const marketUpdated = "3 Aug 2026";
 
 const featuredOpenings = [
   ["AI Engineer Intern (Aug - Dec 2026)", "SHOKZ (SINGAPORE) PTE. LTD.", "Technology, AI & Data", "internship", "https://sg.jobstreet.com/job/93624878?origin=cardTitle&ref=search-standalone&type=standard", "Posted 10h ago", "JobStreet SG"],
   ["Intern - AI Engineering (Aug to Dec 2026)", "Lighthouse Canton", "Technology, AI & Data", "internship", "https://www.mycareersfuture.gov.sg/job/intern-ai-engineering-lighthouse-canton-a7e0c1bf7fe1188a3ad8e440592ee501", "Posted 7 Jul 2026; closing 6 Aug 2026", "MyCareersFuture"],
   ["Product Management Intern", "Horizon Labs", "Technology, AI & Data", "internship", "https://sg.jobstreet.com/job/92587796", "Posted 30d+ ago; Aug 2026 flexible start", "JobStreet SG"],
-  ["Product Analyst Intern, Traffic & Content - Business Intelligence AI Bot (Fall 2026)", "Shopee", "Technology, AI & Data", "internship", "https://sg.indeed.com/q-3-weeks-internship-jobs.html", "Live Indeed result crawled 27 Jul 2026", "Indeed Singapore"],
+  ["Cloud Software Engineering Intern (Uni Undergrad)", "Respiree", "Technology, AI & Data", "internship", "https://www.mycareersfuture.gov.sg/job/engineering/cloud-software-engineering-intern-respiree-ca7942b01ef53e88cd690b263f32c6af", "Posted 28 Jul 2026; closing 27 Aug 2026", "MyCareersFuture"],
   ["Research Science: Internship opportunities", "Microsoft", "Technology, AI & Data", "internship", "https://jobs.singaporeglobalnetwork.gov.sg/jobs/microsoft?internshipOnly=true", "Posted 3d ago", "Singapore Global Network"],
   ["Accounting Intern- Immediate Hiring", "SMCC OVERSEAS SINGAPORE PTE LTD", "Banking, Finance, Insurance & Accounting", "internship", "https://sg.jobstreet.com/job/93519470", "Posted 4d ago", "JobStreet SG"],
   ["HUMAN RESOURCES INTERN - P&G Management Internship Program (Summer 2027)", "Procter & Gamble I'ntl Operations SA Singapore Branch", "Human Resources, Admin & Education", "internship", "https://sg.jobstreet.com/job/93576312", "Posted 5d ago", "JobStreet SG"],
@@ -322,17 +322,17 @@ const featuredOpenings = [
   ["Intern, Guest Service", "CapitaLand", "Hospitality, Tourism & Events", "internship", "https://jobs.singaporeglobalnetwork.gov.sg/jobs/capitaland?internshipOnly=true", "Live SGN internship listing", "Singapore Global Network"],
   ["Intern, Lease Management, Property Tax (Commercial)", "CapitaLand", "Built Environment, Real Estate & Facilities", "internship", "https://jobs.singaporeglobalnetwork.gov.sg/jobs/capitaland?internshipOnly=true", "Posted 3d ago", "Singapore Global Network"],
   ["IT Project Management Intern (6 Months)", "Sea", "Technology, AI & Data", "internship", "https://jobs.singaporeglobalnetwork.gov.sg/jobs/sea?internshipOnly=true", "Posted 8d ago", "Singapore Global Network"],
-  ["Marketing & Sales Intern", "Aurorafood Pte Ltd", "Marketing, Sales & Business", "internship", "https://sg.indeed.com/q-internship-april-2026-jobs.html", "Live Indeed result crawled 3d ago", "Indeed Singapore"],
+  ["Business Development Intern", "Tee Tree Investments", "Marketing, Sales & Business", "internship", "https://www.mycareersfuture.gov.sg/job/general-management/business-development-intern-tee-tree-investments-102b73af8786cbfcfdcc6db852a1b53c", "Posted 31 Jul 2026; closing 30 Aug 2026", "MyCareersFuture"],
   ["Demand Generation Rep Intern", "Amazon Web Services Singapore Private Limited", "Marketing, Sales & Business", "internship", "https://sg.indeed.com/q-june-july-internship-jobs.html", "Live Indeed result crawled 2d ago", "Indeed Singapore"],
   ["Internship - Polytechnic (2026)", "PSA Singapore", "Maritime, Aviation & Transport", "internship", "https://sg.indeed.com/Internship-European-jobs-in-Singapore", "Live Indeed result crawled 3d ago", "Indeed Singapore"],
   ["Intern (Sports) - Aug 2026 Intake", "DULWICH COLLEGE (SINGAPORE)", "Human Resources, Admin & Education", "internship", "https://sg.jobstreet.com/student-internship-jobs/in-West-Region", "Live JobStreet result", "JobStreet SG"],
   ["Logistics Intern", "NatSteel Holdings Pte Ltd", "Supply Chain, Logistics & Operations", "internship", "https://sg.jobstreet.com/student-internship-jobs/in-West-Region", "Listed 9d ago", "JobStreet SG"],
   ["Intern - HR", "Haleon", "Human Resources, Admin & Education", "internship", "https://sg.jobstreet.com/student-internship-jobs/in-West-Region", "Live JobStreet result", "JobStreet SG"],
   ["Education & Laboratory Intern", "Achievers Dream Learning Centre", "Science, Research & Academia", "internship", "https://sg.jobstreet.com/student-internship-jobs/in-West-Region", "Live JobStreet result", "JobStreet SG"],
-  ["Financial Services Consultant", "Placement Professionals", "Banking, Finance, Insurance & Accounting", "first-job", "https://www.mycareersfuture.gov.sg/job/banking-finance/fresh-graduates-financial-services-consultant-placement-professionals-8e8f95f88d4b848753a1865620c7bcb2", "Live MyCareersFuture fresh-graduate result", "MyCareersFuture"],
+  ["Event & Marketing Associate (Entry Level)", "SKILLMATCH RECRUITMENT", "Marketing, Sales & Business", "first-job", "https://www.mycareersfuture.gov.sg/job/advertising/event-marketing-associate-skillmatch-recruitment-4be09d2f9d7ef953e7350843c63c271c", "Posted 01 Aug 2026; closing 08 Aug 2026", "MyCareersFuture"],
   ["3 Ola Trainee - Back-End Engineer - Go / PHP / Java Game Server", "OLA PARTY PTE. LTD.", "Technology, AI & Data", "first-job", "https://www.mycareersfuture.gov.sg/job/information-technology/3-ola-trainee-back-end-engineer-%E2%80%94-go-php-java-game-server-ola-party-fdd2bdf560f1463bfd47267d9b94c4e6", "Published 3d ago", "MyCareersFuture"],
   ["Computer Software Engineer (Fresh Graduate)", "XIAOMI TECHNOLOGIES SINGAPORE PTE. LTD.", "Technology, AI & Data", "first-job", "https://www.mycareersfuture.gov.sg/job/engineering/computer-software-engineer-xiaomi-technologies-singapore-a334e7c7e047ee107535d99979b09c8d?event=RecommendedJobJD&source=MCF", "Published last week", "MyCareersFuture"],
-  ["Technical Cloud Architect - Fresh Graduate Analyst", "Accenture", "Technology, AI & Data", "first-job", "https://sg.indeed.com/viewjob?jk=2dad15872184c2b4", "Live Indeed listing crawled today", "Indeed Singapore"],
+  ["Software DevOps Engineer (Fresh Graduate)", "Talentsis", "Technology, AI & Data", "first-job", "https://www.mycareersfuture.gov.sg/job/engineering/software-devops-engineer-talentsis-04762bfd9400720bfd45f6f5ae10037f", "Posted 31 Jul 2026; closing 30 Aug 2026", "MyCareersFuture"],
   ["Graduate Analyst - Talent Advancement Program", "Accenture", "Professional Services, Consulting & Advisory", "first-job", "https://sg.indeed.com/viewjob?jk=a726c199037f55ca", "Live Indeed listing crawled yesterday", "Indeed Singapore"],
   ["Management Trainee (Fresh Graduate Programme)", "AIA Group Limited", "Banking, Finance, Insurance & Accounting", "first-job", "https://sg.indeed.com/viewjob?jk=6aa6f0fa9a904abf", "Live Indeed listing crawled 2d ago", "Indeed Singapore"],
   ["[ENTRY LEVEL/FRESH GRAD] PRODUCT ASSOCIATE", "VA ORGANIZATION", "Marketing, Sales & Business", "first-job", "https://sg.indeed.com/viewjob?jk=6c690967bf567b25", "Live Indeed listing crawled today", "Indeed Singapore"],
@@ -355,7 +355,7 @@ const featuredOpenings = [
   industry,
   stage,
   source,
-  checked: "2 Aug 2026",
+  checked: "3 Aug 2026",
   posted,
   url,
 }));
