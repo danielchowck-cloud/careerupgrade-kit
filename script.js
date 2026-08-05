@@ -304,10 +304,11 @@ const targetData = [
   ["Science, Research & Academia", "Research Assistant", "first-job", "Research design, writing, analysis, ethics"],
 ].map(([industry, role, stage, evidence]) => ({ industry, role, stage, evidence }));
 
-const marketUpdated = "5 Aug 2026";
+const marketUpdated = "6 Aug 2026";
 
 const featuredOpenings = [
-  ["Financial Intern", "ACE ASCENTIA PTE. LTD.", "Banking, Finance, Insurance & Accounting", "internship", "https://www.mycareersfuture.gov.sg/job/banking-finance/financial-intern-ace-ascentia-bac3ce0fc420a8409ca1b15dc49dcb63?event=Search&source=MCF", "Posted 04 Aug 2026; closing 18 Aug 2026", "MyCareersFuture"],
+  ["Creative Content & Social Media Intern", "KINRY FOOD INGREDIENTS PTE. LTD.", "Design, Media & Communications", "internship", "https://www.mycareersfuture.gov.sg/job/design/creative-content-social-media-intern-kinry-food-ingredients-e3dab2d44c44461ce101ab49c85d581d", "Posted 05 Aug 2026; closing 04 Sep 2026", "MyCareersFuture"],
+  ["Business Development Intern", "ANYWHEEL PTE. LTD.", "Marketing, Sales & Business", "internship", "https://www.mycareersfuture.gov.sg/job/marketing/business-development-intern-anywheel-13aa3d4508ca035399195e64682a614c?event=Search&source=MCF", "Posted 05 Aug 2026; closing 04 Sep 2026", "MyCareersFuture"],
   ["Investment Analyst Intern [Path to Full Time Offer]", "SILVERSTREAK ANALYTICS PTE. LTD.", "Banking, Finance, Insurance & Accounting", "internship", "https://www.mycareersfuture.gov.sg/job/banking-finance/investment-analyst-intern-path-full-time-offer-silverstreak-analytics-b24ba1ce993db0b38b3fa879d28670f0?event=Search&source=MCF", "Posted 03 Aug 2026; closing 17 Aug 2026", "MyCareersFuture"],
   ["Quantitative Research Intern", "FRAGMENT WORKS PTE. LTD.", "Technology, AI & Data", "internship", "https://www.mycareersfuture.gov.sg/job/information-technology/quantitative-research-intern-fragment-works-f114cba55a2cec520ab249a7f2479bdd?event=RecommendedJobJD&source=MCF", "Posted 31 Jul 2026; closing 30 Aug 2026", "MyCareersFuture"],
   ["Intern - Language Research & AI Training", "X STAR TECHNOLOGY PTE. LTD.", "Technology, AI & Data", "internship", "https://www.mycareersfuture.gov.sg/job/others/intern-language-research-ai-training-x-star-technology-ffd7f6a4513dce952e29b32835764bc9?event=Search&source=MCF", "Posted 04 Aug 2026; closing 03 Sep 2026", "MyCareersFuture"],
@@ -320,22 +321,23 @@ const featuredOpenings = [
   ["HR Intern", "ACP COMPUTER TRAINING & CONSULTANCY PTE. LTD.", "Human Resources, Admin & Education", "internship", "https://www.mycareersfuture.gov.sg/job/human-resources/hr-intern-ac-p-computer-training-consultancy-eb46e8d376a4b53a294ffc3e073b64ad?event=RecommendedJobJD&source=MCF", "Posted 03 Aug 2026; closing 10 Aug 2026", "MyCareersFuture"],
   ["Internship, HR Assistant (Medical Industry) - 3 months, 6 months", "HCT RECRUIT EXPRESS PTE. LTD.", "Healthcare, Biomedical & Pharma", "internship", "https://www.mycareersfuture.gov.sg/job/human-resources/internship-hr-assistant-%E2%80%93-3-months-6-months-hct-recruit-express-caa5d8ed77c4fbd82d50270dcfa80765?event=Search&source=MCF", "Posted 03 Aug 2026; closing 02 Sep 2026", "MyCareersFuture"],
   ["Finance Intern", "JTA CONSULTANCY PTE. LTD.", "Banking, Finance, Insurance & Accounting", "internship", "https://www.mycareersfuture.gov.sg/job/banking-finance/finance-intern-jta-consultancy-de500480e8419590f972c84427d1b8a3?event=Search&source=MCF", "Posted 03 Aug 2026; closing 10 Aug 2026", "MyCareersFuture"],
-  ["People & Office Intern", "D4L DATA4LIFE ASIA LIMITED", "Human Resources, Admin & Education", "internship", "https://sg.jobstreet.com/job/93120417", "Job period from 10 Aug 2026; crawled last week", "JobStreet SG"],
+  ["Corporate Development (Intern)", "LHN Group Pte Ltd", "Built Environment, Real Estate & Facilities", "internship", "https://sg.jobstreet.com/job/93616350", "Listed 28 Jul 2026; job period from Aug 2026", "JobStreet SG"],
   ["Intern - Listing Compliance (August 2026 to December 2026)", "SINGAPORE EXCHANGE LIMITED", "Legal, Policy, Public Sector & ESG", "internship", "https://sg.jobstreet.com/job/93423083", "Crawled last week; Aug-Dec 2026 internship", "JobStreet SG"],
   ["Business Development (Merchant Development) Intern", "FoodLine", "Retail, FMCG & E-Commerce", "internship", "https://sg.indeed.com/viewjob?jk=39b3b388e4dd331c", "Posted 01 Aug 2026", "Indeed Singapore"],
   ["Intern, Business Relationship Management, ESG product, Singapore", "FITCH RATINGS", "Legal, Policy, Public Sector & ESG", "internship", "https://sg.indeed.com/viewjob?jk=d4ffc45c81b9e67e", "Posted 15 Jul 2026", "Indeed Singapore"],
-  ["Systems Engineer Intern", "SIGNIFY", "Energy, Utilities & Sustainability", "internship", "https://sg.indeed.com/viewjob?jk=008b11658034c5cd", "Posted 06 Jul 2026", "Indeed Singapore"],
+  ["Risk System Project Delivery Intern (Aug to Feb 2027)", "UOB", "Banking, Finance, Insurance & Accounting", "internship", "https://jobs.singaporeglobalnetwork.gov.sg/jobs/uob?internshipOnly=true", "Posted 3 days ago", "Singapore Global Network"],
   ["Intern, Occupational Health & Safety", "Grab", "Supply Chain, Logistics & Operations", "internship", "https://jobs.singaporeglobalnetwork.gov.sg/jobs/grab", "Posted less than 1 day ago", "Singapore Global Network"],
   ["The Public Relations Intern (Corporate Communications)", "Razer", "Design, Media & Communications", "internship", "https://jobs.singaporeglobalnetwork.gov.sg/jobs/razer?internshipOnly=true", "Posted less than 1 day ago", "Singapore Global Network"],
   ["Undergraduate Intern", "Dell Technologies", "Technology, AI & Data", "internship", "https://jobs.singaporeglobalnetwork.gov.sg/jobs/dell-technologies?internshipOnly=true", "Posted less than 1 day ago", "Singapore Global Network"],
   ["Commercial Banking Credit Intern (Jan 2027-May 2027)", "UOB", "Banking, Finance, Insurance & Accounting", "internship", "https://jobs.singaporeglobalnetwork.gov.sg/jobs/uob?internshipOnly=true", "Posted 5 days ago", "Singapore Global Network"],
-  ["Your Next Chapter Starts With One Yes", "SKILLMATCH RECRUITMENT", "Marketing, Sales & Business", "first-job", "https://www.mycareersfuture.gov.sg/job/general-management/%F0%9F%9A%AAyour-next-chapter-starts-one-yes-skillmatch-recruitment-8190d30581da511478dcd4dfd0a82924?event=Search&source=MCF", "Posted 04 Aug 2026; closing 25 Aug 2026", "MyCareersFuture"],
+  ["Fresh Graduate Sales & Marketing", "ZENVORA NOVA ENTERPRISE", "Marketing, Sales & Business", "first-job", "https://www.mycareersfuture.gov.sg/job/advertising/fresh-graduate-%F0%9F%A7%91%E2%80%8D%F0%9F%8E%93-sales-marketing-zenvora-nova-enterprise-cb5b3a8d67d57c44e41219c42fc43a73?event=RecommendedJobJD&source=MCF", "Posted 03 Aug 2026; closing 17 Aug 2026", "MyCareersFuture"],
+  ["Site Engineer (Fresh Graduate)", "RICH CONSTRUCTION COMPANY PTE. LTD.", "Built Environment, Real Estate & Facilities", "first-job", "https://www.mycareersfuture.gov.sg/job/building-construction/site-engineer-rich-construction-company-49e902e5ad378fd349be35820f3cb734?event=RecommendedJobJD&source=MCF", "Posted 03 Aug 2026; closing 17 Aug 2026", "MyCareersFuture"],
   ["Events Customer Service (Sales) (Entry Level)", "EMINENCE ORGANIZATION PTE. LTD.", "Hospitality, Tourism & Events", "first-job", "https://www.mycareersfuture.gov.sg/job/consulting/%F0%9F%8C%88-events-customer-service-%F0%9F%8C%88-eminence-organization-a8330ba9bc53d2c20d8f56a93a6a43c1", "Posted 04 Aug 2026; fresh/entry level", "MyCareersFuture"],
   ["Marketing & Events Executive (Entry-Level)", "SKILLMATCH RECRUITMENT", "Marketing, Sales & Business", "first-job", "https://www.mycareersfuture.gov.sg/job/advertising/marketing-events-executive-skillmatch-recruitment-74c4df31640ad6b7165f4dea3c3acab5?event=Search&source=MCF", "Posted 04 Aug 2026; closing 11 Aug 2026", "MyCareersFuture"],
   ["Sales Representative (Entry-level, Travel Opportunities)", "ROYAL ORG PTE. LTD.", "Marketing, Sales & Business", "first-job", "https://www.mycareersfuture.gov.sg/job/marketing/sales-representative-royal-org-6c7b648474b81fb116bca3d563f95e32", "Posted 04 Aug 2026; closing 03 Sep 2026", "MyCareersFuture"],
   ["Business Development Associate", "ONE PERCENT SG PTE. LTD.", "Marketing, Sales & Business", "first-job", "https://www.mycareersfuture.gov.sg/job/marketing/business-development-associate-one-percent-sg-815b27ebbbfaeac1fbe42019f9e327cf?event=Search&source=MCF", "Posted 04 Aug 2026; closing 03 Sep 2026", "MyCareersFuture"],
   ["Customer Experience Specialist", "AVARON PTE. LTD.", "Hospitality, Tourism & Events", "first-job", "https://www.mycareersfuture.gov.sg/job/customer-service/customer-experience-specialist-avaron-4147207e9bc1379176ea2d2ac2813168", "Posted 04 Aug 2026; fresh/entry level", "MyCareersFuture"],
-  ["Junior Sales & Marketing Associate | Training Provided", "WAVEWORKS", "Marketing, Sales & Business", "first-job", "https://www.mycareersfuture.gov.sg/job/junior-sales-marketing-associate-training-provided-waveworks-167aff2135811f7291a8b7884bd4d062", "Posted today; fresh/entry level", "MyCareersFuture"],
+  ["Program Manager (Fresh Graduate)", "HP", "Engineering, Semiconductor & Manufacturing", "first-job", "https://sg.indeed.com/viewjob?jk=47196244014a78ae", "Full-time fresh-graduate listing crawled last week", "Indeed Singapore"],
   ["Software DevOps Engineer (Fresh Graduate)", "TALENTSIS PTE. LTD.", "Technology, AI & Data", "first-job", "https://www.mycareersfuture.gov.sg/job/engineering/software-devops-engineer-talentsis-04762bfd9400720bfd45f6f5ae10037f", "Fresh graduate; crawled today", "MyCareersFuture"],
   ["Business Analyst / Junior Consultant", "SCIENTE INTERNATIONAL PTE. LTD.", "Professional Services, Consulting & Advisory", "first-job", "https://www.mycareersfuture.gov.sg/job/business-analyst-sciente-international-e22e77d6af432df28b66590c6b533d89", "Fresh/entry level; crawled yesterday", "MyCareersFuture"],
   ["Assistant Editor (PhD Graduates)", "MDPI PTE. LTD.", "Science, Research & Academia", "first-job", "https://www.mycareersfuture.gov.sg/job/sciences/assistant-editor-mdpi-f1fee2f03b4bf70e5c2d62287e8ffbfb", "Fresh/entry level; crawled today", "MyCareersFuture"],
@@ -354,7 +356,7 @@ const featuredOpenings = [
   industry,
   stage,
   source,
-  checked: "5 Aug 2026",
+  checked: "6 Aug 2026",
   posted,
   url,
 }));
@@ -402,7 +404,7 @@ function sourceSearchLinks(role, stage = "internship") {
 
   const jobStreetPath = stage === "first-job"
     ? "fresh-graduate-entry-level-jobs"
-    : "internship";
+    : "internship-jobs";
 
   return [
     ["MyCareersFuture", liveSearchUrl(role, stage)],
