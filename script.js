@@ -304,7 +304,7 @@ const targetData = [
   ["Science, Research & Academia", "Research Assistant", "first-job", "Research design, writing, analysis, ethics"],
 ].map(([industry, role, stage, evidence]) => ({ industry, role, stage, evidence }));
 
-const marketUpdated = "7 Aug 2026";
+const marketUpdated = "8 Aug 2026";
 
 const featuredOpenings = [
   ["Industry Consultant Intern (6 Months | $1,600)", "ADECCO PERSONNEL PTE LTD", "Professional Services, Consulting & Advisory", "internship", "https://www.mycareersfuture.gov.sg/job/consulting/industry-consultant-intern-adecco-personnel-31dd315a631272af7a69a607d85c00ec?event=Search&source=MCF", "Posted 06 Aug 2026; closing 05 Sep 2026", "MyCareersFuture"],
@@ -348,7 +348,7 @@ const featuredOpenings = [
   ["Sales Representative (Entry-level, Travel Opportunities)", "ROYAL ORG PTE. LTD.", "Marketing, Sales & Business", "first-job", "https://www.mycareersfuture.gov.sg/job/marketing/sales-representative-royal-org-6c7b648474b81fb116bca3d563f95e32", "Posted 04 Aug 2026; closing 03 Sep 2026", "MyCareersFuture"],
   ["Business Development Associate", "ONE PERCENT SG PTE. LTD.", "Marketing, Sales & Business", "first-job", "https://www.mycareersfuture.gov.sg/job/marketing/business-development-associate-one-percent-sg-815b27ebbbfaeac1fbe42019f9e327cf?event=Search&source=MCF", "Posted 04 Aug 2026; closing 03 Sep 2026", "MyCareersFuture"],
   ["Customer Experience Specialist", "AVARON PTE. LTD.", "Hospitality, Tourism & Events", "first-job", "https://www.mycareersfuture.gov.sg/job/customer-service/customer-experience-specialist-avaron-4147207e9bc1379176ea2d2ac2813168", "Posted 04 Aug 2026; fresh/entry level", "MyCareersFuture"],
-  ["Program Manager (Fresh Graduate)", "HP", "Engineering, Semiconductor & Manufacturing", "first-job", "https://sg.indeed.com/viewjob?jk=47196244014a78ae", "Full-time fresh-graduate listing crawled last week", "Indeed Singapore"],
+  ["Network Engineer (Fresh Graduate)", "EXORDIOR TECHNOLOGIES PTE. LTD.", "Technology, AI & Data", "first-job", "https://sg.indeed.com/viewjob?jk=ef8d09bcb22ba8c3", "Full-time fresh-graduate listing crawled today", "Indeed Singapore"],
   ["Software DevOps Engineer (Fresh Graduate)", "TALENTSIS PTE. LTD.", "Technology, AI & Data", "first-job", "https://www.mycareersfuture.gov.sg/job/engineering/software-devops-engineer-talentsis-04762bfd9400720bfd45f6f5ae10037f", "Fresh graduate; crawled today", "MyCareersFuture"],
   ["Business Analyst / Junior Consultant", "SCIENTE INTERNATIONAL PTE. LTD.", "Professional Services, Consulting & Advisory", "first-job", "https://www.mycareersfuture.gov.sg/job/business-analyst-sciente-international-e22e77d6af432df28b66590c6b533d89", "Fresh/entry level; crawled yesterday", "MyCareersFuture"],
   ["Assistant Editor (PhD Graduates)", "MDPI PTE. LTD.", "Science, Research & Academia", "first-job", "https://www.mycareersfuture.gov.sg/job/sciences/assistant-editor-mdpi-f1fee2f03b4bf70e5c2d62287e8ffbfb", "Fresh/entry level; crawled today", "MyCareersFuture"],
@@ -369,7 +369,7 @@ const featuredOpenings = [
   industry,
   stage,
   source,
-  checked: "7 Aug 2026",
+  checked: "8 Aug 2026",
   posted,
   url,
 }));
