@@ -304,10 +304,13 @@ const targetData = [
   ["Science, Research & Academia", "Research Assistant", "first-job", "Research design, writing, analysis, ethics"],
 ].map(([industry, role, stage, evidence]) => ({ industry, role, stage, evidence }));
 
-const marketUpdated = "8 Aug 2026";
+const marketUpdated = "9 Aug 2026";
 
 const featuredOpenings = [
+  ["Intern - Listing Compliance (August 2026 to December 2026)", "SGX", "Legal, Policy, Public Sector & ESG", "internship", "https://sg.indeed.com/viewjob?jk=5d649090c5708ff7", "Crawled 09 Aug 2026; internship role", "Indeed Singapore"],
+  ["Internship: Group Human Resources, Talent Acquisition Experience, Talent Sourcing [Aug to Dec 2026]", "OCBC Bank", "Human Resources, Admin & Education", "internship", "https://jobs.singaporeglobalnetwork.gov.sg/jobs/ocbc?internshipOnly=true", "Posted 1 day ago", "Singapore Global Network"],
   ["Industry Consultant Intern (6 Months | $1,600)", "ADECCO PERSONNEL PTE LTD", "Professional Services, Consulting & Advisory", "internship", "https://www.mycareersfuture.gov.sg/job/consulting/industry-consultant-intern-adecco-personnel-31dd315a631272af7a69a607d85c00ec?event=Search&source=MCF", "Posted 06 Aug 2026; closing 05 Sep 2026", "MyCareersFuture"],
+  ["Product Intern", "AUGMENTUS PTE. LTD.", "Engineering, Semiconductor & Manufacturing", "internship", "https://www.mycareersfuture.gov.sg/job/engineering/product-intern-augmentus-d5adaf877abab0b2f58b9e091f7d57ba", "Posted 06 Aug 2026; closing 05 Sep 2026", "MyCareersFuture"],
   ["Data Engineer / BI (Intern)", "LHN GROUP PTE. LTD.", "Technology, AI & Data", "internship", "https://www.mycareersfuture.gov.sg/job/information-technology/data-engineer-bi-lhn-group-2d03e87b77042cdbc53598558b49a62e?event=Search&source=MCF", "Posted 05 Aug 2026; closing 04 Sep 2026", "MyCareersFuture"],
   ["Intern (Human Capital)", "YTL POWERSERAYA PTE. LIMITED", "Human Resources, Admin & Education", "internship", "https://www.mycareersfuture.gov.sg/job/others/intern-ytl-powerseraya-43b91ed89d0bfe8db61cc569ca172e37?event=Search&source=MCF", "Posted 05 Aug 2026; closing 04 Sep 2026", "MyCareersFuture"],
   ["Video Editor Intern", "CINTRA CONSULTANCY PTE. LTD.", "Design, Media & Communications", "internship", "https://www.mycareersfuture.gov.sg/job/advertising/video-editor-intern-cintra-consultancy-f3bcfd55234864a3cfc1c098dcef954b", "Posted 05 Aug 2026; closing 04 Sep 2026", "MyCareersFuture"],
@@ -326,17 +329,15 @@ const featuredOpenings = [
   ["HR Intern", "ACP COMPUTER TRAINING & CONSULTANCY PTE. LTD.", "Human Resources, Admin & Education", "internship", "https://www.mycareersfuture.gov.sg/job/human-resources/hr-intern-ac-p-computer-training-consultancy-eb46e8d376a4b53a294ffc3e073b64ad?event=RecommendedJobJD&source=MCF", "Posted 03 Aug 2026; closing 10 Aug 2026", "MyCareersFuture"],
   ["Internship, HR Assistant (Medical Industry) - 3 months, 6 months", "HCT RECRUIT EXPRESS PTE. LTD.", "Healthcare, Biomedical & Pharma", "internship", "https://www.mycareersfuture.gov.sg/job/human-resources/internship-hr-assistant-%E2%80%93-3-months-6-months-hct-recruit-express-caa5d8ed77c4fbd82d50270dcfa80765?event=Search&source=MCF", "Posted 03 Aug 2026; closing 02 Sep 2026", "MyCareersFuture"],
   ["Finance Intern", "JTA CONSULTANCY PTE. LTD.", "Banking, Finance, Insurance & Accounting", "internship", "https://www.mycareersfuture.gov.sg/job/banking-finance/finance-intern-jta-consultancy-de500480e8419590f972c84427d1b8a3?event=Search&source=MCF", "Posted 03 Aug 2026; closing 10 Aug 2026", "MyCareersFuture"],
-  ["Corporate Development (Intern)", "LHN Group Pte Ltd", "Built Environment, Real Estate & Facilities", "internship", "https://sg.jobstreet.com/job/93616350", "Listed 28 Jul 2026; job period from Aug 2026", "JobStreet SG"],
-  ["Intern - Listing Compliance (August 2026 to December 2026)", "SINGAPORE EXCHANGE LIMITED", "Legal, Policy, Public Sector & ESG", "internship", "https://sg.jobstreet.com/job/93423083", "Crawled last week; Aug-Dec 2026 internship", "JobStreet SG"],
+  ["Strategy & Market Research Internship", "Global Angle Pte Ltd", "Professional Services, Consulting & Advisory", "internship", "https://sg.jobstreet.com/job/93093735", "Listed 02 Jul 2026; job period from Aug 2026", "JobStreet SG"],
+  ["Marketing & Communications Intern", "The Red Pencil (Singapore)", "Social Services, Non-Profit & Community", "internship", "https://sg.jobstreet.com/job/93403924", "Listed Jul 2026; preferred start second week of Aug 2026", "JobStreet SG"],
   ["Intern or Part-Time, Restructuring and Insolvency", "Alvarez & Marsal", "Professional Services, Consulting & Advisory", "internship", "https://sg.indeed.com/viewjob?jk=fcb70b855a13c902", "Date posted 04 Aug 2026", "Indeed Singapore"],
   ["Business Development (Merchant Development) Intern", "FoodLine", "Retail, FMCG & E-Commerce", "internship", "https://sg.indeed.com/viewjob?jk=39b3b388e4dd331c", "Posted 01 Aug 2026", "Indeed Singapore"],
   ["Intern, Business Relationship Management, ESG product, Singapore", "FITCH RATINGS", "Legal, Policy, Public Sector & ESG", "internship", "https://sg.indeed.com/viewjob?jk=d4ffc45c81b9e67e", "Posted 15 Jul 2026", "Indeed Singapore"],
-  ["Risk System Project Delivery Intern (Aug to Feb 2027)", "UOB", "Banking, Finance, Insurance & Accounting", "internship", "https://jobs.singaporeglobalnetwork.gov.sg/jobs/uob?internshipOnly=true", "Posted 3 days ago", "Singapore Global Network"],
-  ["Intern, Occupational Health & Safety", "Grab", "Supply Chain, Logistics & Operations", "internship", "https://jobs.singaporeglobalnetwork.gov.sg/jobs/grab", "Posted less than 1 day ago", "Singapore Global Network"],
-  ["The Public Relations Intern (Corporate Communications)", "Razer", "Design, Media & Communications", "internship", "https://jobs.singaporeglobalnetwork.gov.sg/jobs/razer?internshipOnly=true", "Posted less than 1 day ago", "Singapore Global Network"],
-  ["Undergraduate Intern", "Dell Technologies", "Technology, AI & Data", "internship", "https://jobs.singaporeglobalnetwork.gov.sg/jobs/dell-technologies?internshipOnly=true", "Posted less than 1 day ago", "Singapore Global Network"],
-  ["Graduate Intern", "Dell Technologies", "Technology, AI & Data", "internship", "https://jobs.singaporeglobalnetwork.gov.sg/jobs/dell-technologies?internshipOnly=true", "Posted 1 day ago", "Singapore Global Network"],
+  ["Risk System Project Delivery Intern (Aug to Feb 2027)", "UOB", "Banking, Finance, Insurance & Accounting", "internship", "https://jobs.singaporeglobalnetwork.gov.sg/jobs/uob?internshipOnly=true", "Posted 4 days ago", "Singapore Global Network"],
+  ["Private Bank Intern (Aug - Dec 2026)", "UOB", "Banking, Finance, Insurance & Accounting", "internship", "https://jobs.singaporeglobalnetwork.gov.sg/jobs/uob?internshipOnly=true", "Posted last week", "Singapore Global Network"],
   ["Commercial Banking Credit Intern (Jan 2027-May 2027)", "UOB", "Banking, Finance, Insurance & Accounting", "internship", "https://jobs.singaporeglobalnetwork.gov.sg/jobs/uob?internshipOnly=true", "Posted 5 days ago", "Singapore Global Network"],
+  ["Customer Experience / Client Relations Executive", "AURUM M CAPITAL", "Hospitality, Tourism & Events", "first-job", "https://www.mycareersfuture.gov.sg/job/admin/customer-experience-client-relations-executive-aurum-m-capital-0e588b6163b888370ec2e0bb8a4663e5", "Posted 08 Aug 2026; closing 07 Sep 2026", "MyCareersFuture"],
   ["Full-Time Graduate Development Executive", "AUDERE MARKETING", "Marketing, Sales & Business", "first-job", "https://www.mycareersfuture.gov.sg/job/marketing/full-time-graduate-development-executive-audere-marketing-26b60bb7c41e821514f6789fdf326f87?event=Search&source=MCF", "Posted 06 Aug 2026; closing 13 Aug 2026", "MyCareersFuture"],
   ["IT Engineer (Open to Fresh Graduates)", "TALENTSIS PTE. LTD.", "Technology, AI & Data", "first-job", "https://www.mycareersfuture.gov.sg/job/information-technology/engineer-talentsis-5020f312efa67d085deb78927925e080?event=Search&source=MCF", "Posted 05 Aug 2026; closing 04 Sep 2026", "MyCareersFuture"],
   ["Quantity Surveyor #79863", "ANRADUS PTE. LTD.", "Built Environment, Real Estate & Facilities", "first-job", "https://www.mycareersfuture.gov.sg/job/building-construction/quantity-surveyor-79863-anradus-00c63defd01ca2e76718d1b940dfee2f", "Posted 06 Aug 2026; fresh/entry level", "MyCareersFuture"],
@@ -348,7 +349,8 @@ const featuredOpenings = [
   ["Sales Representative (Entry-level, Travel Opportunities)", "ROYAL ORG PTE. LTD.", "Marketing, Sales & Business", "first-job", "https://www.mycareersfuture.gov.sg/job/marketing/sales-representative-royal-org-6c7b648474b81fb116bca3d563f95e32", "Posted 04 Aug 2026; closing 03 Sep 2026", "MyCareersFuture"],
   ["Business Development Associate", "ONE PERCENT SG PTE. LTD.", "Marketing, Sales & Business", "first-job", "https://www.mycareersfuture.gov.sg/job/marketing/business-development-associate-one-percent-sg-815b27ebbbfaeac1fbe42019f9e327cf?event=Search&source=MCF", "Posted 04 Aug 2026; closing 03 Sep 2026", "MyCareersFuture"],
   ["Customer Experience Specialist", "AVARON PTE. LTD.", "Hospitality, Tourism & Events", "first-job", "https://www.mycareersfuture.gov.sg/job/customer-service/customer-experience-specialist-avaron-4147207e9bc1379176ea2d2ac2813168", "Posted 04 Aug 2026; fresh/entry level", "MyCareersFuture"],
-  ["Network Engineer (Fresh Graduate)", "EXORDIOR TECHNOLOGIES PTE. LTD.", "Technology, AI & Data", "first-job", "https://sg.indeed.com/viewjob?jk=ef8d09bcb22ba8c3", "Full-time fresh-graduate listing crawled today", "Indeed Singapore"],
+  ["Backend Engineer Graduate (Search Architecture) - 2026 Start (BS / MS)", "BYTEDANCE PTE. LTD.", "Technology, AI & Data", "first-job", "https://www.mycareersfuture.gov.sg/job/information-technology/backend-engineer-graduate-2026-start-bytedance-ab8abcbe73e29af5facfce3c64fe1fc3", "Posted 25 Jul 2026; graduate role", "MyCareersFuture"],
+  ["Network Engineer (Fresh Graduate)", "EXORDIOR TECHNOLOGIES PTE. LTD.", "Technology, AI & Data", "first-job", "https://sg.indeed.com/viewjob?jk=ef8d09bcb22ba8c3", "Full-time fresh-graduate listing crawled 09 Aug 2026", "Indeed Singapore"],
   ["Software DevOps Engineer (Fresh Graduate)", "TALENTSIS PTE. LTD.", "Technology, AI & Data", "first-job", "https://www.mycareersfuture.gov.sg/job/engineering/software-devops-engineer-talentsis-04762bfd9400720bfd45f6f5ae10037f", "Fresh graduate; crawled today", "MyCareersFuture"],
   ["Business Analyst / Junior Consultant", "SCIENTE INTERNATIONAL PTE. LTD.", "Professional Services, Consulting & Advisory", "first-job", "https://www.mycareersfuture.gov.sg/job/business-analyst-sciente-international-e22e77d6af432df28b66590c6b533d89", "Fresh/entry level; crawled yesterday", "MyCareersFuture"],
   ["Assistant Editor (PhD Graduates)", "MDPI PTE. LTD.", "Science, Research & Academia", "first-job", "https://www.mycareersfuture.gov.sg/job/sciences/assistant-editor-mdpi-f1fee2f03b4bf70e5c2d62287e8ffbfb", "Fresh/entry level; crawled today", "MyCareersFuture"],
@@ -360,7 +362,7 @@ const featuredOpenings = [
   ["Management Trainee (Entry Level Welcome)", "Fort Financial Pte. Ltd.", "Banking, Finance, Insurance & Accounting", "first-job", "https://sg.indeed.com/viewjob?jk=2230feb75ed612de", "Permanent fresh-graduate listing crawled 5 days ago", "Indeed Singapore"],
   ["Client Success's Associates", "Private Advertiser", "Marketing, Sales & Business", "first-job", "https://sg.jobstreet.com/job/93732332", "Listed 1h ago; fresh graduates welcome", "JobStreet SG"],
   ["Warehouse Executive / Warehouse Customer Service Executive ID6120", "Job Express Services Pte Ltd", "Supply Chain, Logistics & Operations", "first-job", "https://sg.jobstreet.com/Job-Express-Services-jobs/in-Kaki-Bukit-East-Region", "Listed 5 days ago; fresh graduates welcome", "JobStreet SG"],
-  ["Customer Support Officer", "Bloomberg", "Banking, Finance, Insurance & Accounting", "first-job", "https://sg.jobstreet.com/job/87251980", "2027 graduate programme route; crawled 2 days ago", "JobStreet SG"],
+  ["Accounts Executive / Assistant", "Mavenside Consulting Pte. Ltd.", "Banking, Finance, Insurance & Accounting", "first-job", "https://sg.jobstreet.com/job-in-kaki-bukit-jobs/in-Tai-Seng-North%2BEast-Region", "Listed 2 days ago; fresh graduates welcome", "JobStreet SG"],
   ["Community Content Designer", "Razer", "Design, Media & Communications", "first-job", "https://jobs.singaporeglobalnetwork.gov.sg/jobs/razer", "Posted 2 days ago", "Singapore Global Network"],
   ["Associate Researcher / Researcher, R&D", "Procter & Gamble Co.", "Science, Research & Academia", "first-job", "https://jobs.singaporeglobalnetwork.gov.sg/jobs/procter-gamble", "Posted 4 days ago", "Singapore Global Network"],
 ].map(([title, company, industry, stage, url, posted, source]) => ({
@@ -369,7 +371,7 @@ const featuredOpenings = [
   industry,
   stage,
   source,
-  checked: "8 Aug 2026",
+  checked: "9 Aug 2026",
   posted,
   url,
 }));
