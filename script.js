@@ -304,10 +304,14 @@ const targetData = [
   ["Science, Research & Academia", "Research Assistant", "first-job", "Research design, writing, analysis, ethics"],
 ].map(([industry, role, stage, evidence]) => ({ industry, role, stage, evidence }));
 
-const marketUpdated = "11 Aug 2026";
+const marketUpdated = "12 Aug 2026";
 
 const featuredOpenings = [
+  ["Financial Intern", "ACE ASCENTIA PTE. LTD.", "Banking, Finance, Insurance & Accounting", "internship", "https://www.mycareersfuture.gov.sg/job/banking-finance/financial-intern-ace-ascentia-b1d79786073e9599b33768f10d2607f7?event=Search&source=MCF", "Posted 11 Aug 2026; closing 25 Aug 2026", "MyCareersFuture"],
+  ["Contract / Intern Graphic Designer Assistant", "SAVILLS PROPERTY MANAGEMENT PTE. LTD.", "Design, Media & Communications", "internship", "https://www.mycareersfuture.gov.sg/job/advertising/contract-intern-graphic-designer-assistant-savills-property-management-19f96c59e84fed298a3d62fccbe6d3de?event=Search&source=MCF", "Posted 11 Aug 2026; closing 10 Sep 2026", "MyCareersFuture"],
   ["Intern, Occupational Health & Safety", "Grab", "Healthcare, Biomedical & Pharma", "internship", "https://jobs.singaporeglobalnetwork.gov.sg/jobs?internshipOnly=true", "Posted less than 1 day ago", "Singapore Global Network"],
+  ["Teaching & Lab Intern", "ACHIEVERS DREAM LEARNING CENTRE PTE. LTD.", "Science, Research & Academia", "internship", "https://www.mycareersfuture.gov.sg/job/sciences/teaching-lab-intern-achievers-dream-learning-centre-dcf05015f686f1980229a476c65369b9", "Posted 10 Aug 2026; closing 24 Aug 2026", "MyCareersFuture"],
+  ["Marine Operations & Technical Support Intern", "HAIDA UNITED MARINE SERVICES PTE. LTD.", "Maritime, Aviation & Transport", "internship", "https://www.mycareersfuture.gov.sg/job/admin/marine-operations-technical-support-intern-haida-united-marine-services-fcc9dc49ebdd0233717d9df277107d28?event=Search&source=MCF", "Posted 10 Aug 2026; closing 24 Aug 2026", "MyCareersFuture"],
   ["Marketing Intern", "Fu Yu Corporation Ltd", "Marketing, Sales & Business", "internship", "https://sg.jobstreet.com/job/93817352", "Listed 06 Aug 2026; posted 3d ago; internship role", "JobStreet SG"],
   ["Intern - Group Health, Safety, Security & Environment", "Sembcorp Industries Ltd", "Energy, Utilities & Sustainability", "internship", "https://sg.jobstreet.com/job/93790840", "Listed 05 Aug 2026; posted 1d ago; internship role", "JobStreet SG"],
   ["Finance Intern (Full Time 6 Months)", "Aramco Trading Singapore", "Banking, Finance, Insurance & Accounting", "internship", "https://sg.indeed.com/viewjob?jk=afac09de12865ccc", "Listed 04 Aug 2026; internship role", "Indeed Singapore"],
@@ -315,7 +319,6 @@ const featuredOpenings = [
   ["Intern, Data Analytics, Talent Attraction", "NTUC HEALTH CO-OPERATIVE LTD", "Technology, AI & Data", "internship", "https://www.mycareersfuture.gov.sg/job/intern-data-analytics-talent-attraction-ntuc-health-co-operative-ae70823f5fb946913200e6cbe71898f3", "Posted 07 Aug 2026; closing 06 Sep 2026", "MyCareersFuture"],
   ["Recruitment Intern #TNJHJ", "RECRUIT EXPRESS PTE LTD", "Human Resources, Admin & Education", "internship", "https://www.mycareersfuture.gov.sg/job/human-resources/recruitment-intern-tnjhj-recruit-express-7f96059676709ca889209ae874ef1b8c", "Posted 07 Aug 2026; closing 06 Sep 2026", "MyCareersFuture"],
   ["Brand Marketing Intern, SEA (Role based in Singapore)", "PAULA'S CHOICE SINGAPORE SEA PTE. LTD.", "Marketing, Sales & Business", "internship", "https://www.mycareersfuture.gov.sg/job/events/brand-marketing-intern-sea-paulas-choice-singapore-sea-68ed1632d23e22522d3716937bed5528", "Posted 07 Aug 2026; closing 06 Sep 2026", "MyCareersFuture"],
-  ["Financial Intern", "ACE ASCENTIA PTE. LTD.", "Banking, Finance, Insurance & Accounting", "internship", "https://www.mycareersfuture.gov.sg/job/banking-finance/financial-intern-ace-ascentia-a3ea2fea7ddfdc49678564abbe54320c?event=RecommendedJobJD&source=MCF", "Posted 07 Aug 2026; closing 21 Aug 2026", "MyCareersFuture"],
   ["Product Marketing Intern", "Advance Intelligence Group", "Marketing, Sales & Business", "internship", "https://jobs.singaporeglobalnetwork.gov.sg/jobs/advance-intelligence-group?internshipOnly=true", "Posted 1 day ago", "Singapore Global Network"],
   ["Graduate Intern", "Dell Technologies", "Technology, AI & Data", "internship", "https://jobs.singaporeglobalnetwork.gov.sg/jobs/dell-technologies", "Posted 1 day ago", "Singapore Global Network"],
   ["Intern - Listing Compliance (August 2026 to December 2026)", "SGX", "Legal, Policy, Public Sector & ESG", "internship", "https://sg.indeed.com/viewjob?jk=5d649090c5708ff7", "Crawled 09 Aug 2026; internship role", "Indeed Singapore"],
@@ -347,6 +350,9 @@ const featuredOpenings = [
   ["Private Bank Intern (Aug - Dec 2026)", "UOB", "Banking, Finance, Insurance & Accounting", "internship", "https://jobs.singaporeglobalnetwork.gov.sg/jobs/uob?internshipOnly=true", "Posted last week", "Singapore Global Network"],
   ["Commercial Banking Credit Intern (Jan 2027-May 2027)", "UOB", "Banking, Finance, Insurance & Accounting", "internship", "https://jobs.singaporeglobalnetwork.gov.sg/jobs/uob?internshipOnly=true", "Posted 5 days ago", "Singapore Global Network"],
   ["Software & DevOps Engineer (Fresh Graduate Welcome)", "TALENTSIS PTE. LTD.", "Technology, AI & Data", "first-job", "https://www.mycareersfuture.gov.sg/job/engineering/software-devops-engineer-talentsis-652e6bcf768c4ecdae2a43d4e88f63ce", "Posted 06 Aug 2026; closing 05 Sep 2026", "MyCareersFuture"],
+  ["Engineering Assistant - MNC (Service / Entry Level) #HZO", "RECRUIT EXPRESS PTE LTD", "Engineering, Semiconductor & Manufacturing", "first-job", "https://www.mycareersfuture.gov.sg/job/engineering/engineering-assistant-mnc-hzo-recruit-express-1a491825ca58e95ca4f9d07c7bbd7bc4?event=Search&source=MCF", "Posted 11 Aug 2026; closing 10 Sep 2026", "MyCareersFuture"],
+  ["Quantity Surveyor (Tender)", "SB PROCUREMENT PTE. LTD.", "Built Environment, Real Estate & Facilities", "first-job", "https://www.mycareersfuture.gov.sg/job/building-construction/quantity-surveyor-sb-procurement-cc6ceb5ec1a142e5eb483c519b0c4f62", "Posted 11 Aug 2026; closing 10 Sep 2026; fresh graduates welcome", "MyCareersFuture"],
+  ["Fresh Graduate Opportunity - Sales & Marketing Executive", "ASCEND MARKETING SOLUTIONS PTE. LTD.", "Marketing, Sales & Business", "first-job", "https://www.mycareersfuture.gov.sg/job/marketing/fresh-graduate-opportunity-%E2%80%93-sales-marketing-executive-ascend-marketing-solutions-32a37d82e4438673995dedbcfbfa2a85", "Posted 10 Aug 2026; closing 17 Aug 2026", "MyCareersFuture"],
   ["Fresh Graduate Opportunity - Financial Services Consultant", "ET MARKETING", "Banking, Finance, Insurance & Accounting", "first-job", "https://www.mycareersfuture.gov.sg/job/banking-finance/fresh-graduate-opportunity-%E2%80%93-financial-services-consultant-et-marketing-af70243c1cc4c8634e87a7e2fbe6d0de", "Posted 03 Aug 2026; closing 02 Sep 2026", "MyCareersFuture"],
   ["Software Engineer (Fresh Graduate)", "Xiaomi Technologies Singapore", "Technology, AI & Data", "first-job", "https://www.mycareersfuture.gov.sg/job/software-engineer-xiaomi-technologies-singapore-6c2146f7c07598f47117f5334f5cf954", "Posted 15 Jul 2026; closing 14 Aug 2026", "MyCareersFuture"],
   ["Senior / Chemist", "Singapore Refining Company Private Limited (SRC)", "Science, Research & Academia", "first-job", "https://sg.indeed.com/viewjob?jk=90aa821d448fd00f", "Entry level; closing 16 Aug 2026", "Indeed Singapore"],
@@ -390,7 +396,7 @@ const featuredOpenings = [
   industry,
   stage,
   source,
-  checked: "11 Aug 2026",
+  checked: "12 Aug 2026",
   posted,
   url,
 }));
