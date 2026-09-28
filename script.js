@@ -304,17 +304,18 @@ const targetData = [
   ["Science, Research & Academia", "Research Assistant", "first-job", "Research design, writing, analysis, ethics"],
 ].map(([industry, role, stage, evidence]) => ({ industry, role, stage, evidence }));
 
-const marketUpdated = "25 Sep 2026";
+const marketUpdated = "28 Sep 2026";
 
 const featuredOpenings = [
   ["2027 Markets Quantitative Trading & Research Analyst Program – Off-Cycle Internship - Singapore", "JPMorgan Chase Bank, N.A.", "Banking, Finance, Insurance & Accounting", "internship", "https://www.mycareersfuture.gov.sg/job/2027-markets-quantitative-trading-research-analyst-program-%E2%80%93-off-cycle-internship-singapore-jpmorgan-chase-bank-na-878a4e0394d908894ef6ebb6a326ee93", "on 17 Sep 2026; closes 1 Oct 2026", "MyCareersFuture"],
   ["Brand and Marketing Intern", "Advance Intelligence Pte. Ltd.", "Marketing, Sales & Business", "internship", "https://www.mycareersfuture.gov.sg/job/brand-marketing-intern-advance-intelligence-e10cc829bdeb929ef62dd1425a8dc901", "on 11 Sep 2026; closes 11 Oct 2026", "MyCareersFuture"],
+  ["AI Researcher Intern (Embodied Robotics) - Dec 2026 or Jan 2027 onwards (3 / 6 months)", "Pentas Vision Pte. Ltd.", "Technology, AI & Data", "internship", "https://www.mycareersfuture.gov.sg/job/ai-researcher-intern-dec-2026-jan-2027-onwards-pentas-vision-17692e7f0e5656cab7fd2ca9e6132224", "on 4 Sep 2026; closes 4 Oct 2026", "MyCareersFuture"],
   ["Software Developer Intern (January to June 2027)", "Visier Inc.", "Technology, AI & Data", "internship", "https://sg.indeed.com/viewjob?jk=48c50cf8ccfe5865", "on a current listing indexed 25 Sep 2026", "Indeed Singapore"],
   ["Internship - Full Stack Developer (Unit Process Excellence)", "Infineon Technologies", "Technology, AI & Data", "internship", "https://sg.jobstreet.com/job/93178449", "on a live listing re-indexed 25 Sep 2026", "JobStreet SG"],
   ["Temasek Summer Internship Programme 2027 - Investment Group (Singapore)", "Temasek", "Banking, Finance, Insurance & Accounting", "internship", "https://sg.indeed.com/viewjob?jk=d04d385a328c264f", "on a current listing indexed in Sep 2026", "Indeed Singapore"],
   ["[Keppel Internship Programme 2027] Intern, Finance A&F (Jan - May 2027)", "Keppel", "Banking, Finance, Insurance & Accounting", "internship", "https://sg.indeed.com/viewjob?jk=ce8e16bc38c60362", "on a current listing indexed in Sep 2026", "Indeed Singapore"],
   ["Policy Research Intern, Sustainability Strategy (Jan - Jun 2027)", "Temasek", "Legal, Policy, Public Sector & ESG", "internship", "https://sg.indeed.com/viewjob?jk=abde508e06450d55", "on a current listing indexed in Sep 2026", "Indeed Singapore"],
-  ["GIC Internship Programme", "GIC", "Banking, Finance, Insurance & Accounting", "internship", "https://jobs.singaporeglobalnetwork.gov.sg/jobs/singapore-global-network/617b7000-e213-4c82-bacb-fa0a1c6e701f", "on the live programme page", "Singapore Global Network"],
+  ["R&D Engineer (MNC / Materials / No exp required)", "Trust Recruit Pte. Ltd.", "Engineering, Semiconductor & Manufacturing", "first-job", "https://www.mycareersfuture.gov.sg/job/engineering/rd-engineer-trust-recruit-c3b7f4d5a021da31784b8a1347490417", "on 24 Sep 2026; closes 15 Oct 2026", "MyCareersFuture"],
   ["ENGINEER - Planning (Operations Modelling)", "Micron Semiconductor Asia Operations Pte. Ltd.", "Engineering, Semiconductor & Manufacturing", "first-job", "https://www.mycareersfuture.gov.sg/job/engineering/engineer-planning-micron-semiconductor-asia-operations-811c81842961bb34391ce69e7dabcc06", "on 22 Sep 2026; closes 6 Oct 2026", "MyCareersFuture"],
   ["Event Coordinator (4 Months) - HSN", "Recruit Express Pte Ltd", "Hospitality, Tourism & Events", "first-job", "https://www.mycareersfuture.gov.sg/job/events/event-coordinator-hsn-recruit-express-534887529f7f922b14d7d6ee0c10e51a?event=Search&source=MCF", "on 16 Sep 2026; closes 16 Oct 2026", "MyCareersFuture"],
   ["2027 APAC Graduate Programme – RISK – Singapore", "BNP Paribas", "Banking, Finance, Insurance & Accounting", "first-job", "https://sg.indeed.com/viewjob?jk=fdef417e9077b21a", "on a current listing indexed 24 Sep 2026", "Indeed Singapore"],
@@ -323,14 +324,13 @@ const featuredOpenings = [
   ["Assistant Project Engineer (Mechanical / Electrical)", "Lea Keong Mechanical & Engineering", "Built Environment, Real Estate & Facilities", "first-job", "https://sg.indeed.com/viewjob?jk=bb537aec73718b12", "on a current listing indexed 24 Sep 2026", "Indeed Singapore"],
   ["Shell Graduate Programme 2027 - Singapore", "Shell", "Energy, Utilities & Sustainability", "first-job", "https://sg.indeed.com/viewjob?jk=1a0ce8910d38ddd6", "on 20 Aug 2026", "Indeed Singapore"],
   ["Investment Banking Graduate Programme 2027 Singapore", "Barclays", "Banking, Finance, Insurance & Accounting", "first-job", "https://sg.indeed.com/viewjob?jk=07c9226b89f2fb97", "on 17 Aug 2026", "Indeed Singapore"],
-  ["GIC Professionals Programme", "GIC", "Banking, Finance, Insurance & Accounting", "first-job", "https://jobs.singaporeglobalnetwork.gov.sg/jobs/singapore-global-network/dbe5bc79-c1bc-41ef-a06b-44e8c291533f", "on the live graduate programme page", "Singapore Global Network"],
 ].map(([title, company, industry, stage, url, posted, source]) => ({
   title,
   company,
   industry,
   stage,
   source,
-  checked: "25 Sep 2026",
+  checked: "28 Sep 2026",
   posted,
   url,
 }));
