@@ -304,25 +304,27 @@ const targetData = [
   ["Science, Research & Academia", "Research Assistant", "first-job", "Research design, writing, analysis, ethics"],
 ].map(([industry, role, stage, evidence]) => ({ industry, role, stage, evidence }));
 
-const marketUpdated = "5 Oct 2026";
+const marketUpdated = "9 Oct 2026";
 
 const featuredOpenings = [
-  ["Software Developer Intern", "IDEMIA Pte. Ltd.", "Technology, AI & Data", "internship", "https://sg.jobstreet.com/job/95006072", "on 5 Oct 2026", "JobStreet SG"],
-  ["Sustainability Intern", "Schneider Electric Singapore Pte Ltd", "Energy, Utilities & Sustainability", "internship", "https://sg.jobstreet.com/job/94996790", "on 5 Oct 2026", "JobStreet SG"],
-  ["Business Finance Intern", "Schneider Electric Singapore Pte Ltd", "Banking, Finance, Insurance & Accounting", "internship", "https://sg.jobstreet.com/job/94997870", "on 4 Oct 2026", "JobStreet SG"],
-  ["AI & Business Process Transformation Intern", "Schneider Electric Singapore Pte Ltd", "Technology, AI & Data", "internship", "https://sg.indeed.com/viewjob?jk=a000a231f357ef29", "on a current listing indexed 4 Oct 2026", "Indeed Singapore"],
-  ["Intern, Marketing & Partnerships, Studios - Jan to Jul 2027", "The Walt Disney Company (APAC)", "Marketing, Sales & Business", "internship", "https://sg.indeed.com/viewjob?jk=5185fa749348117d", "on a current listing indexed 3 Oct 2026", "Indeed Singapore"],
-  ["Procurement & Digital Intern", "Schneider Electric Singapore Pte Ltd", "Supply Chain, Logistics & Operations", "internship", "https://sg.jobstreet.com/job/94997771", "on 2 Oct 2026", "JobStreet SG"],
-  ["Technical Project Manager Intern (Server Planning and Delivery) - 2027 Start", "ByteDance", "Technology, AI & Data", "internship", "https://sg.indeed.com/viewjob?jk=3a6f72b13d70aa94", "on a current listing indexed 1 Oct 2026", "Indeed Singapore"],
+  ["Software Developer Intern", "IDEMIA Pte. Ltd.", "Technology, AI & Data", "internship", "https://sg.jobstreet.com/job/95006072", "on 6 Oct 2026", "JobStreet SG"],
+  ["AI & Business Process Transformation Intern", "Schneider Electric Singapore Pte Ltd", "Technology, AI & Data", "internship", "https://sg.indeed.com/viewjob?jk=a000a231f357ef29", "on a live listing checked 9 Oct 2026", "Indeed Singapore"],
+  ["Intern, Marketing & Partnerships, Studios - Jan to Jul 2027", "The Walt Disney Company (APAC)", "Marketing, Sales & Business", "internship", "https://sg.indeed.com/viewjob?jk=5185fa749348117d", "on a live listing checked 9 Oct 2026", "Indeed Singapore"],
+  ["Business Analyst Intern", "Schneider Electric Singapore Pte Ltd", "Professional Services, Consulting & Advisory", "internship", "https://sg.jobstreet.com/job/94996094", "on 2 Oct 2026", "JobStreet SG"],
+  ["Marketing Intern", "Sapphire Windows Pte Ltd", "Marketing, Sales & Business", "internship", "https://sg.jobstreet.com/job/95001455", "on 2 Oct 2026", "JobStreet SG"],
+  ["Research Analyst Intern", "Insights Table Pte Ltd", "Professional Services, Consulting & Advisory", "internship", "https://sg.indeed.com/viewjob?jk=45a277835fa46cb7", "on 1 Oct 2026", "Indeed Singapore"],
+  ["Technical Project Manager Intern (Server Planning and Delivery) - 2027 Start", "ByteDance", "Technology, AI & Data", "internship", "https://sg.indeed.com/viewjob?jk=3a6f72b13d70aa94", "on a live listing checked 9 Oct 2026", "Indeed Singapore"],
+  ["IAD Sustainability Intern", "Schneider Electric Singapore Pte Ltd", "Energy, Utilities & Sustainability", "internship", "https://sg.jobstreet.com/job/94996790", "on a live listing checked 9 Oct 2026", "JobStreet SG"],
   ["Marketing Intern (Social Media)", "Confirm Good Pte. Ltd.", "Design, Media & Communications", "internship", "https://www.mycareersfuture.gov.sg/job/marketing-intern-confirm-good-acea505a44c0b70ce126803378fd4eb0", "on 21 Sep 2026; closes 21 Oct 2026", "MyCareersFuture"],
   ["AI & Automation Intern", "Ascentium Business Services Pte. Ltd.", "Technology, AI & Data", "internship", "https://www.mycareersfuture.gov.sg/job/information-technology/ai-automation-intern-ascentium-business-services-3d62d3806eb4a8b291ca9e147f1abc16", "on 15 Sep 2026; closes 15 Oct 2026", "MyCareersFuture"],
+  ["Accounts Assistant", "In-Touch Singapore Pte Ltd", "Banking, Finance, Insurance & Accounting", "first-job", "https://sg.jobstreet.com/job/95150882", "on 9 Oct 2026", "JobStreet SG"],
+  ["Naval Architect Engineer (Fresh Graduate)", "Seatrium Ltd", "Maritime, Aviation & Transport", "first-job", "https://sg.jobstreet.com/job/95110999", "on 8 Oct 2026", "JobStreet SG"],
+  ["Engineering Assistant / Engineer (Fresh Grad / Entry Level) - Electronics Manufacturing", "Aurora Technology Pte Ltd", "Engineering, Semiconductor & Manufacturing", "first-job", "https://sg.jobstreet.com/job/95082925", "on 7 Oct 2026", "JobStreet SG"],
+  ["FullStack Software Engineer Graduate, TikTok Client - AI-Powered Audio & Video Creation - 2027 Start", "TikTok Pte. Ltd.", "Technology, AI & Data", "first-job", "https://www.mycareersfuture.gov.sg/job/information-technology/fullstack-software-engineer-graduate-2027-start-tiktok-fb1bec736f2a03111336936f034659a8", "on 2 Oct 2026; closes 1 Nov 2026", "MyCareersFuture"],
   ["2027 Finance Graduate Program – Singapore", "Nomura", "Banking, Finance, Insurance & Accounting", "first-job", "https://sg.indeed.com/viewjob?jk=4cb13349eddfc186", "on a current listing indexed 5 Oct 2026", "Indeed Singapore"],
   ["2027 Deutsche Bank Graduate Programme - Investment Bank: Fixed Income & Currencies - Singapore", "Deutsche Bank", "Banking, Finance, Insurance & Accounting", "first-job", "https://sg.indeed.com/viewjob?jk=faccf471ff565119", "on a current listing indexed 4 Oct 2026; closes 25 Oct 2026", "Indeed Singapore"],
-  ["Sourcing Specialist (Materials and Services / Manufacturing / Fresh Graduates)", "GE Vernova", "Supply Chain, Logistics & Operations", "first-job", "https://sg.jobstreet.com/job/95027597", "on 3 Oct 2026", "JobStreet SG"],
-  ["Operations Executive (Graduates Welcome)", "Sleek Tech Pte Ltd", "Supply Chain, Logistics & Operations", "first-job", "https://sg.jobstreet.com/job/95011563", "on 2 Oct 2026", "JobStreet SG"],
-  ["Graduate Process Engineer", "Suntar International Group", "Engineering, Semiconductor & Manufacturing", "first-job", "https://sg.jobstreet.com/job/94961857", "on 2 Oct 2026", "JobStreet SG"],
   ["2027 Deutsche Bank Graduate Programme - Human Resources - Singapore", "Deutsche Bank", "Human Resources, Admin & Education", "first-job", "https://sg.indeed.com/viewjob?jk=66ce4cc6cabf7804", "on a current listing; closes 25 Oct 2026", "Indeed Singapore"],
-  ["R&D Engineer (MNC / Materials / No exp required)", "Trust Recruit Pte. Ltd.", "Engineering, Semiconductor & Manufacturing", "first-job", "https://www.mycareersfuture.gov.sg/job/engineering/rd-engineer-trust-recruit-c3b7f4d5a021da31784b8a1347490417", "on 24 Sep 2026; closes 15 Oct 2026", "MyCareersFuture"],
+  ["Research Assistant (NIE-CRPP)", "Nanyang Technological University", "Science, Research & Academia", "first-job", "https://www.mycareersfuture.gov.sg/job/education-training/research-assistant-nanyang-technological-university-b6601f933f7e0c45b83b1947388ce547", "on 1 Oct 2026; closes 15 Oct 2026", "MyCareersFuture"],
   ["Manufacturing Engineer", "Ardentec Singapore Pte. Ltd.", "Engineering, Semiconductor & Manufacturing", "first-job", "https://www.mycareersfuture.gov.sg/job/manufacturing-engineer-ardentec-singapore-f15be44b0b95a10ea260f10c566f6239", "on 22 Sep 2026; closes 22 Oct 2026", "MyCareersFuture"],
   ["Assistant / Care Coordinator - National University Polyclinics", "National University Health Services Group Pte. Ltd.", "Healthcare, Biomedical & Pharma", "first-job", "https://www.mycareersfuture.gov.sg/job/assistant-care-coordinator-national-university-polyclinics-national-university-health-services-group-d8d5f8236265869b1a85b12763e4b0ad", "on 16 Sep 2026; closes 16 Oct 2026", "MyCareersFuture"],
 ].map(([title, company, industry, stage, url, posted, source]) => ({
@@ -331,7 +333,7 @@ const featuredOpenings = [
   industry,
   stage,
   source,
-  checked: "5 Oct 2026",
+  checked: "9 Oct 2026",
   posted,
   url,
 }));
