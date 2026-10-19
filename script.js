@@ -304,18 +304,24 @@ const targetData = [
   ["Science, Research & Academia", "Research Assistant", "first-job", "Research design, writing, analysis, ethics"],
 ].map(([industry, role, stage, evidence]) => ({ industry, role, stage, evidence }));
 
-const marketUpdated = "16 Oct 2026";
+const marketUpdated = "19 Oct 2026";
 
 const featuredOpenings = [
+  ["Operations Business Analyst Intern, Operations and Supply Chain (6 Month)", "Apple", "Supply Chain, Logistics & Operations", "internship", "https://sg.jobstreet.com/job/95322975", "on 18 Oct 2026", "JobStreet SG"],
+  ["Business Intelligence & Analysis Intern (Jan to May 2027)", "Monee SG Private Limited", "Technology, AI & Data", "internship", "https://sg.jobstreet.com/job/95319268", "on 18 Oct 2026", "JobStreet SG"],
+  ["Regional Credit Analyst Intern", "EssilorLuxottica", "Banking, Finance, Insurance & Accounting", "internship", "https://sg.jobstreet.com/job/95322562", "on 17 Oct 2026", "JobStreet SG"],
+  ["Regional Learning & Development Intern", "EssilorLuxottica", "Human Resources, Admin & Education", "internship", "https://sg.jobstreet.com/job/95322565", "on 17 Oct 2026", "JobStreet SG"],
   ["PRADA Merchandising Intern", "PRADA Singapore Pte Ltd", "Retail, FMCG & E-Commerce", "internship", "https://sg.jobstreet.com/job/95295387", "on 16 Oct 2026", "JobStreet SG"],
   ["Data Analyst Intern - Business Intelligence, Regional Logistics (Spring 2027)", "Shopee Singapore Private Limited", "Technology, AI & Data", "internship", "https://sg.jobstreet.com/job/95295374", "on 16 Oct 2026", "JobStreet SG"],
   ["Business & Marketing Intern (6-mths internship)", "Nanyang Tech Pte Ltd", "Marketing, Sales & Business", "internship", "https://sg.jobstreet.com/job/95288599", "on 15 Oct 2026", "JobStreet SG"],
   ["HR Intern / Temp Assistant (6 months contract)", "Moove Media Pte Ltd", "Human Resources, Admin & Education", "internship", "https://sg.jobstreet.com/job/95281561", "on 15 Oct 2026", "JobStreet SG"],
   ["Software Engineering Intern, 2027 (English)", "Google", "Technology, AI & Data", "internship", "https://sg.jobstreet.com/job/95242002", "on 14 Oct 2026; applications anticipated through 15 Nov 2026", "JobStreet SG"],
   ["Operations Intern", "Antares Management Services Pte. Ltd.", "Professional Services, Consulting & Advisory", "internship", "https://www.mycareersfuture.gov.sg/job/a706cce52dd33ca28d4b72a28434d2d7", "on 9 Oct 2026; closes 8 Nov 2026", "MyCareersFuture"],
-  ["Finance Intern", "Agrocorp International Pte Ltd", "Banking, Finance, Insurance & Accounting", "internship", "https://www.mycareersfuture.gov.sg/job/finance-intern-agrocorp-international-97bbe539434938796964e9a885264156", "on 6 Oct 2026; closes 20 Oct 2026", "MyCareersFuture"],
   ["Applied AI & Conversational Systems Intern", "Sincere Healthcare Group (Singapore) Pte. Ltd.", "Technology, AI & Data", "internship", "https://www.mycareersfuture.gov.sg/job/applied-ai-conversational-systems-intern-sincere-healthcare-group-9358a2359d253f80cbf17d693dc4997d", "on 2 Oct 2026; closes 1 Nov 2026", "MyCareersFuture"],
   ["Administrative and Academic Intern", "inlingua School of Languages Pte. Ltd.", "Human Resources, Admin & Education", "internship", "https://www.mycareersfuture.gov.sg/job/administrative-academic-intern-inlingua-school-languages-e2877a531a4d5b6506d09d835dc83d6f", "on 2 Oct 2026; closes 1 Nov 2026", "MyCareersFuture"],
+  ["Graduate Automation Engineer (PLC/SCADA)", "WE AUTOMATION", "Engineering, Semiconductor & Manufacturing", "first-job", "https://sg.jobstreet.com/job/95332244", "on 19 Oct 2026", "JobStreet SG"],
+  ["Business Analyst, Monee (2027 Graduate)", "Monee SG Private Limited", "Technology, AI & Data", "first-job", "https://sg.jobstreet.com/job/95319822", "on 17 Oct 2026", "JobStreet SG"],
+  ["Junior Bunker Trader (Fresh Graduates Welcome!)", "Times Marine Petroleum Pte Ltd", "Maritime, Aviation & Transport", "first-job", "https://sg.jobstreet.com/job/95311973", "on 17 Oct 2026", "JobStreet SG"],
   ["People & Promotions Marketing Executive / Entry-level", "Thrive Organization Pte. Ltd.", "Marketing, Sales & Business", "first-job", "https://www.mycareersfuture.gov.sg/job/consulting/people-promotions-marketing-executive-entry-level-thrive-organization-9a689258ac7af4a9d9b156b26ef01c2f", "on 14 Oct 2026; closes 28 Oct 2026", "MyCareersFuture"],
   ["Care Support Assistant", "Recruit Express Pte Ltd", "Healthcare, Biomedical & Pharma", "first-job", "https://www.mycareersfuture.gov.sg/job/environment/urgent-min-4-days-nursing-trained-1-month-locum-care-support-assistant-18-hr-hlv-recruit-express-89aa8e1f4e4e9c903fc107ba205f5db9", "on 14 Oct 2026; closes 13 Nov 2026", "MyCareersFuture"],
   ["HR & Admin Executive", "Culina Pte Ltd", "Human Resources, Admin & Education", "first-job", "https://sg.jobstreet.com/job/94497953", "on 14 Oct 2026", "JobStreet SG"],
@@ -323,15 +329,15 @@ const featuredOpenings = [
   ["Junior Business Development Associate", "Nexo Creative", "Marketing, Sales & Business", "first-job", "https://www.mycareersfuture.gov.sg/job/%F0%9F%91%89entry-level%F0%9F%91%88-junior-business-development-associate-training-provided-nexo-creative-68881251f70dc2ad8b957a8bd33b508a", "on 9 Oct 2026; closes 23 Oct 2026", "MyCareersFuture"],
   ["Permanent Project Executive (Management Trainee) at Tuas", "Success Resource Centre Pte. Ltd.", "Built Environment, Real Estate & Facilities", "first-job", "https://www.mycareersfuture.gov.sg/job/permanent-project-executive-tuas-3000-pb-success-resource-centre-5cf370dd9d15129a01bf489ec5ee7878", "on 9 Oct 2026; closes 8 Nov 2026", "MyCareersFuture"],
   ["FullStack Software Engineer Graduate, TikTok Client - AI-Powered Audio & Video Creation - 2027 Start", "TikTok Pte. Ltd.", "Technology, AI & Data", "first-job", "https://www.mycareersfuture.gov.sg/job/information-technology/fullstack-software-engineer-graduate-2027-start-tiktok-fb1bec736f2a03111336936f034659a8", "on 2 Oct 2026; closes 1 Nov 2026", "MyCareersFuture"],
+  ["Smart Building and Innovation Engineer", "Singtel", "Built Environment, Real Estate & Facilities", "first-job", "https://sg.indeed.com/viewjob?jk=1476e5e070a7a1aa", "on 2 Oct 2026", "Indeed SG"],
   ["Engineering Assistant | Fresh Grads Welcome", "Just Recruit Singapore Pte Ltd", "Engineering, Semiconductor & Manufacturing", "first-job", "https://sg.jobstreet.com/job/94460894", "on 28 Sep 2026", "JobStreet SG"],
-  ["Manufacturing Engineer", "Ardentec Singapore Pte. Ltd.", "Engineering, Semiconductor & Manufacturing", "first-job", "https://www.mycareersfuture.gov.sg/job/manufacturing-engineer-ardentec-singapore-f15be44b0b95a10ea260f10c566f6239", "on 22 Sep 2026; closes 22 Oct 2026", "MyCareersFuture"],
 ].map(([title, company, industry, stage, url, posted, source]) => ({
   title,
   company,
   industry,
   stage,
   source,
-  checked: "16 Oct 2026",
+  checked: "19 Oct 2026",
   posted,
   url,
 }));
