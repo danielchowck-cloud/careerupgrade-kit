@@ -304,7 +304,7 @@ const targetData = [
   ["Science, Research & Academia", "Research Assistant", "first-job", "Research design, writing, analysis, ethics"],
 ].map(([industry, role, stage, evidence]) => ({ industry, role, stage, evidence }));
 
-const marketUpdated = "26 Oct 2026";
+const marketUpdated = "30 Oct 2026";
 
 const featuredOpenings = [
   ["Data Analyst Intern - Regional BI & Planning (Spring 2027)", "Shopee Singapore Private Limited", "Technology, AI & Data", "internship", "https://sg.jobstreet.com/job/95475130", "on 25 Oct 2026", "JobStreet SG"],
@@ -312,12 +312,18 @@ const featuredOpenings = [
   ["EIC Intern - Pricing & Analytics, SGP", "Cushman & Wakefield", "Built Environment, Real Estate & Facilities", "internship", "https://sg.jobstreet.com/job/94859311", "on 25 Oct 2026", "JobStreet SG"],
   ["Intern (Throughput Business)", "Singapore LNG Corporation Pte Ltd", "Energy, Utilities & Sustainability", "internship", "https://sg.jobstreet.com/job/95471940", "on 25 Oct 2026", "JobStreet SG"],
   ["AI Solutions & Automation Intern", "MSIG Asia Pte. Ltd.", "Technology, AI & Data", "internship", "https://sg.jobstreet.com/job/95462445", "on 25 Oct 2026", "JobStreet SG"],
+  ["Market Research Intern, Regional Brand & Growth Marketing", "Shopee Singapore Private Limited", "Marketing, Sales & Business", "internship", "https://sg.jobstreet.com/job/95467874", "on 24 Oct 2026", "JobStreet SG"],
+  ["Digital Marketing Intern", "KFC", "Marketing, Sales & Business", "internship", "https://sg.jobstreet.com/job/95449543", "on 24 Oct 2026", "JobStreet SG"],
+  ["Human Resource Intern (HR, Internship)", "STATS ChipPAC Pte. Ltd.", "Human Resources, Admin & Education", "internship", "https://sg.jobstreet.com/job/95448303", "on 24 Oct 2026", "JobStreet SG"],
   ["Events Marketing Intern", "Geniebook Pte. Ltd.", "Hospitality, Tourism & Events", "internship", "https://www.mycareersfuture.gov.sg/job/events/events-marketing-intern-geniebook-b20d530666faa297fd05fc02714e93ce", "on 23 Oct 2026; closes 22 Nov 2026", "MyCareersFuture"],
   ["Data Analyst Intern (Reporting & Insights)", "Singtel", "Technology, AI & Data", "internship", "https://sg.indeed.com/viewjob?jk=73d10db9d8b9b820", "on 22 Oct 2026", "Indeed SG"],
   ["Editorial Intern", "Confirm Good Pte. Ltd.", "Design, Media & Communications", "internship", "https://www.mycareersfuture.gov.sg/job/editorial-intern-confirm-good-a65c6cb3380d15ff8cc061bbb08b1c33", "on 22 Oct 2026; closes 21 Nov 2026", "MyCareersFuture"],
-  ["Edge AI Systems & Solutions Intern", "Talons Laboratories Pte. Ltd.", "Technology, AI & Data", "internship", "https://www.mycareersfuture.gov.sg/job/information-technology/edge-ai-systems-solutions-intern-talons-laboratories-3127e87ade229cf09a923e90ed70880b", "on 20 Oct 2026; closes 3 Nov 2026", "MyCareersFuture"],
   ["Software QA Intern", "Knovel Engineering Pte. Ltd.", "Technology, AI & Data", "internship", "https://www.mycareersfuture.gov.sg/job/information-technology/software-qa-intern-knovel-engineering-d541f4dadb5b8c53d329410d365ad758", "on 20 Oct 2026; closes 19 Nov 2026", "MyCareersFuture"],
+  ["Intern, Financial Crime Compliance (Full time / Part time)", "iFAST Financial Pte. Ltd.", "Banking, Finance, Insurance & Accounting", "internship", "https://www.mycareersfuture.gov.sg/job/accounting/intern-financial-crime-compliance-ifast-financial-3dc754d8eb445329710b95a8c2b0e5ee", "on 16 Oct 2026; closes 15 Nov 2026", "MyCareersFuture"],
   ["AI Implementation Intern (Jan 2027 Intake)", "Baker Tilly Consultancy (Singapore) Pte. Ltd.", "Professional Services, Consulting & Advisory", "internship", "https://www.mycareersfuture.gov.sg/job/accounting/ai-implementation-intern-baker-tilly-consultancy-080db3e52248bcb472463258495c0447", "on 14 Oct 2026; closes 13 Nov 2026", "MyCareersFuture"],
+  ["Operations Executive - Cruise & Leisure (Fresh Grads Are Welcome)", "Destination Asia (Singapore) Pte Ltd", "Hospitality, Tourism & Events", "first-job", "https://sg.jobstreet.com/job/95501464", "on 28 Oct 2026", "JobStreet SG"],
+  ["Project Ops Analyst (Contract / Entry-level)", "Peoplebank Singapore Pte Ltd", "Banking, Finance, Insurance & Accounting", "first-job", "https://sg.jobstreet.com/job/95503645", "on 27 Oct 2026", "JobStreet SG"],
+  ["QA Engineer / Production Engineer (Entry)", "Aim Recruit Consultancy Pte Ltd", "Engineering, Semiconductor & Manufacturing", "first-job", "https://sg.jobstreet.com/job/95504092", "on 27 Oct 2026", "JobStreet SG"],
   ["Graduate Analyst - Consulting", "Cognizant", "Professional Services, Consulting & Advisory", "first-job", "https://sg.jobstreet.com/job/95479697", "on 26 Oct 2026", "JobStreet SG"],
   ["Business Data Analyst (Fresh Graduates Welcome)", "Prudential Assurance Company Singapore", "Banking, Finance, Insurance & Accounting", "first-job", "https://sg.jobstreet.com/job/95465686", "on 24 Oct 2026", "JobStreet SG"],
   ["Product Data Analyst, Regional Marketplace Ops (2027 Graduate)", "Shopee IP Singapore Private Limited", "Retail, FMCG & E-Commerce", "first-job", "https://sg.jobstreet.com/job/95476132", "on 24 Oct 2026", "JobStreet SG"],
@@ -336,7 +342,7 @@ const featuredOpenings = [
   industry,
   stage,
   source,
-  checked: "26 Oct 2026",
+  checked: "30 Oct 2026",
   posted,
   url,
 }));
