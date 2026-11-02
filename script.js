@@ -304,19 +304,19 @@ const targetData = [
   ["Science, Research & Academia", "Research Assistant", "first-job", "Research design, writing, analysis, ethics"],
 ].map(([industry, role, stage, evidence]) => ({ industry, role, stage, evidence }));
 
-const marketUpdated = "30 Oct 2026";
+const marketUpdated = "2 Nov 2026";
 
 const featuredOpenings = [
-  ["Data Analyst Intern - Regional BI & Planning (Spring 2027)", "Shopee Singapore Private Limited", "Technology, AI & Data", "internship", "https://sg.jobstreet.com/job/95475130", "on 25 Oct 2026", "JobStreet SG"],
+  ["Intern, Data Analytics", "Sembcorp Industries", "Energy, Utilities & Sustainability", "internship", "https://sg.indeed.com/viewjob?jk=921e383cbfa24327", "updated 28 Oct 2026", "Indeed SG"],
+  ["Software Engineering Intern, 2027 (English)", "Google", "Technology, AI & Data", "internship", "https://sg.indeed.com/viewjob?jk=521ce0885688fec9", "with applications open through 15 Nov 2026 (or until filled)", "Indeed SG"],
+  ["Risk & Resilience Intern", "Schneider Electric", "Legal, Policy, Public Sector & ESG", "internship", "https://sg.indeed.com/viewjob?jk=6248f53296766213", "for the H1 2027 cohort", "Indeed SG"],
+  ["Intern - Information Security (Spring 2027, Jan to Jun)", "Singapore Exchange", "Technology, AI & Data", "internship", "https://sg.indeed.com/viewjob?jk=ae375eaec341036e", "for the Spring 2027 intake", "Indeed SG"],
   ["Finance Intern", "SGS Testing & Control Services Singapore", "Banking, Finance, Insurance & Accounting", "internship", "https://sg.jobstreet.com/job/95466927", "on 25 Oct 2026", "JobStreet SG"],
-  ["EIC Intern - Pricing & Analytics, SGP", "Cushman & Wakefield", "Built Environment, Real Estate & Facilities", "internship", "https://sg.jobstreet.com/job/94859311", "on 25 Oct 2026", "JobStreet SG"],
-  ["Intern (Throughput Business)", "Singapore LNG Corporation Pte Ltd", "Energy, Utilities & Sustainability", "internship", "https://sg.jobstreet.com/job/95471940", "on 25 Oct 2026", "JobStreet SG"],
   ["AI Solutions & Automation Intern", "MSIG Asia Pte. Ltd.", "Technology, AI & Data", "internship", "https://sg.jobstreet.com/job/95462445", "on 25 Oct 2026", "JobStreet SG"],
   ["Market Research Intern, Regional Brand & Growth Marketing", "Shopee Singapore Private Limited", "Marketing, Sales & Business", "internship", "https://sg.jobstreet.com/job/95467874", "on 24 Oct 2026", "JobStreet SG"],
   ["Digital Marketing Intern", "KFC", "Marketing, Sales & Business", "internship", "https://sg.jobstreet.com/job/95449543", "on 24 Oct 2026", "JobStreet SG"],
   ["Human Resource Intern (HR, Internship)", "STATS ChipPAC Pte. Ltd.", "Human Resources, Admin & Education", "internship", "https://sg.jobstreet.com/job/95448303", "on 24 Oct 2026", "JobStreet SG"],
   ["Events Marketing Intern", "Geniebook Pte. Ltd.", "Hospitality, Tourism & Events", "internship", "https://www.mycareersfuture.gov.sg/job/events/events-marketing-intern-geniebook-b20d530666faa297fd05fc02714e93ce", "on 23 Oct 2026; closes 22 Nov 2026", "MyCareersFuture"],
-  ["Data Analyst Intern (Reporting & Insights)", "Singtel", "Technology, AI & Data", "internship", "https://sg.indeed.com/viewjob?jk=73d10db9d8b9b820", "on 22 Oct 2026", "Indeed SG"],
   ["Editorial Intern", "Confirm Good Pte. Ltd.", "Design, Media & Communications", "internship", "https://www.mycareersfuture.gov.sg/job/editorial-intern-confirm-good-a65c6cb3380d15ff8cc061bbb08b1c33", "on 22 Oct 2026; closes 21 Nov 2026", "MyCareersFuture"],
   ["Software QA Intern", "Knovel Engineering Pte. Ltd.", "Technology, AI & Data", "internship", "https://www.mycareersfuture.gov.sg/job/information-technology/software-qa-intern-knovel-engineering-d541f4dadb5b8c53d329410d365ad758", "on 20 Oct 2026; closes 19 Nov 2026", "MyCareersFuture"],
   ["Intern, Financial Crime Compliance (Full time / Part time)", "iFAST Financial Pte. Ltd.", "Banking, Finance, Insurance & Accounting", "internship", "https://www.mycareersfuture.gov.sg/job/accounting/intern-financial-crime-compliance-ifast-financial-3dc754d8eb445329710b95a8c2b0e5ee", "on 16 Oct 2026; closes 15 Nov 2026", "MyCareersFuture"],
@@ -342,7 +342,7 @@ const featuredOpenings = [
   industry,
   stage,
   source,
-  checked: "30 Oct 2026",
+  checked: "2 Nov 2026",
   posted,
   url,
 }));
