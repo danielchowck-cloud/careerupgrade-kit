@@ -304,9 +304,13 @@ const targetData = [
   ["Science, Research & Academia", "Research Assistant", "first-job", "Research design, writing, analysis, ethics"],
 ].map(([industry, role, stage, evidence]) => ({ industry, role, stage, evidence }));
 
-const marketUpdated = "16 Nov 2026";
+const marketUpdated = "20 Nov 2026";
 
 const featuredOpenings = [
+  ["Mechanical Engineering Intern", "Jacobs", "Engineering, Semiconductor & Manufacturing", "internship", "https://sg.indeed.com/viewjob?jk=a4229abeb48f213e", "on a current listing indexed 20 Nov 2026; applications close 28 Feb 2027", "Indeed Singapore"],
+  ["People and Culture Intern", "Killiney 88 Pte Ltd (Mama Shelter Singapore)", "Hospitality, Tourism & Events", "internship", "https://sg.indeed.com/viewjob?jk=bd9ac43ae78163c4", "on 17 Nov 2026", "Indeed Singapore"],
+  ["AI Research & Development Intern", "Cynapse Pte Ltd", "Technology, AI & Data", "internship", "https://sg.indeed.com/viewjob?jk=15c3794441968731", "on 17 Nov 2026 for a Dec 2026/Jan 2027 intake", "Indeed Singapore"],
+  ["Finance Intern", "INZY", "Banking, Finance, Insurance & Accounting", "internship", "https://sg.indeed.com/viewjob?jk=da82056ab4178bdf", "on 17 Nov 2026", "Indeed Singapore"],
   ["Talent Acquisition Intern (Jan 2027 intake) - #GeneralInternship", "Singtel", "Human Resources, Admin & Education", "internship", "https://sg.indeed.com/viewjob?jk=9bad56bd9d310d67", "on 12 Nov 2026", "Indeed Singapore"],
   ["Intern, Sustainability", "Singapore Life Ltd.", "Energy, Utilities & Sustainability", "internship", "https://sg.indeed.com/viewjob?jk=61c39ef7ef13ae4a", "on a current listing updated 11 Nov 2026", "Indeed Singapore"],
   ["Intern, Finance Operations", "Singapore Life Ltd.", "Banking, Finance, Insurance & Accounting", "internship", "https://sg.indeed.com/viewjob?jk=345dca89cb8a8be6", "on a current listing updated 10 Nov 2026", "Indeed Singapore"],
@@ -315,9 +319,10 @@ const featuredOpenings = [
   ["Business Analyst Intern, SEA", "Benefit Cosmetics (LVMH)", "Retail, FMCG & E-Commerce", "internship", "https://jobs.smartrecruiters.com/LVMH2/744000152861180-business-analyst-intern-sea", "on a current company listing for Dec 2026/Jan 2027 to Jun 2027", "LVMH Careers"],
   ["Transaction Services Intern Singapore 2027", "Standard Chartered Bank", "Banking, Finance, Insurance & Accounting", "internship", "https://sg.jobstreet.com/job/95622109", "on 2 Nov 2026", "JobStreet SG"],
   ["College Intern - Data Analytics in Supply Chain", "Hewlett Packard Enterprise", "Supply Chain, Logistics & Operations", "internship", "https://sg.jobstreet.com/job/95623201", "on 2 Nov 2026", "JobStreet SG"],
-  ["Intern, Data Analytics", "Sembcorp Industries", "Technology, AI & Data", "internship", "https://sg.indeed.com/viewjob?jk=921e383cbfa24327", "on a current listing updated 28 Oct 2026", "Indeed Singapore"],
   ["Editorial Intern", "Confirm Good Pte. Ltd.", "Design, Media & Communications", "internship", "https://www.mycareersfuture.gov.sg/job/editorial-intern-confirm-good-a65c6cb3380d15ff8cc061bbb08b1c33", "on 22 Oct 2026; closes 21 Nov 2026", "MyCareersFuture"],
-  ["Product Testing & Validation Intern (Hardware + Software)", "Epic Medical Pte. Ltd.", "Engineering, Semiconductor & Manufacturing", "internship", "https://www.mycareersfuture.gov.sg/job/engineering/product-testing-validation-intern-epic-medical-4f19fe760d9028522c75068b4035f8a7", "on 18 Oct 2026; closes 17 Nov 2026", "MyCareersFuture"],
+  ["Graduate Process Engineer", "Jacobs", "Engineering, Semiconductor & Manufacturing", "first-job", "https://sg.indeed.com/viewjob?jk=fc00b49b07dbdd8b", "on a current listing indexed 20 Nov 2026; applications close 28 Feb 2027", "Indeed Singapore"],
+  ["Site Reliability Engineer, AI Platform (2027 Graduate)", "Shopee", "Technology, AI & Data", "first-job", "https://sg.indeed.com/viewjob?jk=3f635da8bed5729c", "on a current listing indexed 19 Nov 2026", "Indeed Singapore"],
+  ["BW Group Graduate Programme - Future Leaders Programme 2027 (Singapore)", "BW Group", "Maritime, Aviation & Transport", "first-job", "https://sg.indeed.com/viewjob?jk=d86f2a74897eaa3b", "on a current listing indexed 19 Nov 2026", "Indeed Singapore"],
   ["Audit - Graduate Associate 2027", "KPMG", "Banking, Finance, Insurance & Accounting", "first-job", "https://sg.indeed.com/viewjob?jk=088de2289a99af82", "on a current listing opened 14 Nov 2026", "Indeed Singapore"],
   ["Algorithm Engineer - Graduate (Global Payment) - 2027 Start", "ByteDance", "Technology, AI & Data", "first-job", "https://sg.indeed.com/viewjob?jk=754eeb856b1cdd51", "on a current listing indexed 13 Nov 2026", "Indeed Singapore"],
   ["Business Analyst – Data & AI (Graduate Development Programme)", "HR SG Pte. Ltd.", "Technology, AI & Data", "first-job", "https://www.mycareersfuture.gov.sg/job/others/business-analyst-%E2%80%93-data-ai-hr-sg-dd14d8a557a678521e2835b9d4378f61", "on 12 Nov 2026; closes 12 Dec 2026", "MyCareersFuture"],
@@ -325,15 +330,15 @@ const featuredOpenings = [
   ["Financial Markets (Sales) Graduate Programme Singapore 2027", "Standard Chartered Bank", "Banking, Finance, Insurance & Accounting", "first-job", "https://jobs.standardchartered.com/job/Singapore-Financial-Markets-%28Sales%29-Graduate-Programme-Singapore-2027/60453-en_GB/", "on 11 Nov 2026; closes 31 Dec 2026", "Standard Chartered Careers"],
   ["AML Operation Analyst Graduate (Global Payment) - 2027 Start", "ByteDance Pte. Ltd.", "Banking, Finance, Insurance & Accounting", "first-job", "https://sg.jobstreet.com/job/95806468", "on 11 Nov 2026", "JobStreet SG"],
   ["2027 Singapore S&T Graduate", "Standard Chartered Bank", "Professional Services, Consulting & Advisory", "first-job", "https://sg.indeed.com/viewjob?jk=7e30ff436c712c41", "on a current listing opened 10 Nov 2026; closes 31 Jan 2027", "Indeed Singapore"],
+  ["Explore Programme - Graduate Associate 2027", "KPMG", "Professional Services, Consulting & Advisory", "first-job", "https://sg.indeed.com/viewjob?jk=0fc85fd1390ceeea", "on a current listing opened 9 Nov 2026", "Indeed Singapore"],
   ["Lead Graduate (2 Years Renewable Contract)", "Vopak Terminals Singapore Pte. Ltd.", "Energy, Utilities & Sustainability", "first-job", "https://sg.jobstreet.com/job/95676917", "on 4 Nov 2026", "JobStreet SG"],
-  ["Graduate Analyst - Consulting", "Cognizant", "Professional Services, Consulting & Advisory", "first-job", "https://sg.jobstreet.com/job/95479697", "on 26 Oct 2026", "JobStreet SG"],
 ].map(([title, company, industry, stage, url, posted, source]) => ({
   title,
   company,
   industry,
   stage,
   source,
-  checked: "16 Nov 2026",
+  checked: "20 Nov 2026",
   posted,
   url,
 }));
