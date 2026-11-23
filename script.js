@@ -304,25 +304,30 @@ const targetData = [
   ["Science, Research & Academia", "Research Assistant", "first-job", "Research design, writing, analysis, ethics"],
 ].map(([industry, role, stage, evidence]) => ({ industry, role, stage, evidence }));
 
-const marketUpdated = "20 Nov 2026";
+const marketUpdated = "23 Nov 2026";
 
 const featuredOpenings = [
+  ["Internship - Digital Strategy & Solutioning (Market Research) 2027", "Mediacorp Pte Ltd", "Design, Media & Communications", "internship", "https://sg.jobstreet.com/job/96034491", "on 21 Nov 2026", "JobStreet SG"],
+  ["Intern, Corporate Development", "NTUC First Campus Limited", "Professional Services, Consulting & Advisory", "internship", "https://sg.jobstreet.com/job/95998189", "on 20 Nov 2026", "JobStreet SG"],
   ["Mechanical Engineering Intern", "Jacobs", "Engineering, Semiconductor & Manufacturing", "internship", "https://sg.indeed.com/viewjob?jk=a4229abeb48f213e", "on a current listing indexed 20 Nov 2026; applications close 28 Feb 2027", "Indeed Singapore"],
+  ["Customer Support Project Internship", "ASML Singapore Pte Ltd", "Engineering, Semiconductor & Manufacturing", "internship", "https://sg.jobstreet.com/job/95976130", "on 19 Nov 2026", "JobStreet SG"],
   ["People and Culture Intern", "Killiney 88 Pte Ltd (Mama Shelter Singapore)", "Hospitality, Tourism & Events", "internship", "https://sg.indeed.com/viewjob?jk=bd9ac43ae78163c4", "on 17 Nov 2026", "Indeed Singapore"],
   ["AI Research & Development Intern", "Cynapse Pte Ltd", "Technology, AI & Data", "internship", "https://sg.indeed.com/viewjob?jk=15c3794441968731", "on 17 Nov 2026 for a Dec 2026/Jan 2027 intake", "Indeed Singapore"],
   ["Finance Intern", "INZY", "Banking, Finance, Insurance & Accounting", "internship", "https://sg.indeed.com/viewjob?jk=da82056ab4178bdf", "on 17 Nov 2026", "Indeed Singapore"],
+  ["Software Engineer - 2027 Summer Internship", "Jane Street SG", "Technology, AI & Data", "internship", "https://sg.jobstreet.com/job/95740754", "on 13 Nov 2026", "JobStreet SG"],
   ["Talent Acquisition Intern (Jan 2027 intake) - #GeneralInternship", "Singtel", "Human Resources, Admin & Education", "internship", "https://sg.indeed.com/viewjob?jk=9bad56bd9d310d67", "on 12 Nov 2026", "Indeed Singapore"],
   ["Intern, Sustainability", "Singapore Life Ltd.", "Energy, Utilities & Sustainability", "internship", "https://sg.indeed.com/viewjob?jk=61c39ef7ef13ae4a", "on a current listing updated 11 Nov 2026", "Indeed Singapore"],
   ["Intern, Finance Operations", "Singapore Life Ltd.", "Banking, Finance, Insurance & Accounting", "internship", "https://sg.indeed.com/viewjob?jk=345dca89cb8a8be6", "on a current listing updated 10 Nov 2026", "Indeed Singapore"],
+  ["Tax - Tax Reimagined | Off-Cycle Internship (Jan 2027 to Jun 2027)", "KPMG", "Banking, Finance, Insurance & Accounting", "internship", "https://sg.indeed.com/viewjob?jk=a3e8dd2ac1e9ef01", "on a current listing opened 4 Nov 2026", "Indeed Singapore"],
   ["IKEA Singapore - Human Resource & Admin Intern (6months Contract)", "Ikano Retail", "Human Resources, Admin & Education", "internship", "https://jobs.smartrecruiters.com/IkanoRetail/744000156496580-ikea-singapore-human-resource-admin-intern", "on a current company listing; apply by 30 Nov 2026", "IKEA Careers"],
   ["REFASH_Social Media Creative Intern_Jan 2027", "Carousell Group", "Design, Media & Communications", "internship", "https://jobs.smartrecruiters.com/CarousellGroup/744000152581609-refash-social-media-creative-intern-jan-2027", "on a current company listing for a Jan 2027 start", "Carousell Careers"],
   ["Business Analyst Intern, SEA", "Benefit Cosmetics (LVMH)", "Retail, FMCG & E-Commerce", "internship", "https://jobs.smartrecruiters.com/LVMH2/744000152861180-business-analyst-intern-sea", "on a current company listing for Dec 2026/Jan 2027 to Jun 2027", "LVMH Careers"],
-  ["Transaction Services Intern Singapore 2027", "Standard Chartered Bank", "Banking, Finance, Insurance & Accounting", "internship", "https://sg.jobstreet.com/job/95622109", "on 2 Nov 2026", "JobStreet SG"],
-  ["College Intern - Data Analytics in Supply Chain", "Hewlett Packard Enterprise", "Supply Chain, Logistics & Operations", "internship", "https://sg.jobstreet.com/job/95623201", "on 2 Nov 2026", "JobStreet SG"],
-  ["Editorial Intern", "Confirm Good Pte. Ltd.", "Design, Media & Communications", "internship", "https://www.mycareersfuture.gov.sg/job/editorial-intern-confirm-good-a65c6cb3380d15ff8cc061bbb08b1c33", "on 22 Oct 2026; closes 21 Nov 2026", "MyCareersFuture"],
   ["Graduate Process Engineer", "Jacobs", "Engineering, Semiconductor & Manufacturing", "first-job", "https://sg.indeed.com/viewjob?jk=fc00b49b07dbdd8b", "on a current listing indexed 20 Nov 2026; applications close 28 Feb 2027", "Indeed Singapore"],
+  ["OCBC Singapore Graduate Talent Programme 2027", "OCBC (Singapore)", "Banking, Finance, Insurance & Accounting", "first-job", "https://sg.jobstreet.com/job/96034891", "on 20 Nov 2026", "JobStreet SG"],
+  ["Accounts Admin", "RevUp Proservices Pte. Ltd.", "Banking, Finance, Insurance & Accounting", "first-job", "https://www.mycareersfuture.gov.sg/job/accounting/accounts-admin-revup-proservices-e3d4c32c5ffe52584eb3eefdacd05596", "on 19 Nov 2026; closes 19 Dec 2026", "MyCareersFuture"],
   ["Site Reliability Engineer, AI Platform (2027 Graduate)", "Shopee", "Technology, AI & Data", "first-job", "https://sg.indeed.com/viewjob?jk=3f635da8bed5729c", "on a current listing indexed 19 Nov 2026", "Indeed Singapore"],
-  ["BW Group Graduate Programme - Future Leaders Programme 2027 (Singapore)", "BW Group", "Maritime, Aviation & Transport", "first-job", "https://sg.indeed.com/viewjob?jk=d86f2a74897eaa3b", "on a current listing indexed 19 Nov 2026", "Indeed Singapore"],
+  ["BW Group Graduate Programme - Future Leaders Programme 2027 (Singapore)", "BW Maritime Pte. Ltd.", "Maritime, Aviation & Transport", "first-job", "https://sg.jobstreet.com/job/95944524", "on 19 Nov 2026", "JobStreet SG"],
+  ["Graduate Engineer | Ground Engineering", "Arup Singapore Pte Ltd", "Built Environment, Real Estate & Facilities", "first-job", "https://sg.jobstreet.com/job/95928740", "on 17 Nov 2026", "JobStreet SG"],
   ["Audit - Graduate Associate 2027", "KPMG", "Banking, Finance, Insurance & Accounting", "first-job", "https://sg.indeed.com/viewjob?jk=088de2289a99af82", "on a current listing opened 14 Nov 2026", "Indeed Singapore"],
   ["Algorithm Engineer - Graduate (Global Payment) - 2027 Start", "ByteDance", "Technology, AI & Data", "first-job", "https://sg.indeed.com/viewjob?jk=754eeb856b1cdd51", "on a current listing indexed 13 Nov 2026", "Indeed Singapore"],
   ["Business Analyst – Data & AI (Graduate Development Programme)", "HR SG Pte. Ltd.", "Technology, AI & Data", "first-job", "https://www.mycareersfuture.gov.sg/job/others/business-analyst-%E2%80%93-data-ai-hr-sg-dd14d8a557a678521e2835b9d4378f61", "on 12 Nov 2026; closes 12 Dec 2026", "MyCareersFuture"],
@@ -331,14 +336,14 @@ const featuredOpenings = [
   ["AML Operation Analyst Graduate (Global Payment) - 2027 Start", "ByteDance Pte. Ltd.", "Banking, Finance, Insurance & Accounting", "first-job", "https://sg.jobstreet.com/job/95806468", "on 11 Nov 2026", "JobStreet SG"],
   ["2027 Singapore S&T Graduate", "Standard Chartered Bank", "Professional Services, Consulting & Advisory", "first-job", "https://sg.indeed.com/viewjob?jk=7e30ff436c712c41", "on a current listing opened 10 Nov 2026; closes 31 Jan 2027", "Indeed Singapore"],
   ["Explore Programme - Graduate Associate 2027", "KPMG", "Professional Services, Consulting & Advisory", "first-job", "https://sg.indeed.com/viewjob?jk=0fc85fd1390ceeea", "on a current listing opened 9 Nov 2026", "Indeed Singapore"],
-  ["Lead Graduate (2 Years Renewable Contract)", "Vopak Terminals Singapore Pte. Ltd.", "Energy, Utilities & Sustainability", "first-job", "https://sg.jobstreet.com/job/95676917", "on 4 Nov 2026", "JobStreet SG"],
+  ["Assistant Academic Administrator", "Singapore Raffles Music College Pte. Ltd.", "Human Resources, Admin & Education", "first-job", "https://www.mycareersfuture.gov.sg/job/admin/assistant-academic-administrator-singapore-raffles-music-college-85e17f1a00cd873a708c92718897a37a", "on 5 Nov 2026; closes 5 Dec 2026", "MyCareersFuture"],
 ].map(([title, company, industry, stage, url, posted, source]) => ({
   title,
   company,
   industry,
   stage,
   source,
-  checked: "20 Nov 2026",
+  checked: "23 Nov 2026",
   posted,
   url,
 }));
